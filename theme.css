@@ -95,3 +95,10 @@ d-article table th {
   font-size: 30px;
   padding: 2px 8px 20px 0px;
 }
+
+/* Title space */
+d-title {
+  background-image: url(img/beach_square.jpg);
+  background-size: cover;
+  padding: 5em 0em 60em 0em;
+}
