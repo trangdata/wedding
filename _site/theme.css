@@ -80,12 +80,12 @@ d-appendix {
 /* Change bullets */
 ul > li::marker {
   font-size: 1.125em;
-  color: #0F2E3D;
+  color: #5994a6;
 }
 
 /* Change link appearance */
 d-article a {
-  border-bottom: 2px solid #ffd8db;
+  border-bottom: 2px solid #5994a6;
   text-decoration: none;
 }
 
