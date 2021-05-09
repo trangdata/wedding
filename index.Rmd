@@ -1,15 +1,26 @@
 ---
-title: "Le &amp; Himmelstein Wedding"
-description: |
-  Welcome to the website. I hope you enjoy it!
+title: "Trang & Daniel"
+image: "img/beach_square.jpg"
+links:
+  - label: 'RSVP'
+    url: ""
+  - label: 'Travel'
+    url: ""
+  - label: 'Things to Do'
+    url: ""
+  - label: 'Registry'
+    url: ""
+  - label: 'FAQ'
+    url: ""
+output:
+  postcards::trestles
 site: distill::distill_website
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+### Hello!
 
-# Learn more about creating websites with Distill at:
-# https://rstudio.github.io/distill/website.html
+Welcome to Trang & Daniel’s wedding site. 
 
-```
+We are getting married on July 32nd, 2021!
 
+`r stringi::stri_rand_lipsum(1)`

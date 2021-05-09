@@ -1,12 +1,25 @@
 name: "wedding"
-title: "Le &amp; Himmelstein Wedding"
+title: "Trang & Daniel"
 description: |
-  Le &amp; Himmelstein Wedding
+  Le & Himmelstein Wedding
 output_dir: "_site"
 navbar:
   right:
     - text: "Home"
       href: index.html
-    - text: "About"
+    - text: "Schedule"
       href: about.html
+    - text: "Details & Other Pages"
+      menu:
+        - text: "RSVP"
+          href: "menu/rsvp.html"
+        - text: "Travel"
+          href: "menu/travel.html"
+        - text: "Things to Do"
+          href: "menu/todo.html"
+        - text: "Registry"
+          href: "menu/registry.html"
+        - text: "FAQ"
+          href: "menu/faq.html"
 output: distill::distill_article
+theme: theme.css

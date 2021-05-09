@@ -1,10 +1,92 @@
 ---
-title: "About this site"
+title: "Schedule"
 description: |
-  Some additional details about the website
+  July 13 & 14 2021
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+```{=html}
+<!--
+<table>
+    <tbody>
+        <tr>
+            <td colspan=3>
+            <h1>Monday, July 12th</h1>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan=4>L1 Name</td>
+            <td rowspan=2>L2 Name A</td>
+            <td>L3 Name A</td>
+        </tr>
+        <tr>
+            <td>L3 Name B</td>
+        </tr>
+        <tr>
+            <td rowspan=2>L2 Name B</td>
+            <td>L3 Name C</td>
+        </tr>
+        <tr>
+            <td>L3 Name D</td>
+        </tr>
+    </tbody>
+</table>
+-->
+```
+
+# Monday, July 12th
+
+## Welcome Drinks
+
++----------------------+----------------------+-----------------------+
+| **19.00 - 21.00**    | **Location Name**\   | [Map]()\              |
+|                      | Address\             | [Calendar]()          |
+|                      | City, State, Country |                       |
++----------------------+----------------------+-----------------------+
+
+----
+
+# Tuesday, July 13th
+
+## Ceremony
+
++----------------------+----------------------+-----------------------+
+| **12.30 - 15.30**    | **Location Name**\   | [Map]()\              |
+|                      | Address\             | [Calendar]()\         |
+|                      | City, State, Country |                       |
++----------------------+----------------------+-----------------------+
+  
+---
+
+# Wednesday, July 14th
+
+## Wedding Mass
+
++----------------------+----------------------+-----------------------+
+| **15.15 - 17.00**    | **Location Name**\   | [Map]()\              |
+|                      | Address\             | [Calendar]()\         |
+|                      | City, State, Country |                       |
++----------------------+----------------------+-----------------------+
+
+## Reception
+
++----------------------+-----------------------+----------------------+
+| **18.00 - 04.00**    | **Location Name**\    | [Map]()\             |
+|                      | Address\              | [Calendar]()         |
+|                      | City, State, Country  |                      |
++----------------------+-----------------------+----------------------+
+
+---
+
+# Thursday, July 15th
+
+## Farewell Brunch
+
++----------------------+-----------------------+----------------------+
+| **10:00 - 16.00**    | **Location Name**\    | [Map]()\             |
+|                      | Address\              | [Calendar]()\        |
+|                      | City, State, Country  |                      |
++----------------------+-----------------------+----------------------+
