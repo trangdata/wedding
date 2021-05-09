@@ -1,5 +1,6 @@
 name: "wedding"
 title: "Trang & Daniel"
+theme: theme.css
 description: |
   Le & Himmelstein Wedding
 output_dir: "_site"
@@ -12,14 +13,13 @@ navbar:
     - text: "Details & Other Pages"
       menu:
         - text: "RSVP"
-          href: "menu/rsvp.html"
+          href: "rsvp.html"
         - text: "Travel"
-          href: "menu/travel.html"
+          href: "travel.html"
         - text: "Things to Do"
-          href: "menu/todo.html"
+          href: "todo.html"
         - text: "Registry"
-          href: "menu/registry.html"
+          href: "registry.html"
         - text: "FAQ"
-          href: "menu/faq.html"
+          href: "faq.html"
 output: distill::distill_article
-theme: theme.css

@@ -2,8 +2,9 @@
 title: "RSVP"
 description: |
   A new article created using the Distill format.
-date: "`r Sys.Date()`"
-output: distill::distill_article
+output: 
+  distill::distill_article:
+    theme: theme.css
 ---
 
 ```{r setup, include=FALSE}
