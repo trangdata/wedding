@@ -16,8 +16,8 @@
 
 html {
   /*-- Main font sizes --*/
-  --title-size:      60px;
-  --body-size:       1.06rem;
+  --title-size:      50px;
+  --body-size:       1.3rem;
   --code-size:       14px;
   --aside-size:      12px;
   --fig-cap-size:    13px;
@@ -60,9 +60,9 @@ d-appendix {
 /* These properties only apply to Distill sites and blogs  */
 
 .distill-site-header {
-  --title-size:       18px;
+  --title-size:       25px;
   --text-color:       rgba(255, 255, 255, 0.8);
-  --text-size:        15px;
+  --text-size:        18px;
   --hover-color:      white;
   --bkgd-color:       #0F2E3D;
 }
@@ -74,8 +74,8 @@ d-appendix {
   --bkgd-color:       #0F2E3D;
 }
 
-/*-- Additional custom styles --*/
-/* Add any additional CSS rules below                      */
+/*-- Additional custom styles -----------------------------------------------*/
+/* Add any additional CSS rules below */
 
 /* Change bullets */
 ul > li::marker {
@@ -120,4 +120,22 @@ d-title {
     background-repeat: no-repeat;
     background-size: contain ;
   }
+}
+
+/* Postcard/Home page */
+
+/* navigation bar */
+.distill-site-header {
+  line-height: 1.5rem;
+}
+
+/* heading above paragraph */
+h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+/* paragraph text */
+body {
+  font-size: 1.25rem;
 }
