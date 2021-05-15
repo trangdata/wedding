@@ -2,7 +2,6 @@
 title: "FAQ"
 description: |
   A new article created using the Distill format.
-date: "`r Sys.Date()`"
 output: 
   distill::distill_article:
     toc: true
@@ -12,6 +11,8 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
+
+# Frequently Asked Questions
 
 Distill is a publication format for scientific and technical writing, native to the web. 
 

@@ -2131,7 +2131,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   html {
     /*-- Main font sizes --*/
     --title-size:      60px;
-    --body-size:       1.06rem;
+    --body-size:       1.3rem;
     --code-size:       14px;
     --aside-size:      12px;
     --fig-cap-size:    13px;
@@ -2174,9 +2174,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   /* These properties only apply to Distill sites and blogs  */
 
   .distill-site-header {
-    --title-size:       18px;
+    --title-size:       25px;
     --text-color:       rgba(255, 255, 255, 0.8);
-    --text-size:        15px;
+    --text-size:        18px;
     --hover-color:      white;
     --bkgd-color:       #0F2E3D;
   }
@@ -2204,10 +2204,18 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   }
 
   /* Tables */
+  /* table heading */
   d-article table th {
     font-family: 'Dancing Script', cursive;
     font-size: 30px;
+    line-height: 1.2em;
     padding: 2px 8px 20px 0px;
+  }
+
+  /* table rows */
+  d-article table td {
+    font-size: 1.2rem;
+    padding: 2px 100px 0px 0px; /* gets both columns approx. same width */
   }
 
   /* Title space */
@@ -2221,7 +2229,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   /* Resizing background image for desktop */
   @media (min-width: 601px) {
     d-title {
-      background-image: url(img/crosscountry.jpg);
+      background-image: url(img/skiing.jpg);
       background-repeat: no-repeat;
       background-size: cover;
     }
@@ -2230,7 +2238,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   /* Resizing background image for mobile */
   @media (max-width: 600px) {
     d-title {
-      background-image: url(img/crosscountry.jpg);
+      background-image: url(img/skiing.jpg);
       background-repeat: no-repeat;
       background-size: cover ;
       padding: 5em 0em 5em 0em;

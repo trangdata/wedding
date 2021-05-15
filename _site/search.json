@@ -5,24 +5,23 @@
       "title": "FAQ",
       "description": "A new article created using the Distill format.\n",
       "author": [],
-      "date": "`r Sys.Date()`",
-      "contents": "\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill for R Markdown at https://rstudio.github.io/distill.\n\n\n\n",
-      "last_modified": "2021-05-15T16:23:27-04:00"
+      "contents": "\n\nContents\nFrequently Asked Questions\n\nFrequently Asked Questions\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill for R Markdown at https://rstudio.github.io/distill.\n\n\n\n",
+      "last_modified": "2021-05-15T17:13:28-04:00"
     },
     {
       "path": "index.html",
       "title": "Trang & Daniel",
       "author": [],
-      "contents": "\n\n          \n          \n          Trang & Daniel\n          \n          \n          Home\n          Schedule\n          RSVP\n          Travel\n          Things to Do\n          FAQ\n          ☰\n          \n          \n      \n        \n          \n            \n              \n            \n              Trang & Daniel\n            \n            \n              \n                \n            \n          \n        \n        \n        \n          \n            \n            Hello!\n            Welcome to Trang & Daniel’s wedding site.\n            We are getting married on July 32nd, 2021!\n            Lorem ipsum dolor sit amet, taciti in nec mi elementum porttitor id mus a orci nec. Ac blandit ipsum eu ad mauris egestas viverra, fringilla. Massa aliquam augue sem et himenaeos urna eu, sed ac. Leo inceptos suspendisse senectus in fermentum et vehicula. Convallis venenatis euismod eu. Cum nec vulputate eu vivamus dapibus pharetra. Enim platea lacinia vel penatibus taciti ut ultricies inceptos eu. Ex turpis molestie ac varius sollicitudin. Ultrices pharetra eros ac risus. Hac interdum semper vitae arcu. Ligula at quis sollicitudin sed adipiscing in dolor condimentum nulla facilisis magna.\n            \n          \n        \n      \n    \n\n    \n      \n        \n          \n            \n              \n            \n              Trang & Daniel\n            \n            \n              \n                \n                                  \n              \n            \n            \n              \n              Hello!\n              Welcome to Trang & Daniel’s wedding site.\n              We are getting married on July 32nd, 2021!\n              Lorem ipsum dolor sit amet, taciti in nec mi elementum porttitor id mus a orci nec. Ac blandit ipsum eu ad mauris egestas viverra, fringilla. Massa aliquam augue sem et himenaeos urna eu, sed ac. Leo inceptos suspendisse senectus in fermentum et vehicula. Convallis venenatis euismod eu. Cum nec vulputate eu vivamus dapibus pharetra. Enim platea lacinia vel penatibus taciti ut ultricies inceptos eu. Ex turpis molestie ac varius sollicitudin. Ultrices pharetra eros ac risus. Hac interdum semper vitae arcu. Ligula at quis sollicitudin sed adipiscing in dolor condimentum nulla facilisis magna.\n              \n            \n        \n      \n    \n\n    \n    \n    ",
-      "last_modified": "2021-05-15T16:23:28-04:00"
+      "contents": "\n\n          \n          \n          Trang & Daniel\n          \n          \n          Home\n          Schedule\n          RSVP\n          Travel\n          Things to Do\n          FAQ\n          ☰\n          \n          \n      \n        \n          \n            \n              \n            \n              Trang & Daniel\n            \n            \n              \n                \n            \n          \n        \n        \n        \n          \n            \n            Hello!\n            Welcome to Trang & Daniel’s wedding site.\n            We are getting married on July 32nd, 2021!\n            Lorem ipsum dolor sit amet, aenean aenean facilisis, eget feugiat, parturient et gravida dui sit sed. Ultricies aenean eu enim tincidunt. Efficitur potenti sem dui nulla non tellus. Fames, aliquet ultrices facilisi etiam quis. Sed non lacinia, odio, mauris pellentesque, mollis vitae nam bibendum sit scelerisque, praesent at. Eros lorem vel fermentum magna et. Laoreet class amet sit enim ante. Neque porttitor mattis a vitae facilisi maximus ut scelerisque torquent morbi orci massa at. Lacinia est accumsan justo sed ac.\n            \n          \n        \n      \n    \n\n    \n      \n        \n          \n            \n              \n            \n              Trang & Daniel\n            \n            \n              \n                \n                                  \n              \n            \n            \n              \n              Hello!\n              Welcome to Trang & Daniel’s wedding site.\n              We are getting married on July 32nd, 2021!\n              Lorem ipsum dolor sit amet, aenean aenean facilisis, eget feugiat, parturient et gravida dui sit sed. Ultricies aenean eu enim tincidunt. Efficitur potenti sem dui nulla non tellus. Fames, aliquet ultrices facilisi etiam quis. Sed non lacinia, odio, mauris pellentesque, mollis vitae nam bibendum sit scelerisque, praesent at. Eros lorem vel fermentum magna et. Laoreet class amet sit enim ante. Neque porttitor mattis a vitae facilisi maximus ut scelerisque torquent morbi orci massa at. Lacinia est accumsan justo sed ac.\n              \n            \n        \n      \n    \n\n    \n    \n    ",
+      "last_modified": "2021-05-15T17:13:29-04:00"
     },
     {
       "path": "rsvp.html",
       "title": "RSVP",
       "description": "A new article created using the Distill format.\n",
       "author": [],
-      "contents": "\n\n\n\n\n\n\n\n",
-      "last_modified": "2021-05-15T16:23:29-04:00"
+      "contents": "\nRSVP\n\n\n\n\n\n\n\n",
+      "last_modified": "2021-05-15T17:13:29-04:00"
     },
     {
       "path": "schedule.html",
@@ -30,25 +29,23 @@
       "description": "July 13 & 14 2021\n",
       "author": [],
       "contents": "\nMonday, July 12th\nWelcome Drinks\n\n19.00 - 21.00\nLocation NameAddressCity, State, Country\nTuesday, July 13th\nCeremony\n\n12.30 - 15.30\nLocation NameAddressCity, State, Country\nWednesday, July 14th\nWedding Mass\n\n15.15 - 17.00\nLocation NameAddressCity, State, Country\nReception\n\n18.00 - 04.00\nLocation NameAddressCity, State, Country\nThursday, July 15th\nFarewell Brunch\n\n10:00 - 16.00\nLocation NameAddressCity, State, Country\n\n\n\n",
-      "last_modified": "2021-05-15T16:30:14-04:00"
+      "last_modified": "2021-05-15T17:13:30-04:00"
     },
     {
       "path": "todo.html",
       "title": "Things to Do",
       "description": "A new article created using the Distill format.\n",
       "author": [],
-      "date": "`r Sys.Date()`",
-      "contents": "\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill for R Markdown at https://rstudio.github.io/distill.\n\n\n\n",
-      "last_modified": "2021-05-15T16:23:30-04:00"
+      "contents": "\nThings to Do\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill for R Markdown at https://rstudio.github.io/distill.\n\n\n\n",
+      "last_modified": "2021-05-15T17:13:31-04:00"
     },
     {
       "path": "travel.html",
       "title": "Travel",
       "description": "A new article created using the Distill format.\n",
       "author": [],
-      "date": "`r Sys.Date()`",
-      "contents": "\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill for R Markdown at https://rstudio.github.io/distill.\n\n\n\n",
-      "last_modified": "2021-05-15T16:23:31-04:00"
+      "contents": "\nTravel\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill for R Markdown at https://rstudio.github.io/distill.\nLorem ipsum dolor sit amet, purus, et tortor ad dignissim ac himenaeos. Taciti arcu sed, pulvinar leo velit, urna. Natoque sociosqu aliquam eros pretium nunc non sed egestas varius interdum. In mattis et urna phasellus, et quis aliquam, viverra enim. Sollicitudin sem maximus rutrum torquent dictumst dignissim mattis, sem praesent tristique sollicitudin lacinia vivamus est, a diam faucibus. Ante, placerat elementum nulla eros mauris nibh mollis. Conubia nulla facilisi eu risus habitant varius curabitur volutpat morbi. Blandit ex iaculis varius massa bibendum et. Consequat pellentesque proin dapibus proin magna, tellus purus aliquet cras. Eu duis ac nullam aenean. Fermentum vel in habitant orci ultrices, habitant curae. Euismod cubilia primis, turpis aliquam at sed interdum commodo convallis et, eget. Diam sodales convallis pellentesque sem eget habitant pulvinar malesuada tortor suspendisse in.\n\n\n\n",
+      "last_modified": "2021-05-15T17:13:31-04:00"
     }
   ],
   "collections": []

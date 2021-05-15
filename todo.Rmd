@@ -2,16 +2,17 @@
 title: "Things to Do"
 description: |
   A new article created using the Distill format.
-date: "`r Sys.Date()`"
 output: 
   distill::distill_article:
-    toc: true
+    toc: false
     theme: "css/theme-todo.css"
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
+
+# Things to Do
 
 Distill is a publication format for scientific and technical writing, native to the web. 
 

@@ -4,7 +4,7 @@ description: |
   A new article created using the Distill format.
 output: 
   distill::distill_article:
-    toc: true
+    toc: false
     theme: css/theme-rsvp.css
 ---
 
@@ -12,7 +12,9 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-```{r}
+# RSVP
+
+```{r, fig.align='center'}
 knitr::include_url("https://docs.google.com/forms/d/e/1FAIpQLSdryETpwYdGLUiSnrSeWxsG26dDMtjt8c7RjOoPF_KEPfECDg/viewform?usp=sf_link", height = "1500px")
 ```
 

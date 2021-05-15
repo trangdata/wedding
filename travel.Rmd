@@ -2,10 +2,9 @@
 title: "Travel"
 description: |
   A new article created using the Distill format.
-date: "`r Sys.Date()`"
 output: 
   distill::distill_article:
-    toc: true
+    toc: false
     theme: css/theme-travel.css
 ---
 
@@ -13,10 +12,13 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+# Travel
+
 Distill is a publication format for scientific and technical writing, native to the web. 
 
 Learn more about using Distill for R Markdown at <https://rstudio.github.io/distill>.
 
+`r stringi::stri_rand_lipsum(1)`
 
 
 
