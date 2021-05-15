@@ -2,24 +2,16 @@
 title: "Trang & Daniel"
 image: "img/beach_square.jpg"
 links:
-  - label: 'RSVP'
-    url: ""
-  - label: 'Travel'
-    url: ""
-  - label: 'Things to Do'
-    url: ""
-  - label: 'Registry'
-    url: ""
-  - label: 'FAQ'
-    url: ""
-output:
+  - label: 'Enter &#10230;'
+    url: "about.html"
+output: 
   postcards::trestles
 site: distill::distill_website
 ---
 
 ### Hello!
 
-Welcome to Trang & Daniel’s wedding site. 
+Welcome to Trang & Daniel’s wedding site.
 
 We are getting married on July 32nd, 2021!
 
