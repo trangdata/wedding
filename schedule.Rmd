@@ -2,6 +2,10 @@
 title: "Schedule"
 description: |
   July 13 & 14 2021
+output: 
+  distill::distill_article:
+    toc: false
+    theme: css/theme-schedule.css
 ---
 
 ```{r setup, include=FALSE}
@@ -18,7 +22,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 # Tuesday, July 13th
 
-| Ceremony   |                                                      |
+| Ceremony          |                                                      |
 |:------------------|------------------------------------------------------|
 | **12.30 - 15.30** | **Location Name**<br>Address<br>City, State, Country |
 
