@@ -6,7 +6,7 @@
       "description": "July 13 & 14 2021",
       "author": [],
       "contents": "\nMonday, July 12th\nWelcome Drinks\n\n19.00 - 21.00\nLocation NameAddressCity, State, Country\nTuesday, July 13th\nCeremony\n\n12.30 - 15.30\nLocation NameAddressCity, State, Country\nWednesday, July 14th\nWedding Mass\n\n15.15 - 17.00\nLocation NameAddressCity, State, Country\nReception\n\n18.00 - 04.00\nLocation NameAddressCity, State, Country\nThursday, July 15th\nFarewell Brunch\n\n10:00 - 16.00\nLocation NameAddressCity, State, Country\n\n\n\n",
-      "last_modified": "2021-05-15T14:55:17-04:00"
+      "last_modified": "2021-05-15T15:11:52-04:00"
     },
     {
       "path": "faq.html",
@@ -15,22 +15,22 @@
       "author": [],
       "date": "`r Sys.Date()`",
       "contents": "\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill for R Markdown at https://rstudio.github.io/distill.\n\n\n\n",
-      "last_modified": "2021-05-15T14:55:19-04:00"
+      "last_modified": "2021-05-15T15:11:53-04:00"
     },
     {
       "path": "index.html",
       "title": "Trang & Daniel",
       "author": [],
-      "contents": "\n\n          \n          \n          Trang & Daniel\n          \n          \n          Home\n          Schedule\n          RSVP\n          Travel\n          Things to Do\n          FAQ\n          ☰\n          \n          \n      \n        \n          \n            \n              \n            \n              Trang & Daniel\n            \n            \n              \n                \n                    \n                      \n                        Enter ⟶\n                      \n                    \n                  \n                                  \n            \n          \n        \n        \n        \n          \n            \n            Hello!\n            Welcome to Trang & Daniel’s wedding site.\n            We are getting married on July 32nd, 2021!\n            Lorem ipsum dolor sit amet, faucibus sed platea. Rhoncus, sed id eu penatibus blandit elementum. Scelerisque maecenas malesuada diam venenatis ultricies mus ipsum. Aptent, congue interdum lacinia viverra at magnis, libero fringilla sed egestas leo ut sed. Ut turpis, malesuada imperdiet nunc in et magnis venenatis. Sed erat leo nibh sit iaculis. Pharetra habitant nascetur risus euismod sed elit integer augue pharetra ut condimentum diam.\n            \n          \n        \n      \n    \n\n    \n      \n        \n          \n            \n              \n            \n              Trang & Daniel\n            \n            \n              \n                \n                                    \n                    \n                      Enter ⟶\n                    \n                  \n                                  \n              \n            \n            \n              \n              Hello!\n              Welcome to Trang & Daniel’s wedding site.\n              We are getting married on July 32nd, 2021!\n              Lorem ipsum dolor sit amet, faucibus sed platea. Rhoncus, sed id eu penatibus blandit elementum. Scelerisque maecenas malesuada diam venenatis ultricies mus ipsum. Aptent, congue interdum lacinia viverra at magnis, libero fringilla sed egestas leo ut sed. Ut turpis, malesuada imperdiet nunc in et magnis venenatis. Sed erat leo nibh sit iaculis. Pharetra habitant nascetur risus euismod sed elit integer augue pharetra ut condimentum diam.\n              \n            \n        \n      \n    \n\n    \n    \n    ",
-      "last_modified": "2021-05-15T14:55:19-04:00"
+      "contents": "\n\n          \n          \n          Trang & Daniel\n          \n          \n          Home\n          Schedule\n          RSVP\n          Travel\n          Things to Do\n          FAQ\n          ☰\n          \n          \n      \n        \n          \n            \n              \n            \n              Trang & Daniel\n            \n            \n              \n                \n                    \n                      \n                        Enter ⟶\n                      \n                    \n                  \n                                  \n            \n          \n        \n        \n        \n          \n            \n            Hello!\n            Welcome to Trang & Daniel’s wedding site.\n            We are getting married on July 32nd, 2021!\n            Lorem ipsum dolor sit amet, duis at maximus mus cursus ornare vitae malesuada viverra! Blandit aliquet, purus faucibus mus, suscipit et. Nunc arcu platea maecenas. Faucibus hendrerit nibh hendrerit, sed. Dolor nisi aliquam nisl, id, mauris ut facilisi phasellus non neque porttitor in. Porta volutpat risus, ullamcorper at sem tincidunt sed, ut et. Sed, libero parturient, lorem ac sapien sed, varius turpis sed consectetur nec. Et dui ut fusce fermentum auctor at tincidunt eu lectus sed. Aliquam purus eu at fames nibh. Sed congue dolor urna vel et arcu. Vestibulum nullam sed congue etiam turpis justo. Tellus finibus mollis elit et mauris in, pulvinar augue.\n            \n          \n        \n      \n    \n\n    \n      \n        \n          \n            \n              \n            \n              Trang & Daniel\n            \n            \n              \n                \n                                    \n                    \n                      Enter ⟶\n                    \n                  \n                                  \n              \n            \n            \n              \n              Hello!\n              Welcome to Trang & Daniel’s wedding site.\n              We are getting married on July 32nd, 2021!\n              Lorem ipsum dolor sit amet, duis at maximus mus cursus ornare vitae malesuada viverra! Blandit aliquet, purus faucibus mus, suscipit et. Nunc arcu platea maecenas. Faucibus hendrerit nibh hendrerit, sed. Dolor nisi aliquam nisl, id, mauris ut facilisi phasellus non neque porttitor in. Porta volutpat risus, ullamcorper at sem tincidunt sed, ut et. Sed, libero parturient, lorem ac sapien sed, varius turpis sed consectetur nec. Et dui ut fusce fermentum auctor at tincidunt eu lectus sed. Aliquam purus eu at fames nibh. Sed congue dolor urna vel et arcu. Vestibulum nullam sed congue etiam turpis justo. Tellus finibus mollis elit et mauris in, pulvinar augue.\n              \n            \n        \n      \n    \n\n    \n    \n    ",
+      "last_modified": "2021-05-15T15:11:54-04:00"
     },
     {
       "path": "rsvp.html",
       "title": "RSVP",
       "description": "A new article created using the Distill format.\n",
       "author": [],
-      "contents": "\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill for R Markdown at https://rstudio.github.io/distill.\n\n\n\n",
-      "last_modified": "2021-05-15T14:55:19-04:00"
+      "contents": "\n\n\n\n\n\n\n\n",
+      "last_modified": "2021-05-15T15:11:54-04:00"
     },
     {
       "path": "todo.html",
@@ -39,7 +39,7 @@
       "author": [],
       "date": "`r Sys.Date()`",
       "contents": "\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill for R Markdown at https://rstudio.github.io/distill.\n\n\n\n",
-      "last_modified": "2021-05-15T14:55:20-04:00"
+      "last_modified": "2021-05-15T15:11:55-04:00"
     },
     {
       "path": "travel.html",
@@ -48,7 +48,7 @@
       "author": [],
       "date": "`r Sys.Date()`",
       "contents": "\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill for R Markdown at https://rstudio.github.io/distill.\n\n\n\n",
-      "last_modified": "2021-05-15T14:55:20-04:00"
+      "last_modified": "2021-05-15T15:11:56-04:00"
     }
   ],
   "collections": []
