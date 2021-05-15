@@ -1,9 +1,6 @@
 ---
 title: "Trang & Daniel"
 image: "img/beach_square.jpg"
-links:
-  - label: 'Enter &#10230;'
-    url: "about.html"
 output: 
   postcards::trestles
 site: distill::distill_website

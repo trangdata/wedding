@@ -1,6 +1,6 @@
 name: "wedding"
 title: "Trang & Daniel"
-theme: theme.css
+theme: css/theme.css
 description: |
   Le & Himmelstein Wedding
 output_dir: "_site"
@@ -9,7 +9,7 @@ navbar:
     - text: "Home"
       href: index.html
     - text: "Schedule"
-      href: about.html
+      href: schedule.html
     - text: "RSVP"
       href: rsvp.html
     - text: "Travel"

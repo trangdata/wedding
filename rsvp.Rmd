@@ -4,7 +4,8 @@ description: |
   A new article created using the Distill format.
 output: 
   distill::distill_article:
-    theme: theme.css
+    toc: true
+    theme: css/theme-rsvp.css
 ---
 
 ```{r setup, include=FALSE}

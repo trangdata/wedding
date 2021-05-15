@@ -3,7 +3,10 @@ title: "Things to Do"
 description: |
   A new article created using the Distill format.
 date: "`r Sys.Date()`"
-output: distill::distill_article
+output: 
+  distill::distill_article:
+    toc: true
+    theme: "css/theme-todo.css"
 ---
 
 ```{r setup, include=FALSE}

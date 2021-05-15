@@ -3,7 +3,10 @@ title: "Travel"
 description: |
   A new article created using the Distill format.
 date: "`r Sys.Date()`"
-output: distill::distill_article
+output: 
+  distill::distill_article:
+    toc: true
+    theme: css/theme-travel.css
 ---
 
 ```{r setup, include=FALSE}

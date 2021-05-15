@@ -810,7 +810,26 @@
           d-title {
             background-image: url(img/beach_square.jpg);
             background-size: cover;
-            padding: 5em 0em 60em 0em;
+            background-position: 50% 50%;
+            padding: 5em 0em 55em 0em;
+          }
+
+          /* Resizing background image for desktop */
+          @media (min-width: 481px) {
+            d-title {
+              background-image: url(img/beach_square.jpg);
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+          }
+
+          /* Resizing background image for mobile */
+          @media (max-width: 480px) {
+            d-title {
+              background-image: url(img/beach_square.jpg);
+              background-repeat: no-repeat;
+              background-size: contain ;
+            }
           }</style>
           <style type="text/css">
           /* base style */
@@ -980,7 +999,7 @@
           </div>
           <div class="nav-right">
           <a href="index.html">Home</a>
-          <a href="about.html">Schedule</a>
+          <a href="schedule.html">Schedule</a>
           <a href="rsvp.html">RSVP</a>
           <a href="travel.html">Travel</a>
           <a href="todo.html">Things to Do</a>
@@ -1007,13 +1026,6 @@
             <div class="p-2">
               <div id="icon-list">
                 <ul class="list-inline">
-                                    <li class="list-inline-item">
-                    <a href=about.html>
-                      <button type="button" class="btn btn-outline-dark mb-2">
-                        Enter ⟶
-                      </button>
-                    </a>
-                  </li>
                                   </ul>
               </div>
             </div>
@@ -1026,7 +1038,7 @@
             <h3>Hello!</h3>
             <p>Welcome to Trang &amp; Daniel’s wedding site.</p>
             <p>We are getting married on July 32nd, 2021!</p>
-            <p>Lorem ipsum dolor sit amet, duis at maximus mus cursus ornare vitae malesuada viverra! Blandit aliquet, purus faucibus mus, suscipit et. Nunc arcu platea maecenas. Faucibus hendrerit nibh hendrerit, sed. Dolor nisi aliquam nisl, id, mauris ut facilisi phasellus non neque porttitor in. Porta volutpat risus, ullamcorper at sem tincidunt sed, ut et. Sed, libero parturient, lorem ac sapien sed, varius turpis sed consectetur nec. Et dui ut fusce fermentum auctor at tincidunt eu lectus sed. Aliquam purus eu at fames nibh. Sed congue dolor urna vel et arcu. Vestibulum nullam sed congue etiam turpis justo. Tellus finibus mollis elit et mauris in, pulvinar augue.</p>
+            <p>Lorem ipsum dolor sit amet, taciti in nec mi elementum porttitor id mus a orci nec. Ac blandit ipsum eu ad mauris egestas viverra, fringilla. Massa aliquam augue sem et himenaeos urna eu, sed ac. Leo inceptos suspendisse senectus in fermentum et vehicula. Convallis venenatis euismod eu. Cum nec vulputate eu vivamus dapibus pharetra. Enim platea lacinia vel penatibus taciti ut ultricies inceptos eu. Ex turpis molestie ac varius sollicitudin. Ultrices pharetra eros ac risus. Hac interdum semper vitae arcu. Ligula at quis sollicitudin sed adipiscing in dolor condimentum nulla facilisis magna.</p>
             </div>
           </div>
         </div>
@@ -1048,11 +1060,6 @@
             <div class="row justify-content-center align-items-center">
               <div class="col-8 p-1 text-center">
                 <div class="list-group">
-                                    <a href=about.html>
-                    <button type="button" class="list-group-item list-group-item-action my-1 rounded">
-                      Enter ⟶
-                    </button>
-                  </a>
                                   </div>
               </div>
             </div>
@@ -1061,7 +1068,7 @@
               <h3>Hello!</h3>
               <p>Welcome to Trang &amp; Daniel’s wedding site.</p>
               <p>We are getting married on July 32nd, 2021!</p>
-              <p>Lorem ipsum dolor sit amet, duis at maximus mus cursus ornare vitae malesuada viverra! Blandit aliquet, purus faucibus mus, suscipit et. Nunc arcu platea maecenas. Faucibus hendrerit nibh hendrerit, sed. Dolor nisi aliquam nisl, id, mauris ut facilisi phasellus non neque porttitor in. Porta volutpat risus, ullamcorper at sem tincidunt sed, ut et. Sed, libero parturient, lorem ac sapien sed, varius turpis sed consectetur nec. Et dui ut fusce fermentum auctor at tincidunt eu lectus sed. Aliquam purus eu at fames nibh. Sed congue dolor urna vel et arcu. Vestibulum nullam sed congue etiam turpis justo. Tellus finibus mollis elit et mauris in, pulvinar augue.</p>
+              <p>Lorem ipsum dolor sit amet, taciti in nec mi elementum porttitor id mus a orci nec. Ac blandit ipsum eu ad mauris egestas viverra, fringilla. Massa aliquam augue sem et himenaeos urna eu, sed ac. Leo inceptos suspendisse senectus in fermentum et vehicula. Convallis venenatis euismod eu. Cum nec vulputate eu vivamus dapibus pharetra. Enim platea lacinia vel penatibus taciti ut ultricies inceptos eu. Ex turpis molestie ac varius sollicitudin. Ultrices pharetra eros ac risus. Hac interdum semper vitae arcu. Ligula at quis sollicitudin sed adipiscing in dolor condimentum nulla facilisis magna.</p>
               </div>
             </div>
         </div>

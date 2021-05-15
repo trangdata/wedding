@@ -107,7 +107,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","output"]}},"value":[{"type":"character","attributes":{},"value":["RSVP"]},{"type":"character","attributes":{},"value":["A new article created using the Distill format.\n"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["theme"]}},"value":[{"type":"character","attributes":{},"value":["theme.css"]}]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","output"]}},"value":[{"type":"character","attributes":{},"value":["RSVP"]},{"type":"character","attributes":{},"value":["A new article created using the Distill format.\n"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","theme"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["css/theme-rsvp.css"]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2212,9 +2212,39 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   /* Title space */
   d-title {
-    background-image: url(img/beach_square.jpg);
+    background-image: url(img/hill.jpg);
     background-size: cover;
-    padding: 5em 0em 60em 0em;
+    background-position: 50% 50%;
+    padding: 5em 0em 55em 0em;
+  }
+
+  /* Resizing background image for desktop */
+  @media (min-width: 481px) {
+    d-title {
+      background-image: url(img/hill.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+
+  /* Resizing background image for desktop */
+  @media (min-width: 601px) {
+    d-title {
+      background-image: url(img/hill.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  /* Resizing background image for mobile */
+  @media (max-width: 600px) {
+    d-title {
+      background-image: url(img/hill.jpg);
+      background-repeat: no-repeat;
+      background-size: cover ;
+      padding: 5em 0em 5em 0em;
+    }
   }</style>
   <style type="text/css">
   /* base style */
@@ -2403,7 +2433,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 <div class="nav-right">
 <a href="index.html">Home</a>
-<a href="about.html">Schedule</a>
+<a href="schedule.html">Schedule</a>
 <a href="rsvp.html">RSVP</a>
 <a href="travel.html">Travel</a>
 <a href="todo.html">Things to Do</a>
