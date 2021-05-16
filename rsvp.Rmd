@@ -1,7 +1,5 @@
 ---
 title: "RSVP"
-description: |
-  Let us know if you're coming!
 output: 
   distill::distill_article:
     toc: false
@@ -12,9 +10,9 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-# RSVP
-
 ## Path of Life Garden, 36 Park Rd, Windsor, VT 05089
+
+[Map](https://www.google.com/maps/place/Path+of+Life+Sculpture+Garden/@43.5134707,-72.3999229,15z/data=!4m2!3m1!1s0x0:0xe51fd9530f5b7312?sa=X&ved=2ahUKEwilzc7qlc7wAhWWWc0KHbcWCGAQ_BIwG3oECEMQBQ)
 
 We appreciate your early response! Please send additional comments/questions to our event coordinator Linh Phan <violinhino@gmail.com>.
 

@@ -95,13 +95,19 @@ d-article table th {
   font-family: 'Dancing Script', cursive;
   font-size: 30px;
   line-height: 1.2em;
-  padding: 2px 8px 20px 0px;
+  padding: 2px 8px 10px 0px;
 }
 
 /* table rows */
 d-article table td {
   font-size: 1.2rem;
-  padding: 2px 100px 0px 0px; /* gets both columns approx. same width */
+  text-align: left;
+  /*border-top: none !important;
+  padding: 2px 0px 0px 0px; /* gets both columns approx. same width */
+}
+
+d-article table td:nth-child(1) {
+  width: 35%
 }
 
 /* Title space */

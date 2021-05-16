@@ -1,7 +1,7 @@
 ---
 title: "Schedule"
 description: |
-  July 13 & 14 2021
+  What are we doing all day? We're glad you asked!
 output: 
   distill::distill_article:
     toc: false
