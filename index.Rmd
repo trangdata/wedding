@@ -1,6 +1,9 @@
 ---
 title: "Trang & Daniel"
 image: "img/beach_square.jpg"
+links:
+  - label: "RSVP"
+    url: "https://loveroo.netlify.app/rsvp.html"
 output: 
   postcards::trestles
 site: distill::distill_website
