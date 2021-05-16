@@ -1,7 +1,7 @@
 ---
 title: "Schedule"
 description: |
-  July 13 & 14 2021
+  What are we doing all day? We're glad you asked!
 output: 
   distill::distill_article:
     toc: false
@@ -12,36 +12,69 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-# Monday, July 12th
+[TODO: Add to Calendar]()
 
-| Welcome Drinks    |                                                      |
+# Friday, July 23rd
+
+| Kayaking trip     |                                              |
+|:------------------|----------------------------------------------|
+| **13:00 - 16.00** | Floating/kayaking down the Connecticut river!|
+
+
+| Potluck dinner    |                                                      |
 |:------------------|------------------------------------------------------|
-| **19.00 - 21.00** | **Location Name**<br>Address<br>City, State, Country |
+| **18:30 - 20.00** | Anything made or purchased with love is appreciated! |
+
+| Socializing       |                                                      |
+|:------------------|------------------------------------------------------|
+| **20:30 - 23.00** | Beer. Bonfire. Bliss.                                |
 
 ------------------------------------------------------------------------
 
-# Tuesday, July 13th
+# Saturday, July 24th
 
-| Ceremony          |                                                      |
+| MYOB              |                                                      |
 |:------------------|------------------------------------------------------|
-| **12.30 - 15.30** | **Location Name**<br>Address<br>City, State, Country |
+| **08:00 - 11:00** | Make your own bagel. And coffee.|
+
+| Calibration yoga  |                                                      |
+|:------------------|------------------------------------------------------|
+| **09:00 - 10:00** | An alignment-based practice that transcends boundaries. |
+
+| Unstructured joy  |                                                      |
+|:------------------|------------------------------------------------------|
+| **11:00 - 15:00** | Water activities, yard games, sculpture garden |
+
+| Unconventional ceremony |                                                |
+|:------------------|------------------------------------------------------|
+| **16:00 - 17:00** | Yup.|
+
+| Wedding dinner    |                                                      |
+|:------------------|------------------------------------------------------|
+| **17:30 - 20:00** |  |
+
+| Bonfire hang      |                                                      |
+|:------------------|------------------------------------------------------|
+| **20:00 - **      | Dancing with the Driftwood band                      |
+
 
 ------------------------------------------------------------------------
 
-# Wednesday, July 14th
+# Sunday, July 25th
 
-| Wedding Mass      |                                                      |
+| MYOB              |                                                      |
 |:------------------|------------------------------------------------------|
-| **15.15 - 17.00** | **Location Name**<br>Address<br>City, State, Country |
+| **08:00 - 11:00** | See Saturday.                                        |
 
-| Reception         |                                                      |
+| Off-the-grid 5K Race |                                                      |
+|:---------------------|------------------------------------------------------|
+| **09:00 - 10:00**    | ~5 km double-loop around the garden.<br>Potential uneven footing. Watch your step! |
+
+| Award ceremony    |                                                      |
 |:------------------|------------------------------------------------------|
-| **18.00 - 04.00** | **Location Name**<br>Address<br>City, State, Country |
+| **10:00 - 11:00** | Best of each gender group receives special trophy.   |
 
-------------------------------------------------------------------------
+| Lingering festivities |                                                      |
+|:----------------------|------------------------------------------------------|
+| **11:00 - 14:00**     | Adieu.|
 
-# Thursday, July 15th
-
-| Farewell Brunch   |                                                      |
-|:------------------|------------------------------------------------------|
-| **10:00 - 16.00** | **Location Name**<br>Address<br>City, State, Country |
