@@ -96,6 +96,12 @@ d-article table th {
   font-size: 30px;
   line-height: 1.2em;
   padding: 2px 8px 10px 0px;
+  border-bottom: none; /* removes bottom border */
+}
+
+/* also responsible for some table heading properties */
+table thead {
+  border-bottom: none; /* removes bottom border */
 }
 
 /* table rows */
