@@ -1,7 +1,7 @@
 ---
 title: "RSVP"
 description: |
-  A new article created using the Distill format.
+  Let us know if you're coming!
 output: 
   distill::distill_article:
     toc: false
@@ -14,7 +14,12 @@ knitr::opts_chunk$set(echo = FALSE)
 
 # RSVP
 
+## Path of Life Garden, 36 Park Rd, Windsor, VT 05089
+
+We appreciate your early response! Please send additional comments/questions to our event coordinator Linh Phan <violinhino@gmail.com>.
+
+
 ```{r, fig.align='center'}
-knitr::include_url("https://docs.google.com/forms/d/e/1FAIpQLSdryETpwYdGLUiSnrSeWxsG26dDMtjt8c7RjOoPF_KEPfECDg/viewform?usp=sf_link", height = "1500px")
+knitr::include_url("https://docs.google.com/forms/d/e/1FAIpQLScMt7QDWuqGIsuY8yO69GDuTmkR2K1lNHW1WBlsXbgDQ19ezw/viewform?usp=sf_link", height = "1500px")
 ```
 
