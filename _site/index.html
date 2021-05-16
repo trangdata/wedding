@@ -848,6 +848,15 @@
           /* paragraph text */
           body {
             font-size: 1.25rem;
+          }
+
+          /* navigation bar */
+          /* not sure how to make it stable/sticky, so this is a hack.
+          I made it so the bar doesn't disappear ("ease-in-out")
+          until 5 minutes have gone by */
+          .headroom--transition {
+            /*transition: all .4s ease-in-out;  original code */
+            transition: all 300s ease-in-out;
           }</style>
           <style type="text/css">
           /* base style */
@@ -1063,7 +1072,7 @@
             <h3>Hello!</h3>
             <p>Welcome to Trang &amp; Daniel’s wedding site.</p>
             <p>We are getting married on July 32nd, 2021!</p>
-            <p>Lorem ipsum dolor sit amet, consequat donec ad faucibus ad rhoncus penatibus turpis enim. Finibus felis eros vel tellus feugiat porta vulputate donec at. Vulputate ac feugiat tellus quis suspendisse urna mauris nulla. Eu ex sed ante neque, lectus. In justo habitant ridiculus nisl porta primis ornare ligula vel, in. In massa, euismod pellentesque massa penatibus morbi non ultricies class. Blandit non sed risus, ex mi urna potenti. Vestibulum eget purus ipsum ipsum sagittis sed ornare nunc sociis eget. Ac, ornare facilisis suspendisse at. Lorem ac nisl luctus ac augue sapien eget ipsum pellentesque sed.</p>
+            <p>Lorem ipsum dolor sit amet, nisl vel praesent orci etiam rhoncus ultrices sapien mauris donec. Sapien arcu libero maximus, vehicula interdum morbi mattis pharetra libero rhoncus a ad magna elit. Non quam sed pulvinar in viverra scelerisque risus. Amet id sapien purus ac, pulvinar nibh. Ut sed id metus sem natoque arcu in. Ut ligula in ut. Egestas tristique, nisl donec tempus quis sodales. Dui sapien dictum. Venenatis porta, nec, blandit, mollis sed faucibus amet phasellus facilisis magna commodo? In, ultricies nunc adipiscing non, mi, himenaeos nunc, vel. Arcu faucibus fringilla cubilia vitae dis tellus tincidunt porttitor? Cras natoque sed sollicitudin parturient ligula tellus dui ligula vel. Ex diam, nisl conubia pellentesque ut in.</p>
             </div>
           </div>
         </div>
@@ -1098,7 +1107,7 @@
               <h3>Hello!</h3>
               <p>Welcome to Trang &amp; Daniel’s wedding site.</p>
               <p>We are getting married on July 32nd, 2021!</p>
-              <p>Lorem ipsum dolor sit amet, consequat donec ad faucibus ad rhoncus penatibus turpis enim. Finibus felis eros vel tellus feugiat porta vulputate donec at. Vulputate ac feugiat tellus quis suspendisse urna mauris nulla. Eu ex sed ante neque, lectus. In justo habitant ridiculus nisl porta primis ornare ligula vel, in. In massa, euismod pellentesque massa penatibus morbi non ultricies class. Blandit non sed risus, ex mi urna potenti. Vestibulum eget purus ipsum ipsum sagittis sed ornare nunc sociis eget. Ac, ornare facilisis suspendisse at. Lorem ac nisl luctus ac augue sapien eget ipsum pellentesque sed.</p>
+              <p>Lorem ipsum dolor sit amet, nisl vel praesent orci etiam rhoncus ultrices sapien mauris donec. Sapien arcu libero maximus, vehicula interdum morbi mattis pharetra libero rhoncus a ad magna elit. Non quam sed pulvinar in viverra scelerisque risus. Amet id sapien purus ac, pulvinar nibh. Ut sed id metus sem natoque arcu in. Ut ligula in ut. Egestas tristique, nisl donec tempus quis sodales. Dui sapien dictum. Venenatis porta, nec, blandit, mollis sed faucibus amet phasellus facilisis magna commodo? In, ultricies nunc adipiscing non, mi, himenaeos nunc, vel. Arcu faucibus fringilla cubilia vitae dis tellus tincidunt porttitor? Cras natoque sed sollicitudin parturient ligula tellus dui ligula vel. Ex diam, nisl conubia pellentesque ut in.</p>
               </div>
             </div>
         </div>

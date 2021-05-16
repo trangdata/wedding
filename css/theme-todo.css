@@ -122,3 +122,12 @@ d-title {
     padding: 5em 0em 5em 0em;
   }
 }
+
+/* navigation bar */
+/* not sure how to make it stable/sticky, so this is a hack.
+I made it so the bar doesn't disappear ("ease-in-out")
+until 5 minutes have gone by */
+.headroom--transition {
+  /*transition: all .4s ease-in-out;  original code */
+  transition: all 300s ease-in-out;
+}
