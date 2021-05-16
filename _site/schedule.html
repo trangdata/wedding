@@ -55,7 +55,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { } /* Attribute */
+code span.at { color: #20794d; } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
 code span.cf { color: #007ba5; } /* ControlFlow */
@@ -76,7 +76,7 @@ code span.kw { color: #007ba5; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
 code span.ot { color: #007ba5; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
-code span.sc { color: #5e5e5e; } /* SpecialChar */
+code span.sc { color: #20794d; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
 code span.st { color: #20794d; } /* String */
 code span.va { color: #111111; } /* Variable */
@@ -87,27 +87,27 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_meta_tags-->
   <title>Trang &amp; Daniel: Schedule</title>
 
-  <meta property="description" itemprop="description" content="July 13 &amp; 14 2021"/>
+  <meta property="description" itemprop="description" content="What are we doing all day? We&#39;re glad you asked!"/>
 
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
   <meta property="og:title" content="Trang &amp; Daniel: Schedule"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content="July 13 &amp; 14 2021"/>
+  <meta property="og:description" content="What are we doing all day? We&#39;re glad you asked!"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="Trang &amp; Daniel"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
   <meta property="twitter:title" content="Trang &amp; Daniel: Schedule"/>
-  <meta property="twitter:description" content="July 13 &amp; 14 2021"/>
+  <meta property="twitter:description" content="What are we doing all day? We&#39;re glad you asked!"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","output"]}},"value":[{"type":"character","attributes":{},"value":["Schedule"]},{"type":"character","attributes":{},"value":["July 13 & 14 2021\n"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","theme"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"character","attributes":{},"value":["css/theme-schedule.css"]}]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","output"]}},"value":[{"type":"character","attributes":{},"value":["Schedule"]},{"type":"character","attributes":{},"value":["What are we doing all day? We're glad you asked!\n"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","theme"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"character","attributes":{},"value":["css/theme-schedule.css"]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -1861,10 +1861,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        var refs = $(this).attr('data-cites').split(" ");
-        var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
-        }).join("\n");
+        var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
         window.tippy(this, {
           allowHTML: true,
           content: refHtml,
@@ -2209,18 +2206,24 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     font-family: 'Dancing Script', cursive;
     font-size: 30px;
     line-height: 1.2em;
-    padding: 2px 8px 20px 0px;
+    padding: 2px 8px 10px 0px;
   }
 
   /* table rows */
   d-article table td {
     font-size: 1.2rem;
-    padding: 2px 100px 0px 0px; /* gets both columns approx. same width */
+    text-align: left;
+    /*border-top: none !important;
+    padding: 2px 0px 0px 0px; /* gets both columns approx. same width */
+  }
+
+  d-article table td:nth-child(1) {
+    width: 35%
   }
 
   /* Title space */
   d-title {
-    background-image: url(img/skiing.jpg);
+    background-image: url(img/skiing_wide.jpg);
     background-size: cover;
     background-position: 50% 50%;
     padding: 5em 0em 55em 0em;
@@ -2229,7 +2232,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   /* Resizing background image for desktop */
   @media (min-width: 601px) {
     d-title {
-      background-image: url(img/skiing.jpg);
+      background-image: url(img/skiing_wide.jpg);
       background-repeat: no-repeat;
       background-size: cover;
     }
@@ -2238,7 +2241,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   /* Resizing background image for mobile */
   @media (max-width: 600px) {
     d-title {
-      background-image: url(img/skiing.jpg);
+      background-image: url(img/skiing_wide.jpg);
       background-repeat: no-repeat;
       background-size: cover ;
       padding: 5em 0em 5em 0em;
@@ -2399,7 +2402,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.8.1/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.7/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2419,7 +2422,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Schedule","description":"July 13 & 14 2021","authors":[]}
+{"title":"Schedule","description":"What are we doing all day? We're glad you asked!","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2448,85 +2451,200 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <h1>Schedule</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p>July 13 &amp; 14 2021</p></p>
+<p><p>What are we doing all day? We’re glad you asked!</p></p>
 </div>
 
 
 <div class="d-article">
-<h1 id="monday-july-12th">Monday, July 12th</h1>
+<p><a href="">TODO: Add to Calendar</a></p>
+<h1 id="friday-july-23rd">Friday, July 23rd</h1>
 <table>
 <thead>
 <tr class="header">
-<th style="text-align: left;">Welcome Drinks</th>
+<th style="text-align: left;">Kayaking trip</th>
 <th></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;"><strong>19.00 - 21.00</strong></td>
-<td><strong>Location Name</strong><br>Address<br>City, State, Country</td>
+<td style="text-align: left;"><strong>13:00 - 16.00</strong></td>
+<td>Floating/kayaking down the Connecticut river!</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Potluck dinner</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>18:30 - 20.00</strong></td>
+<td>Anything made or purchased with love is appreciated!</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Socializing</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>20:30 - 23.00</strong></td>
+<td>Beer. Bonfire. Bliss.</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h1 id="tuesday-july-13th">Tuesday, July 13th</h1>
+<h1 id="saturday-july-24th">Saturday, July 24th</h1>
 <table>
 <thead>
 <tr class="header">
-<th style="text-align: left;">Ceremony</th>
+<th style="text-align: left;">MYOB</th>
 <th></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;"><strong>12.30 - 15.30</strong></td>
-<td><strong>Location Name</strong><br>Address<br>City, State, Country</td>
+<td style="text-align: left;"><strong>08:00 - 11:00</strong></td>
+<td>Make your own bagel. And coffee.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Calibration yoga</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>09:00 - 10:00</strong></td>
+<td>An alignment-based practice that transcends boundaries.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Unstructured joy</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>11:00 - 15:00</strong></td>
+<td>Water activities, yard games, sculpture garden</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Unconventional ceremony</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>16:00 - 17:00</strong></td>
+<td>Yup.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Wedding dinner</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>17:30 - 20:00</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Bonfire hang</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>20:00 - </strong></td>
+<td>Dancing with the Driftwood band</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h1 id="wednesday-july-14th">Wednesday, July 14th</h1>
+<h1 id="sunday-july-25th">Sunday, July 25th</h1>
 <table>
 <thead>
 <tr class="header">
-<th style="text-align: left;">Wedding Mass</th>
+<th style="text-align: left;">MYOB</th>
 <th></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;"><strong>15.15 - 17.00</strong></td>
-<td><strong>Location Name</strong><br>Address<br>City, State, Country</td>
+<td style="text-align: left;"><strong>08:00 - 11:00</strong></td>
+<td>See Saturday.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 28%" />
+<col style="width: 71%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Off-the-grid 5K Race</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>09:00 - 10:00</strong></td>
+<td>~5 km double-loop around the garden.<br>Potential uneven footing. Watch your step!</td>
 </tr>
 </tbody>
 </table>
 <table>
 <thead>
 <tr class="header">
-<th style="text-align: left;">Reception</th>
+<th style="text-align: left;">Award ceremony</th>
 <th></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;"><strong>18.00 - 04.00</strong></td>
-<td><strong>Location Name</strong><br>Address<br>City, State, Country</td>
+<td style="text-align: left;"><strong>10:00 - 11:00</strong></td>
+<td>Best of each gender group receives special trophy.</td>
 </tr>
 </tbody>
 </table>
-<hr />
-<h1 id="thursday-july-15th">Thursday, July 15th</h1>
 <table>
 <thead>
 <tr class="header">
-<th style="text-align: left;">Farewell Brunch</th>
+<th style="text-align: left;">Lingering festivities</th>
 <th></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;"><strong>10:00 - 16.00</strong></td>
-<td><strong>Location Name</strong><br>Address<br>City, State, Country</td>
+<td style="text-align: left;"><strong>11:00 - 14:00</strong></td>
+<td>Adieu.</td>
 </tr>
 </tbody>
 </table>

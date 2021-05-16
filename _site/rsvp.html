@@ -55,7 +55,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { } /* Attribute */
+code span.at { color: #20794d; } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
 code span.cf { color: #007ba5; } /* ControlFlow */
@@ -76,7 +76,7 @@ code span.kw { color: #007ba5; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
 code span.ot { color: #007ba5; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
-code span.sc { color: #5e5e5e; } /* SpecialChar */
+code span.sc { color: #20794d; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
 code span.st { color: #20794d; } /* String */
 code span.va { color: #111111; } /* Variable */
@@ -87,27 +87,24 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_meta_tags-->
   <title>Trang &amp; Daniel: RSVP</title>
 
-  <meta property="description" itemprop="description" content="A new article created using the Distill format."/>
 
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
   <meta property="og:title" content="Trang &amp; Daniel: RSVP"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content="A new article created using the Distill format."/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="Trang &amp; Daniel"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
   <meta property="twitter:title" content="Trang &amp; Daniel: RSVP"/>
-  <meta property="twitter:description" content="A new article created using the Distill format."/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","output"]}},"value":[{"type":"character","attributes":{},"value":["RSVP"]},{"type":"character","attributes":{},"value":["A new article created using the Distill format.\n"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","theme"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"character","attributes":{},"value":["css/theme-rsvp.css"]}]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","output"]}},"value":[{"type":"character","attributes":{},"value":["RSVP"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","theme"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"character","attributes":{},"value":["css/theme-rsvp.css"]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -1861,10 +1858,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        var refs = $(this).attr('data-cites').split(" ");
-        var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
-        }).join("\n");
+        var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
         window.tippy(this, {
           allowHTML: true,
           content: refHtml,
@@ -2208,43 +2202,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     font-family: 'Dancing Script', cursive;
     font-size: 30px;
     padding: 2px 8px 20px 0px;
-  }
-
-  /* Title space */
-  d-title {
-    background-image: url(img/hill.jpg);
-    background-size: cover;
-    background-position: 50% 50%;
-    padding: 5em 0em 55em 0em;
-  }
-
-  /* Resizing background image for desktop */
-  @media (min-width: 481px) {
-    d-title {
-      background-image: url(img/hill.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-  }
-
-
-  /* Resizing background image for desktop */
-  @media (min-width: 601px) {
-    d-title {
-      background-image: url(img/hill.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-  }
-
-  /* Resizing background image for mobile */
-  @media (max-width: 600px) {
-    d-title {
-      background-image: url(img/hill.jpg);
-      background-repeat: no-repeat;
-      background-size: cover ;
-      padding: 5em 0em 5em 0em;
-    }
   }</style>
   <style type="text/css">
   /* base style */
@@ -2401,7 +2358,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.8.1/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.7/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2421,7 +2378,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"RSVP","description":"A new article created using the Distill format.","authors":[]}
+{"title":"RSVP","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2450,14 +2407,16 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <h1>RSVP</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p>A new article created using the Distill format.</p></p>
+
 </div>
 
 
 <div class="d-article">
-<h1 id="rsvp">RSVP</h1>
+<h2 id="path-of-life-garden-36-park-rd-windsor-vt-05089">Path of Life Garden, 36 Park Rd, Windsor, VT 05089</h2>
+<p><a href="https://www.google.com/maps/place/Path+of+Life+Sculpture+Garden/@43.5134707,-72.3999229,15z/data=!4m2!3m1!1s0x0:0xe51fd9530f5b7312?sa=X&amp;ved=2ahUKEwilzc7qlc7wAhWWWc0KHbcWCGAQ_BIwG3oECEMQBQ">Map</a></p>
+<p>We appreciate your early response! Please send additional comments/questions to our event coordinator Linh Phan <a href="mailto:violinhino@gmail.com" class="email">violinhino@gmail.com</a>.</p>
 <div class="layout-chunk" data-layout="l-body">
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdryETpwYdGLUiSnrSeWxsG26dDMtjt8c7RjOoPF_KEPfECDg/viewform?usp=sf_link" width="624" height="1500px">
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScMt7QDWuqGIsuY8yO69GDuTmkR2K1lNHW1WBlsXbgDQ19ezw/viewform?usp=sf_link" width="624" height="1500px">
 </iframe>
 </div>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>

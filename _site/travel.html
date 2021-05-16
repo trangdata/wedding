@@ -55,7 +55,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { } /* Attribute */
+code span.at { color: #20794d; } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
 code span.cf { color: #007ba5; } /* ControlFlow */
@@ -76,7 +76,7 @@ code span.kw { color: #007ba5; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
 code span.ot { color: #007ba5; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
-code span.sc { color: #5e5e5e; } /* SpecialChar */
+code span.sc { color: #20794d; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
 code span.st { color: #20794d; } /* String */
 code span.va { color: #111111; } /* Variable */
@@ -1861,10 +1861,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        var refs = $(this).attr('data-cites').split(" ");
-        var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
-        }).join("\n");
+        var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
         window.tippy(this, {
           allowHTML: true,
           content: refHtml,
@@ -2392,7 +2389,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.8.1/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.7/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2449,7 +2446,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <h1 id="travel">Travel</h1>
 <p>Distill is a publication format for scientific and technical writing, native to the web.</p>
 <p>Learn more about using Distill for R Markdown at <a href="https://rstudio.github.io/distill" class="uri">https://rstudio.github.io/distill</a>.</p>
-<p>Lorem ipsum dolor sit amet, purus, et tortor ad dignissim ac himenaeos. Taciti arcu sed, pulvinar leo velit, urna. Natoque sociosqu aliquam eros pretium nunc non sed egestas varius interdum. In mattis et urna phasellus, et quis aliquam, viverra enim. Sollicitudin sem maximus rutrum torquent dictumst dignissim mattis, sem praesent tristique sollicitudin lacinia vivamus est, a diam faucibus. Ante, placerat elementum nulla eros mauris nibh mollis. Conubia nulla facilisi eu risus habitant varius curabitur volutpat morbi. Blandit ex iaculis varius massa bibendum et. Consequat pellentesque proin dapibus proin magna, tellus purus aliquet cras. Eu duis ac nullam aenean. Fermentum vel in habitant orci ultrices, habitant curae. Euismod cubilia primis, turpis aliquam at sed interdum commodo convallis et, eget. Diam sodales convallis pellentesque sem eget habitant pulvinar malesuada tortor suspendisse in.</p>
+<p>Lorem ipsum dolor sit amet, senectus praesent molestie mollis tristique. Parturient feugiat, nunc, ultrices mi maximus aenean platea mauris leo pellentesque. Nullam sed dui mauris aenean placerat amet nullam. A auctor sapien, parturient tellus auctor torquent a facilisi eget vulputate. Non pulvinar phasellus orci ipsum sed, rutrum, porttitor. Sociosqu, proin blandit. Aptent nec auctor neque eros accumsan sit, mattis in velit in metus. Ridiculus eget, platea nulla aliquam. Ullamcorper metus cursus auctor porta tincidunt amet. Quis efficitur in ac. Et eget eu metus nec velit natoque, dolor. Sed mi donec egestas eros aliquam pharetra in.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
