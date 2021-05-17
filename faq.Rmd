@@ -18,7 +18,7 @@ knitr::opts_chunk$set(echo = FALSE)
 Unfortunately, the venue doesn't allow pets.
 We're sorry but you'll have to leave your furry friends at home.
 
-## Are kids allowed?
+## Are children allowed?
 Yes!
 Bring your babies and we'll teach them Ultimate.
 
