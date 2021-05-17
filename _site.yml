@@ -8,14 +8,16 @@ navbar:
   right:
     - text: "Home"
       href: index.html
-    - text: "Schedule"
-      href: schedule.html
     - text: "RSVP"
       href: rsvp.html
+    - text: "Schedule"
+      href: schedule.html
+    - text: "Venue"
+      href: venue.html
+    - text: "Camping"
+      href: camping.html
     - text: "Travel"
       href: travel.html
-    - text: "Things to Do"
-      href: todo.html
     - text: "FAQ"
       href: faq.html
 output: distill::distill_article

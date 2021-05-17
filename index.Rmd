@@ -9,10 +9,16 @@ output:
 site: distill::distill_website
 ---
 
-### Hello!
+### Hello and welcome! 
+`⅀(x, y) = "$x ♥️ $y"`
 
-Welcome to Trang & Daniel’s wedding site.
+We are celebrating our marriage **July 23--25, 2021** at an encampment along the Connecticut River in Windsor, Vermont.
+The venue is the [Path of Life Garden](https://greatriveroutfitters.com/news-and-events/welcome-to-the-path-of-life-sculpture-garden), which is a fusion of stunning sculpture arts, event space, river trip outfiters, and campground.
 
-We are getting married on July 32nd, 2021!
+The ceremony and reception will start at _4 pm_ on **Saturday, July 24**.
+We hope you can join us camping and a whole weekend of fun (see [Schedule](schedule.html) and [Venue](venue.html)).
 
-`r stringi::stri_rand_lipsum(1)`
+![](img/carbon.svg#carbon){width=100%}
+
+
+_Huge thanks to our dear friend, [Silvia Canelón](https://silvia.rbind.io), for creating this beautiful website._

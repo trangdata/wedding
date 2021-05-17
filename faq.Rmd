@@ -1,7 +1,7 @@
 ---
 title: "FAQ"
 description: |
-  A new article created using the Distill format.
+  Please send questions to Linh Phan <violinhino@gmail.com> and we'll add them here.
 output: 
   distill::distill_article:
     toc: true
@@ -13,19 +13,16 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-# Frequently Asked Questions
+## Are pets allowed?
 
-This page has `toc:true` and `toc_float:true` in the YAML to include a table of contents that floats on the left as you scroll. 
+Unfortunately, the venue doesn't allow pets.
+We're sorry but you'll have to leave your furry friends at home.
 
-## Question 1
+## Are kids allowed?
+Yes!
+Bring your babies and we'll teach them Ultimate.
 
-Distill is a publication format for scientific and technical writing, native to the web. 
-
-## Question 2
-
-Learn more about using Distill for R Markdown at <https://rstudio.github.io/distill>.
-
-
-
-
-
+## Where do I shower?
+There is a solar-bag setup for showering.
+We also recommend bathing in the river.
+Please note that the facility is minimal in general.

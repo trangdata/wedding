@@ -98,7 +98,7 @@ d-article table th {
 
 /* Title space */
 d-title {
-  background-image: url(img/beach_square.jpg);
+  background-image: url(img/anni.jpg);
   background-size: cover;
   background-position: 50% 50%;
   padding: 5em 0em 55em 0em;
@@ -107,7 +107,7 @@ d-title {
 /* Resizing background image for desktop */
 @media (min-width: 481px) {
   d-title {
-    background-image: url(img/beach_square.jpg);
+    background-image: url(img/anni.jpg);
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -116,7 +116,7 @@ d-title {
 /* Resizing background image for mobile */
 @media (max-width: 480px) {
   d-title {
-    background-image: url(img/beach_square.jpg);
+    background-image: url(img/anni.jpg);
     background-repeat: no-repeat;
     background-size: contain ;
   }
@@ -147,4 +147,9 @@ until 5 minutes have gone by */
 .headroom--transition {
   /*transition: all .4s ease-in-out;  original code */
   transition: all 300s ease-in-out;
+}
+
+img[src$="#carbon"] {
+  display: block;
+  border-radius: 10px;
 }

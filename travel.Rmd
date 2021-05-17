@@ -1,7 +1,6 @@
 ---
 title: "Travel"
-description: |
-  A new article created using the Distill format.
+description: 
 output: 
   distill::distill_article:
     toc: false
@@ -12,13 +11,10 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-# Travel
 
-Distill is a publication format for scientific and technical writing, native to the web. 
+Airports: Manchester, Boston, Dartmouth Coach from Boston or NYC, Amtrak
+Carpool request google doc
 
-Learn more about using Distill for R Markdown at <https://rstudio.github.io/distill>.
-
-`r stringi::stri_rand_lipsum(1)`
 
 
 
