@@ -1,7 +1,5 @@
 ---
 title: "Schedule"
-description: |
-  What are we doing all day? We're glad you asked!
 output: 
   distill::distill_article:
     toc: false
@@ -14,7 +12,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 [TODO: Add to Calendar]()
 
-# Friday, July 23rd
+# Friday, July 23^rd^
 
 | Kayaking trip     |                                              |
 |:------------------|----------------------------------------------|
@@ -31,7 +29,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ------------------------------------------------------------------------
 
-# Saturday, July 24th
+# Saturday, July 24^th^
 
 | MYOB              |                                                      |
 |:------------------|------------------------------------------------------|
@@ -60,7 +58,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ------------------------------------------------------------------------
 
-# Sunday, July 25th
+# Sunday, July 25^th^
 
 | MYOB              |                                                      |
 |:------------------|------------------------------------------------------|

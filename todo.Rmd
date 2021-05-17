@@ -25,6 +25,18 @@ Distill is a publication format for scientific and technical writing, native to 
 Learn more about using Distill for R Markdown at <https://rstudio.github.io/distill>.
 
 
+```{julia eval=FALSE}
+using .Celebration
+
+wedding = Event(
+  place = "Path of Life Garden",
+  dates = "July 23—25, 2021"
+)
+invite.(family ∪ friends, (wedding,))
+rsvp && @show love |> gratitude
+
+⅀("trang", "daniel")
+```
 
 
 

@@ -1,0 +1,28 @@
+---
+title: "Camping"
+img: tent3.jpg
+description: 
+output: 
+  distill::distill_article:
+    toc: false
+    theme: css/theme.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+Attendees seeking for the full experience will join us to camp in the gardens.
+We have reserved a section of the garden for wedding guests to camp, which has 4 preexisting deluxe tents.
+If you have camping gear (tent, pad, quilt / blanket), please bring it.
+Otherwise, let us know when RSVPing, and we'll place you in one of the deluxe tents (which includes cots and blankets).
+We will also be setting up extra tents from our surplus gear.
+
+Each deluxe tent has six cots.
+Therefore, ideally we can find parties of 4-6 to sleep in them.
+If your party size is 4-6 or you have other individuals you'd like to stay with, let us know.
+Families might be a good fit.
+
+For guests that aren't staying on the premises, we will try to suggest some local hotels, but we will not be heavily involved in this area of the planning.
+
+Camping map at https://greatriveroutfitters.com/images/files/Camping_Rules_Regulations.pdf

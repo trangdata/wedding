@@ -121,14 +121,14 @@ d-title {
   background-image: url(img/skiing_wide.jpg);
   background-size: cover;
   background-position: 50% 50%;
-  padding: 5em 0em 55em 0em;
+  padding: 5em 0em 20em 0em;
 }
 
 /* Resizing background image for desktop */
 @media (min-width: 601px) {
   d-title {
     background-image: url(img/skiing_wide.jpg);
-    background-repeat: no-repeat;
+    /*background-repeat: no-repeat;*/
     background-size: cover;
   }
 }
@@ -137,7 +137,7 @@ d-title {
 @media (max-width: 600px) {
   d-title {
     background-image: url(img/skiing_wide.jpg);
-    background-repeat: no-repeat;
+    /*background-repeat: no-repeat;*/
     background-size: cover ;
     padding: 5em 0em 5em 0em;
   }
