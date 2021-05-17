@@ -15,20 +15,10 @@ site: distill::distill_website
 We are celebrating our marriage **July 23--25, 2021** at an encampment along the Connecticut River in Windsor, Vermont.
 The venue is the [Path of Life Garden](https://greatriveroutfitters.com/news-and-events/welcome-to-the-path-of-life-sculpture-garden), which is a fusion of stunning sculpture arts, event space, river trip outfiters, and campground.
 
-The ceremony and reception will start at 4 pm on Saturday, July 24.
+The ceremony and reception will start at _4 pm_ on **Saturday, July 24**.
 We hope you can join us camping and a whole weekend of fun (see [Schedule](schedule.html) and [Venue](venue.html)).
 
-```{julia eval=FALSE}
-using .Celebration
+![](img/carbon.svg#carbon){width=100%}
 
-wedding = Event(
-  place = "Path of Life Garden",
-  dates = "July 23—25, 2021"
-)
-invite.(family ∪ friends, (wedding,))
-rsvp && @show love |> gratitude
-
-⅀("trang", "daniel")
-```
 
 _Huge thanks to our dear friend, [Silvia Canelón](https://silvia.rbind.io), for creating this beautiful website._

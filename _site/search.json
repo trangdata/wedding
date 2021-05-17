@@ -4,59 +4,51 @@
       "path": "camping.html",
       "title": "Camping",
       "author": [],
-      "contents": "\nAttendees seeking for the full experience will join us to camp in the gardens. We have reserved a section of the garden for wedding guests to camp, which has 4 preexisting deluxe tents. If you have camping gear (tent, pad, quilt / blanket), please bring it. Otherwise, let us know when RSVPing, and we’ll place you in one of the deluxe tents (which includes cots and blankets). We will also be setting up extra tents from our surplus gear.\nEach deluxe tent has six cots. Therefore, ideally we can find parties of 4-6 to sleep in them. If your party size is 4-6 or you have other individuals you’d like to stay with, let us know. Families might be a good fit.\nFor guests that aren’t staying on the premises, we will try to suggest some local hotels, but we will not be heavily involved in this area of the planning.\nCamping map at https://greatriveroutfitters.com/images/files/Camping_Rules_Regulations.pdf\n\n\n\n",
-      "last_modified": "2021-05-16T19:42:18-04:00"
+      "contents": "\nAttendees seeking for the full experience will join us to camp in the garden.\nWe have reserved a section of the garden for wedding guests to camp, which has 4 preexisting deluxe tents. With cots and blankets, each deluxe tent can fit at least 6 persons. If your party size is 4-6 or you have other individuals you’d like to stay with, let us know.\n\nFamilies might be a good fit.\nIf you have camping gear (tent, pad, quilt / blanket), please bring it. Otherwise, let us know when RSVPing and we’ll place you in one of the deluxe tents. We will also be setting up extra tents from our surplus gear.\nFor guests that aren’t staying on the premises, we will try to suggest some local hotels, but we will not be heavily involved in this area of the planning.\nCamping map at https://greatriveroutfitters.com/images/files/Camping_Rules_Regulations.pdf\n\n\n\n",
+      "last_modified": "2021-05-17T10:42:01-04:00"
     },
     {
       "path": "faq.html",
       "title": "FAQ",
-      "description": "A new article created using the Distill format.\n",
+      "description": "Please send questions to Linh Phan <violinhino@gmail.com> and we'll add them here.\n",
       "author": [],
-      "contents": "\n\nContents\nFrequently Asked QuestionsQuestion 1\nQuestion 2\n\n\nFrequently Asked Questions\nThis page has toc:true and toc_float:true in the YAML to include a table of contents that floats on the left as you scroll.\nQuestion 1\nDistill is a publication format for scientific and technical writing, native to the web.\nQuestion 2\nLearn more about using Distill for R Markdown at https://rstudio.github.io/distill.\n\n\n\n",
-      "last_modified": "2021-05-16T19:42:18-04:00"
+      "contents": "\n\nContents\nAre pets allowed?\nAre kids allowed?\nWhere do I shower?\n\nAre pets allowed?\nUnfortunately, the venue doesn’t allow pets. We’re sorry but you’ll have to leave your furry friends at home.\nAre kids allowed?\nYes! Bring your babies and we’ll teach them Ultimate.\nWhere do I shower?\nThere is a solar-bag setup for showering. We also recommend bathing in the river. Please note that the facility is minimal in general.\n\n\n\n",
+      "last_modified": "2021-05-17T10:42:02-04:00"
     },
     {
       "path": "index.html",
       "title": "Trang & Daniel",
       "author": [],
-      "contents": "\n\n          \n      \n      Trang & Daniel\n      \n      \n      Home\n      RSVP\n      Schedule\n      Venue\n      Camping\n      Travel\n      Things to Do\n      FAQ\n      ☰\n      \n      \n      \n        \n          \n            \n              \n            \n              Trang & Daniel\n            \n            \n              \n                \n                    \n                      \n                        RSVP\n                      \n                    \n                  \n                                  \n            \n          \n        \n        \n        \n          \n            \n            Hello and welcome!\n            ⅀(x, y) = \"$x ♥️ $y\"\n            We are celebrating our marriage July 23–25, 2021 at an encampment along the Connecticut River in Windsor, Vermont. The venue is the Path of Life Garden, which is a fusion of stunning sculpture arts, event space, river trip outfiters, and campground.\n            The ceremony and reception will start at 4 pm on Saturday, July 24. We hope you can join us camping and a whole weekend of fun (see Schedule and Venue).\n            using .Celebration\n            \n            wedding = Event(\n              place = \"Path of Life Garden\",\n              dates = \"July 23—25, 2021\"\n            )\n            invite.(family ∪ friends, (wedding,))\n            rsvp && @show love |> gratitude\n            \n            ⅀(\"trang\", \"daniel\")\n            Huge thanks to our dear friend, Silvia Canelón, for creating this beautiful website.\n            \n          \n        \n      \n    \n\n    \n      \n        \n          \n            \n              \n            \n              Trang & Daniel\n            \n            \n              \n                \n                                    \n                    \n                      RSVP\n                    \n                  \n                                  \n              \n            \n            \n              \n              Hello and welcome!\n              ⅀(x, y) = \"$x ♥️ $y\"\n              We are celebrating our marriage July 23–25, 2021 at an encampment along the Connecticut River in Windsor, Vermont. The venue is the Path of Life Garden, which is a fusion of stunning sculpture arts, event space, river trip outfiters, and campground.\n              The ceremony and reception will start at 4 pm on Saturday, July 24. We hope you can join us camping and a whole weekend of fun (see Schedule and Venue).\n              using .Celebration\n              \n              wedding = Event(\n                place = \"Path of Life Garden\",\n                dates = \"July 23—25, 2021\"\n              )\n              invite.(family ∪ friends, (wedding,))\n              rsvp && @show love |> gratitude\n              \n              ⅀(\"trang\", \"daniel\")\n              Huge thanks to our dear friend, Silvia Canelón, for creating this beautiful website.\n              \n            \n        \n      \n    \n\n    \n    \n    ",
-      "last_modified": "2021-05-16T19:42:19-04:00"
+      "contents": "\n\n          \n      \n      Trang & Daniel\n      \n      \n      Home\n      RSVP\n      Schedule\n      Venue\n      Camping\n      Travel\n      FAQ\n      ☰\n      \n      \n      \n        \n          \n            \n              \n            \n              Trang & Daniel\n            \n            \n              \n                \n                    \n                      \n                        RSVP\n                      \n                    \n                  \n                                  \n            \n          \n        \n        \n        \n          \n            \n            Hello and welcome!\n            ⅀(x, y) = \"$x ♥️ $y\"\n            We are celebrating our marriage July 23–25, 2021 at an encampment along the Connecticut River in Windsor, Vermont. The venue is the Path of Life Garden, which is a fusion of stunning sculpture arts, event space, river trip outfiters, and campground.\n            The ceremony and reception will start at 4 pm on Saturday, July 24. We hope you can join us camping and a whole weekend of fun (see Schedule and Venue).\n            \n            Huge thanks to our dear friend, Silvia Canelón, for creating this beautiful website.\n            \n          \n        \n      \n    \n\n    \n      \n        \n          \n            \n              \n            \n              Trang & Daniel\n            \n            \n              \n                \n                                    \n                    \n                      RSVP\n                    \n                  \n                                  \n              \n            \n            \n              \n              Hello and welcome!\n              ⅀(x, y) = \"$x ♥️ $y\"\n              We are celebrating our marriage July 23–25, 2021 at an encampment along the Connecticut River in Windsor, Vermont. The venue is the Path of Life Garden, which is a fusion of stunning sculpture arts, event space, river trip outfiters, and campground.\n              The ceremony and reception will start at 4 pm on Saturday, July 24. We hope you can join us camping and a whole weekend of fun (see Schedule and Venue).\n              \n              Huge thanks to our dear friend, Silvia Canelón, for creating this beautiful website.\n              \n            \n        \n      \n    \n\n    \n    \n    ",
+      "last_modified": "2021-05-17T10:42:03-04:00"
     },
     {
       "path": "rsvp.html",
       "title": "RSVP",
       "author": [],
-      "contents": "\nPath of Life Garden, 36 Park Rd, Windsor, VT 05089\nMap\nWe appreciate your early response! Please send additional comments/questions to our event coordinator Linh Phan violinhino@gmail.com.\n\n\n\n\n\n\n\n",
-      "last_modified": "2021-05-16T19:42:20-04:00"
+      "contents": "\nPath of Life Garden, 36 Park Rd, Windsor, VT 05089\nMap\nWe appreciate your early response! Make sure you scroll all the way down and hit Submit when finished. Please send additional comments/questions to our event coordinator Linh Phan violinhino@gmail.com.\n\n\n\n\n\n\n\n",
+      "last_modified": "2021-05-17T10:42:04-04:00"
     },
     {
       "path": "schedule.html",
       "title": "Schedule",
       "author": [],
-      "contents": "\nTODO: Add to Calendar\nFriday, July 23rd\nKayaking trip\n\n13:00 - 16.00\nFloating/kayaking down the Connecticut river!\nPotluck dinner\n\n18:30 - 20.00\nAnything made or purchased with love is appreciated!\nSocializing\n\n20:30 - 23.00\nBeer. Bonfire. Bliss.\nSaturday, July 24th\nMYOB\n\n08:00 - 11:00\nMake your own bagel. And coffee.\nCalibration yoga\n\n09:00 - 10:00\nAn alignment-based practice that transcends boundaries.\nUnstructured joy\n\n11:00 - 15:00\nWater activities, yard games, sculpture garden\nUnconventional ceremony\n\n16:00 - 17:00\nYup.\nWedding dinner\n\n17:30 - 20:00\n\nBonfire hang\n\n20:00 - \nDancing with the Driftwood band\nSunday, July 25th\nMYOB\n\n08:00 - 11:00\nSee Saturday.\nOff-the-grid 5K Race\n\n09:00 - 10:00\n~5 km double-loop around the garden.Potential uneven footing. Watch your step!\nAward ceremony\n\n10:00 - 11:00\nBest of each gender group receives special trophy.\nLingering festivities\n\n11:00 - 14:00\nAdieu.\n\n\n\n",
-      "last_modified": "2021-05-16T19:42:20-04:00"
-    },
-    {
-      "path": "todo.html",
-      "title": "Things to Do",
-      "description": "A new article created using the Distill format.\n",
-      "author": [],
-      "contents": "\nThings to Do\nThis page has an example of using <aside> and <\/aside> to bookend a little note that shows up on the right hand side of the page.\n\nThis is an example of an aside.\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill for R Markdown at https://rstudio.github.io/distill.\n\n\n\n\n\n\n",
-      "last_modified": "2021-05-16T19:42:21-04:00"
+      "contents": "\nAdd to Calendar\nFriday, July 23rd\nKayaking trip\n\n13:00 - 16.00\nExplore the Connecticut river on kayak/canoe/paddle board!\nPotluck dinner\n\n18:30 - 20.00\nAnything made or purchased with love is appreciated!\nSocializing\n\n20:30 - 23.00\nBeer. Bonfire. Bliss.\nSaturday, July 24th\nMYOB\n\n08:00 - 11:00\nMake your own bagel. And coffee.\nCalibration yoga\n\n09:00 - 10:00\nAn alignment-based practice session that transcends boundaries.\nUnstructured joy\n\n11:00 - 15:00\nWater activities, yard games, ultimate disc, sculpture garden tour\nUnconventional ceremony\n\n16:00 - 17:00\nYup.\nReception\n\n17:30 - 20:00\n\nBonfire hang\n\n20:00 - \nDancing with the Driftwood band.\nSunday, July 25th\nMYOB\n\n08:00 - 11:00\nSee Saturday.\nOff-the-grid 5K Race\n\n09:00 - 10:00\n~5 km double-loop around the garden.Potential uneven footing. Watch your step!\nAward ceremony\n\n10:00 - 11:00\nBest of each gender group receives special trophy.\nLingering festivities\n\n11:00 - 14:00\nAdieu.\n\n\n\n",
+      "last_modified": "2021-05-17T10:42:05-04:00"
     },
     {
       "path": "travel.html",
       "title": "Travel",
       "author": [],
       "contents": "\nAirports: Manchester, Boston, Dartmouth Coach from Boston or NYC, Amtrak Carpool request google doc\n\n\n\n",
-      "last_modified": "2021-05-16T19:42:21-04:00"
+      "last_modified": "2021-05-17T10:42:06-04:00"
     },
     {
       "path": "venue.html",
       "title": "Venue",
       "author": [],
-      "contents": "\nPath of Life Sculpture Garden\nAddress: 36 Park Road Windsor, Vermont 05089. Map\nPhone: (802) 674-9933\nAdditional links\nSculpture guide\nArtisan Park\nCamping map\nAdditional photos\nLooking north from the beach.Solar bag setup for shower.We have reserved four “deluxe tents” with cots and sleeping bags for at least 6 persons/tent. This is a good option if you do not have a tent.Test run. The path will be more groomed on the day of the race.One of the sculpture works.\n\n\n",
-      "last_modified": "2021-05-16T19:42:22-04:00"
+      "contents": "\nPath of Life Sculpture Garden\nAddress: 36 Park Road Windsor, Vermont 05089. Map\nPhone: (802) 674-9933\nAdditional links\nSculpture guide\nArtisan Park\nCamping map\nAdditional photos\nLooking north from the beach.Solar bag setup for shower.We have reserved four “deluxe tents” with cots and sleeping bags for at least 6 persons/tent. This is a good option if you do not have a tent. See Camping.Test run. The path will be more groomed on the day of the race.One of the sculpture works.\n\n\n",
+      "last_modified": "2021-05-17T10:42:08-04:00"
     }
   ],
   "collections": []

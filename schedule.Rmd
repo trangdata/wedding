@@ -10,13 +10,13 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-[TODO: Add to Calendar]()
+[Add to Calendar](https://calendar.google.com/calendar/u/0?cid=dm5iMWk2aGlsMjJqazljajYxcGZxdTR0ZXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ)
 
 # Friday, July 23^rd^
 
 | Kayaking trip     |                                              |
 |:------------------|----------------------------------------------|
-| **13:00 - 16.00** | Floating/kayaking down the Connecticut river!|
+| **13:00 - 16.00** | Explore the Connecticut river on kayak/canoe/paddle board!|
 
 
 | Potluck dinner    |                                                      |
@@ -37,23 +37,23 @@ knitr::opts_chunk$set(echo = FALSE)
 
 | Calibration yoga  |                                                      |
 |:------------------|------------------------------------------------------|
-| **09:00 - 10:00** | An alignment-based practice that transcends boundaries. |
+| **09:00 - 10:00** | An alignment-based practice session that transcends boundaries. |
 
 | Unstructured joy  |                                                      |
 |:------------------|------------------------------------------------------|
-| **11:00 - 15:00** | Water activities, yard games, sculpture garden |
+| **11:00 - 15:00** | Water activities, yard games, ultimate disc, sculpture garden tour |
 
 | Unconventional ceremony |                                                |
 |:------------------|------------------------------------------------------|
 | **16:00 - 17:00** | Yup.|
 
-| Wedding dinner    |                                                      |
+| Reception         |                                                      |
 |:------------------|------------------------------------------------------|
 | **17:30 - 20:00** |  |
 
 | Bonfire hang      |                                                      |
 |:------------------|------------------------------------------------------|
-| **20:00 - **      | Dancing with the Driftwood band                      |
+| **20:00 - **      | Dancing with the Driftwood band.                    |
 
 
 ------------------------------------------------------------------------

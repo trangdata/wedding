@@ -148,3 +148,8 @@ until 5 minutes have gone by */
   /*transition: all .4s ease-in-out;  original code */
   transition: all 300s ease-in-out;
 }
+
+img[src$="#carbon"] {
+  display: block;
+  border-radius: 10px;
+}

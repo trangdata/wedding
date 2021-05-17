@@ -105,7 +105,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","img","description","output"]}},"value":[{"type":"character","attributes":{},"value":["Camping"]},{"type":"character","attributes":{},"value":["tent3.jpg"]},{"type":"NULL"},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","theme"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"character","attributes":{},"value":["css/theme.css"]}]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","img","description","output"]}},"value":[{"type":"character","attributes":{},"value":["Camping"]},{"type":"character","attributes":{},"value":["tent3.jpg"]},{"type":"NULL"},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","theme"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"character","attributes":{},"value":["css/theme-camping.css"]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2125,7 +2125,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   
   html {
     /*-- Main font sizes --*/
-    --title-size:      50px;
+    --title-size:      60px;
     --body-size:       1.3rem;
     --code-size:       14px;
     --aside-size:      14px;
@@ -2183,8 +2183,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     --bkgd-color:       #0F2E3D;
   }
   
-  /*-- Additional custom styles -----------------------------------------------*/
-  /* Add any additional CSS rules below */
+  /*-- Additional custom styles --*/
+  /* Add any additional CSS rules below                      */
   
   /* Change bullets */
   ul > li::marker {
@@ -2207,46 +2207,29 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   
   /* Title space */
   d-title {
-    background-image: url(img/anni.jpg);
+    background-image: url(img/tent3.jpg);
     background-size: cover;
-    background-position: 50% 50%;
-    padding: 5em 0em 55em 0em;
+    background-position: 10% 0%;
+    padding: 5em 0em 45em 0em;
   }
   
   /* Resizing background image for desktop */
-  @media (min-width: 481px) {
+  @media (min-width: 601px) {
     d-title {
-      background-image: url(img/anni.jpg);
+      background-image: url(img/tent3.jpg);
       background-repeat: no-repeat;
       background-size: cover;
     }
   }
   
   /* Resizing background image for mobile */
-  @media (max-width: 480px) {
+  @media (max-width: 600px) {
     d-title {
-      background-image: url(img/anni.jpg);
+      background-image: url(img/tent3.jpg);
       background-repeat: no-repeat;
-      background-size: contain ;
+      background-size: cover ;
+      padding: 5em 0em 5em 0em;
     }
-  }
-  
-  /* Postcard/Home page */
-  
-  /* navigation bar */
-  .distill-site-header {
-    line-height: 1.5rem;
-  }
-  
-  /* heading above paragraph */
-  h3 {
-    font-size: 2rem;
-    font-weight: 500;
-  }
-  
-  /* paragraph text */
-  body {
-    font-size: 1.25rem;
   }
   
   /* navigation bar */
@@ -2448,7 +2431,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <a href="venue.html">Venue</a>
 <a href="camping.html">Camping</a>
 <a href="travel.html">Travel</a>
-<a href="todo.html">Things to Do</a>
 <a href="faq.html">FAQ</a>
 <a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
 </div>
@@ -2467,8 +2449,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
 <div class="d-article">
-<p>Attendees seeking for the full experience will join us to camp in the gardens. We have reserved a section of the garden for wedding guests to camp, which has 4 preexisting deluxe tents. If you have camping gear (tent, pad, quilt / blanket), please bring it. Otherwise, let us know when RSVPing, and we’ll place you in one of the deluxe tents (which includes cots and blankets). We will also be setting up extra tents from our surplus gear.</p>
-<p>Each deluxe tent has six cots. Therefore, ideally we can find parties of 4-6 to sleep in them. If your party size is 4-6 or you have other individuals you’d like to stay with, let us know. Families might be a good fit.</p>
+<p><em>Attendees seeking for the full experience will join us to camp in the garden.</em></p>
+<p>We have reserved a section of the garden for wedding guests to camp, which has 4 preexisting deluxe tents. With cots and blankets, each deluxe tent can fit at least 6 persons. If your party size is 4-6 or you have other individuals you’d like to stay with, let us know.</p>
+<aside>
+Families might be a good fit.
+</aside>
+<p>If you have camping gear (tent, pad, quilt / blanket), please bring it. Otherwise, let us know when RSVPing and we’ll place you in one of the deluxe tents. We will also be setting up extra tents from our surplus gear.</p>
 <p>For guests that aren’t staying on the premises, we will try to suggest some local hotels, but we will not be heavily involved in this area of the planning.</p>
 <p>Camping map at <a href="https://greatriveroutfitters.com/images/files/Camping_Rules_Regulations.pdf" class="uri">https://greatriveroutfitters.com/images/files/Camping_Rules_Regulations.pdf</a></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>

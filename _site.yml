@@ -18,8 +18,6 @@ navbar:
       href: camping.html
     - text: "Travel"
       href: travel.html
-    - text: "Things to Do"
-      href: todo.html
     - text: "FAQ"
       href: faq.html
 output: distill::distill_article
