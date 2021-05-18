@@ -4,7 +4,8 @@ img: tent3.jpg
 description: 
 output: 
   distill::distill_article:
-    toc: false
+    toc: true
+    toc_float: true
     theme: css/theme-camping.css
 ---
 
@@ -28,5 +29,25 @@ We will also be setting up extra tents from our surplus gear.
 
 For guests that aren't staying on the premises, we will try to suggest some local hotels, but we will not be heavily involved in this area of the planning.
 
+## What to pack
+
+1. shelter (tent / tarp)
+2. padding (pad or mat)
+3. insulation (50° sleeping bag / quilt / comforter / blankets)
+4. water bottle
+6. sunglasses
+5. sunscreen
+6. bug spray
+7. swimsuit
+8. rain jacket / umbrella
+8. capable shoes for the sunday run
+9. headlight (phone flashlight could substitute)
+10. festivities and games
+11. snacks in case of special dietary needs
+12. any musical instrument
+13. yard games
+
+## Camping map
 Camping map and regulations at https://greatriveroutfitters.com/images/files/Camping_Rules_Regulations.pdf
 ![](img/camp-map.png){width=140%}
+

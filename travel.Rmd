@@ -11,11 +11,16 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+## Air
+- [Manchester-Boston Regional Airport](https://www.flymanchester.com/)
+- [Boston Logan International Airport](https://www.massport.com/logan-airport/)
 
-Airports: Manchester, Boston, Dartmouth Coach from Boston or NYC, Amtrak
-Carpool request google doc
+## Ground
+- [Dartmouth Coach](https://dartmouthcoach.com/) from Boston or NYC to Dartmouth college or White River Junction
+- [Amtrak](https://www.amtrak.com/) to White River Junction
 
+We can help coordinate a ride for you from White River Junction to the wedding venue if needed.
+Please add the time of your arrival to this [Carpool sheet](https://docs.google.com/spreadsheets/d/1c_IF5f0gY2EpwDWvSkv1FamWb_bG4eqKfgozGD8xTK8/edit?usp=sharing).
 
-
-
-
+## Carpool requests
+Offer/find your ride to the [Upper Valley](http://matinic.us/defining-uv/#view) by adding your name to this [Carpool sheet](https://docs.google.com/spreadsheets/d/1c_IF5f0gY2EpwDWvSkv1FamWb_bG4eqKfgozGD8xTK8/edit?usp=sharing).

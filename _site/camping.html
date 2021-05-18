@@ -105,7 +105,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","img","description","output"]}},"value":[{"type":"character","attributes":{},"value":["Camping"]},{"type":"character","attributes":{},"value":["tent3.jpg"]},{"type":"NULL"},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","theme"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"character","attributes":{},"value":["css/theme-camping.css"]}]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","img","description","output"]}},"value":[{"type":"character","attributes":{},"value":["Camping"]},{"type":"character","attributes":{},"value":["tent3.jpg"]},{"type":"NULL"},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","toc_float","theme"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["css/theme-camping.css"]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2235,10 +2235,10 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   /* navigation bar */
   /* not sure how to make it stable/sticky, so this is a hack.
   I made it so the bar doesn't disappear ("ease-in-out")
-  until 5 minutes have gone by */
+  until 15 minutes have gone by */
   .headroom--transition {
     /*transition: all .4s ease-in-out;  original code */
-    transition: all 300s ease-in-out;
+    transition: all 900s ease-in-out;
   }</style>
   <style type="text/css">
   /* base style */
@@ -2449,6 +2449,15 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
 <div class="d-article">
+<div class="d-contents d-contents-float">
+<nav class="l-text toc figcaption" id="TOC">
+<h3>Contents</h3>
+<ul>
+<li><a href="#what-to-pack">What to pack</a></li>
+<li><a href="#camping-map">Camping map</a></li>
+</ul>
+</nav>
+</div>
 <p><em>Attendees seeking for the full experience will join us to camp in the garden.</em></p>
 <p>We have reserved a section of the garden for wedding guests to camp, which has 4 preexisting deluxe tents. With cots and blankets, each deluxe tent can fit at least 6 persons. If your party size is 4-6 or you have other individuals you’d like to stay with, let us know.</p>
 <aside>
@@ -2456,6 +2465,25 @@ Families might be a good fit.
 </aside>
 <p>If you have camping gear (tent, pad, quilt / blanket), please bring it. Otherwise, let us know when RSVPing and we’ll place you in one of the deluxe tents. We will also be setting up extra tents from our surplus gear.</p>
 <p>For guests that aren’t staying on the premises, we will try to suggest some local hotels, but we will not be heavily involved in this area of the planning.</p>
+<h2 id="what-to-pack">What to pack</h2>
+<ol type="1">
+<li>shelter (tent / tarp)</li>
+<li>padding (pad or mat)</li>
+<li>insulation (50° sleeping bag / quilt / comforter / blankets)</li>
+<li>water bottle</li>
+<li>sunglasses</li>
+<li>sunscreen</li>
+<li>bug spray</li>
+<li>swimsuit</li>
+<li>rain jacket / umbrella</li>
+<li>capable shoes for the sunday run</li>
+<li>headlight (phone flashlight could substitute)</li>
+<li>festivities and games</li>
+<li>snacks in case of special dietary needs</li>
+<li>any musical instrument</li>
+<li>yard games</li>
+</ol>
+<h2 id="camping-map">Camping map</h2>
 <p>Camping map and regulations at <a href="https://greatriveroutfitters.com/images/files/Camping_Rules_Regulations.pdf" class="uri">https://greatriveroutfitters.com/images/files/Camping_Rules_Regulations.pdf</a> <img src="img/camp-map.png" style="width:140.0%" /></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
