@@ -14,7 +14,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 [Map](https://www.google.com/maps/place/Path+of+Life+Sculpture+Garden/@43.5134707,-72.3999229,15z/data=!4m2!3m1!1s0x0:0xe51fd9530f5b7312?sa=X&ved=2ahUKEwilzc7qlc7wAhWWWc0KHbcWCGAQ_BIwG3oECEMQBQ)
 
-We appreciate your early response! Make sure you scroll all the way down and hit _Submit_ when finished. Please send additional comments/questions to our event coordinator Linh Phan <violinhino@gmail.com>.
+We appreciate your early response! Make sure you scroll all the way down and hit _Submit_ when finished. Please send additional comments/questions directly to Daniel <daniel.himmelstein@gmail.com>.
 
 
 ```{r, fig.align='center'}
