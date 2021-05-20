@@ -14,7 +14,7 @@ jobs:
         run: |-
           Rscript -e "rmarkdown::render_site(encoding = 'UTF-8')"
       - name: Deploy
-        if: github.ref == 'main' && github.event_name == 'push' && !github.event.repository.fork
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push' && !github.event.repository.fork
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
