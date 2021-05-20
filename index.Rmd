@@ -9,7 +9,7 @@ output:
 site: distill::distill_website
 ---
 
-### Hello and welcome! 
+### Xin chào!
 `⅀(x, y) = "$x ♥️ $y"`
 
 We are celebrating our marriage **July 23--25, 2021** at an encampment along the Connecticut River in Windsor, Vermont.
