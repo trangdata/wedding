@@ -14,9 +14,9 @@ knitr::opts_chunk$set(echo = FALSE)
 
 # Friday, July 23^rd^
 
-| Kayaking trip     |                                              |
+| River trip     |                                              |
 |:------------------|----------------------------------------------|
-| **13:00 - 16.00** | Explore the Connecticut river on kayak/canoe/paddle board!|
+| **13:30 - 16.30** | Explore the Connecticut river on kayak/canoe/paddle board!|
 
 
 | Potluck dinner    |                                                      |
@@ -64,13 +64,13 @@ knitr::opts_chunk$set(echo = FALSE)
 |:------------------|------------------------------------------------------|
 | **08:00 - 11:00** | Good morning. Get yourself ready for the race!       |
 
-| Off-the-grid 5K Race |                                                      |
+| Off-the-grid 5K Run |                                                      |
 |:---------------------|------------------------------------------------------|
 | **09:00 - 10:00**    | ~5 km double-loop around the garden.<br>Potential uneven footing. Watch your step! |
 
 | Award ceremony    |                                                      |
 |:------------------|------------------------------------------------------|
-| **10:00 - 11:00** | Best of each gender group receives special trophy.   |
+| **10:00 - 11:00** | Awards to the top finishers in the male, female, and masters (45+) categories. |
 
 | Lingering festivities |                                                      |
 |:----------------------|------------------------------------------------------|

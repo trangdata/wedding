@@ -13,7 +13,11 @@ knitr::opts_chunk$set(echo = FALSE)
 
 [**Path of Life Sculpture Garden**](https://greatriveroutfitters.com/news-and-events/welcome-to-the-path-of-life-sculpture-garden)
 
-Address: 36 Park Road Windsor, Vermont 05089. [Map](https://www.google.com/maps/place/Path+of+Life+Sculpture+Garden/@43.5134707,-72.3999229,15z/data=!4m2!3m1!1s0x0:0xe51fd9530f5b7312?sa=X&ved=2ahUKEwilzc7qlc7wAhWWWc0KHbcWCGAQ_BIwG3oECEMQBQ)
+Address:
+
+- 36 Park Road, Windsor, Vermont 05089
+- On [Google Maps](https://www.google.com/maps/place/Path+of+Life+Sculpture+Garden/@43.5134707,-72.3999229,15z/data=!4m2!3m1!1s0x0:0xe51fd9530f5b7312?sa=X&ved=2ahUKEwilzc7qlc7wAhWWWc0KHbcWCGAQ_BIwG3oECEMQBQ)
+- On [OpenStreetMap](https://www.openstreetmap.org/way/308153779#map=18/43.51397/-72.40171)
 
 Phone: (802) 674-9933
 
