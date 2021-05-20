@@ -31,23 +31,25 @@ For guests that aren't staying on the premises, we will try to suggest some loca
 
 ## What to pack
 
-1. shelter (tent / tarp)
-2. padding (pad or mat)
-3. insulation (50° sleeping bag / quilt / comforter / blankets)
-4. water bottle
-6. sunglasses
-5. sunscreen
-6. bug spray
-7. swimsuit
-8. rain jacket / umbrella
-8. capable shoes for the sunday run
-9. headlight (phone flashlight could substitute)
-10. festivities and games
-11. snacks in case of special dietary needs
-12. any musical instrument
-13. yard games
+#. shelter (tent / tarp)
+#. padding (pad or mat)
+#. insulation (50° sleeping bag / quilt / comforter / blankets)
+#. water bottle
+#. sunglasses
+#. sunscreen
+#. bug spray
+#. swimsuit
+#. ear plugs (for sleeping)
+#. rain jacket / umbrella
+#. capable shoes for the sunday run
+#. headlight (phone flashlight could substitute)
+#. festivities and games
+#. snacks in case of special dietary needs
+#. any musical instrument
+#. yard games
 
 ## Camping map
-Camping map and regulations at https://greatriveroutfitters.com/images/files/Camping_Rules_Regulations.pdf
-![](img/camp-map.png){width=140%}
 
+Camping map and regulations at https://greatriveroutfitters.com/images/files/Camping_Rules_Regulations.pdf
+
+![](img/camp-map.png){width=100%}
