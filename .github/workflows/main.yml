@@ -13,7 +13,6 @@ jobs:
       - name: Render Site
         run: |-
           Rscript -e "rmarkdown::render_site(encoding = 'UTF-8')"
-          echo "::set-env name=DEPLOY_PATH::$(Rscript -e "cat(rmarkdown::site_config()[['output_dir']])")"
       - name: Deploy
         if: github.ref == 'main' && github.event_name == 'push' && !github.event.repository.fork
         uses: peaceiris/actions-gh-pages@v3
