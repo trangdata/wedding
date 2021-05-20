@@ -46,7 +46,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 | Unconventional ceremony |                                                |
 |:------------------|------------------------------------------------------|
-| **16:00 - 17:00** | You don't want to miss this. See [FAQ] for the undress code. |
+| **16:00 - 17:00** | You don't want to miss this. See [FAQ](faq) for the undress code. |
 
 | Reception         |                                                      |
 |:------------------|------------------------------------------------------|
