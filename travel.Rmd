@@ -11,16 +11,29 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+There will be guest parking at the venue.
+
+If you can't drive / bike to the venue, consider any of the following options:
+
 ## Air
-- [Manchester-Boston Regional Airport](https://www.flymanchester.com/)
-- [Boston Logan International Airport](https://www.massport.com/logan-airport/)
+
+- [Boston Logan International Airport](https://www.massport.com/logan-airport/) (BOS).
+- [Manchester-Boston Regional Airport](https://www.flymanchester.com/) (MHT).
+- [Lebanon Municipal Airport](https://lebanonnh.gov/150/Airport) (LEB).
+  Serviced by Cape Air with [flights from](https://www.flightconnections.com/flights-from-lebanon-leb) BOS (Jet Blue codeshare) and White Plains (HPN).
+  There is little convenience to these flights over ground transportation,
+  but the small planes do make for a memorable experience.
 
 ## Ground
-- [Dartmouth Coach](https://dartmouthcoach.com/) from Boston or NYC to Dartmouth college or White River Junction
-- [Amtrak](https://www.amtrak.com/) to White River Junction
 
-We can help coordinate a ride for you from White River Junction to the wedding venue if needed.
+- Bus: [Dartmouth Coach](https://dartmouthcoach.com/) from Boston or NYC to Lebanon, NH or Hanover, NH
+- Train: [Amtrak](https://www.amtrak.com/) to White River Junction on the Vermonter Line.
+
+## Carpool
+
+We can help coordinate a ride for you from local transit locations to the wedding venue if needed.
 Please add the time of your arrival to this [Carpool sheet](https://docs.google.com/spreadsheets/d/1c_IF5f0gY2EpwDWvSkv1FamWb_bG4eqKfgozGD8xTK8/edit?usp=sharing).
 
 ## Carpool requests
+
 Offer/find your ride to the [Upper Valley](http://matinic.us/defining-uv/#view) by adding your name to this [Carpool sheet](https://docs.google.com/spreadsheets/d/1c_IF5f0gY2EpwDWvSkv1FamWb_bG4eqKfgozGD8xTK8/edit?usp=sharing).
