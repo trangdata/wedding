@@ -16,12 +16,13 @@ knitr::opts_chunk$set(echo = FALSE)
 
 | River trip     |                                              |
 |:------------------|----------------------------------------------|
-| **13:30 - 16.30** | Explore the Connecticut river on kayak/canoe/paddle board!|
+| **13:30 - 16.30** | Explore the Connecticut river via kayak, canoe, or paddle board! <small>The river trip goes ~4 miles down the Connecticut River. The shuttle will leave at 2 pm, so you must be there at 1:30 pm to fill out a waiver and undergo an orientation. Advanced notice (via the RSVP) is required for this activity.</small> |
 
 
 | Potluck dinner    |                                                      |
 |:------------------|------------------------------------------------------|
-| **18:30 - 20.00** | Anything made or purchased with love is appreciated! |
+| **18:30 - 20.00** | Anything made or purchased with love is appreciated! <small>If you're able to bring something, great! If you're traveling from afar or unable to bring anything, that is okay.</small> |
+
 
 | Socializing       |                                                      |
 |:------------------|------------------------------------------------------|
@@ -41,17 +42,17 @@ knitr::opts_chunk$set(echo = FALSE)
 
 | Unstructured joy  |                                                      |
 |:------------------|------------------------------------------------------|
-| **11:00 - 15:00** | Water activities, yard games, ultimate disc, sculpture garden tour |
+| **11:00 - 15:00** | Water activities, yard games, flying discs, sculpture garden tour |
 
 | Unconventional ceremony |                                                |
 |:------------------|------------------------------------------------------|
-| **16:00 - 17:00** | You don't want to miss this. |
+| **16:00 - 17:00** | You don't want to miss this. See [FAQ] for the undress code. |
 
 | Reception         |                                                      |
 |:------------------|------------------------------------------------------|
 | **17:30 - 20:00** | You especially don't want to miss this. |
 
-| Bonfire hang      |                                                      |
+| Party      |                                                      |
 |:------------------|------------------------------------------------------|
 | **20:00 - **      | Dancing with the Driftwood band.                    |
 
@@ -66,7 +67,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 | Off-the-grid 5K Run |                                                      |
 |:---------------------|------------------------------------------------------|
-| **09:00 - 10:00**    | ~5 km double-loop around the garden.<br>Potential uneven footing. Watch your step! |
+| **09:00 - 10:00**    | ~5 km double-loop around the garden. <small>Grass and dirt track, with slightly uneven footing. Watch your step! We encourage everyone to participate who can, whether you jog or race.</small> |
 
 | Award ceremony    |                                                      |
 |:------------------|------------------------------------------------------|
