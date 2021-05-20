@@ -13,16 +13,24 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+## Can I bring a +1?
+
+Yes, if we are aware of a likely +1,
+we probably named them in your invite or sent them a separate invite.
+If we didn't, you can still list them as part of your party in the RSVP form.
+
+## Are children allowed?
+
+Yes!
+Bring your babies, and we'll teach them Ultimate.
+
 ## Are pets allowed?
 
 Unfortunately, the venue doesn't allow pets.
 We're sorry but you'll have to leave your furry friends at home.
 
-## Are children allowed?
-Yes!
-Bring your babies and we'll teach them Ultimate.
-
 ## Where do I shower?
-There is a solar-bag setup for showering.
-We also recommend bathing in the river.
-Please note that the facility is minimal in general.
+
+There are two solar-bag setups for showering.
+The Connecticut River is also quite clean and refreshing at this latitude.
+Please note that the facilities are minimal in general.
