@@ -16,13 +16,21 @@ knitr::opts_chunk$set(echo = FALSE)
 
 | River trip     |                                              |
 |:------------------|----------------------------------------------|
-| **13:30 - 16.30** | Explore the Connecticut river via kayak, canoe, or paddle board! <small>The river trip goes ~4 miles down the Connecticut River. The shuttle will leave at 2 pm, so you must be there at 1:30 pm to fill out a waiver and undergo an orientation. Advanced notice (via the RSVP) is required for this activity.</small> |
+| **13:30 - 16.30** | Explore the Connecticut river via kayak, canoe, or paddle board! |
+
+<aside>
+The river trip goes ~4 miles down the Connecticut River. The shuttle will leave at 2 pm, so you must be there at 1:30 pm to fill out a waiver and undergo an orientation. Advanced notice (via the RSVP) is required for this activity.
+</aside>
 
 
 | Potluck dinner    |                                                      |
 |:------------------|------------------------------------------------------|
-| **18:30 - 20.00** | Anything made or purchased with love is appreciated! <small>If you're able to bring something, great! If you're traveling from afar or unable to bring anything, that is okay.</small> |
+| **18:30 - 20.00** | Anything made or purchased with love is appreciated!|
 
+<aside>
+
+If you're able to bring something, great! If you're traveling from afar or unable to bring anything, that is okay.
+</aside>
 
 | Socializing       |                                                      |
 |:------------------|------------------------------------------------------|

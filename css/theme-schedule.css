@@ -151,3 +151,8 @@ until 15 minutes have gone by */
   /*transition: all .4s ease-in-out;  original code */
   transition: all 900s ease-in-out;
 }
+
+aside {
+  width: 150%;
+  padding-top: 15px;
+}
