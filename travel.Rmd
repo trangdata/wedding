@@ -17,9 +17,11 @@ If you can't drive / bike to the venue, consider any of the following options:
 
 ## Air
 
-- [Boston Logan International Airport](https://www.massport.com/logan-airport/) (BOS).
+- [Boston Logan International Airport](https://www.massport.com/logan-airport/) (BOS),
+  with [global service](https://www.flightconnections.com/flights-to-boston-bos).
 - [Manchester-Boston Regional Airport](https://www.flymanchester.com/) (MHT).
-- [Lebanon Municipal Airport](https://lebanonnh.gov/150/Airport) (LEB).
+- [Lebanon Municipal Airport](https://lebanonnh.gov/150/Airport) (LEB),
+  [serviced](https://www.flightconnections.com/flights-to-manchester-mht) by American, United, and Southwest.
   Serviced by Cape Air with [flights from](https://www.flightconnections.com/flights-from-lebanon-leb) BOS (Jet Blue codeshare) and White Plains (HPN).
   There is little convenience to these flights over ground transportation,
   but the small planes do make for a memorable experience.
@@ -31,9 +33,7 @@ If you can't drive / bike to the venue, consider any of the following options:
 
 ## Carpool
 
-We can help coordinate a ride for you from local transit locations to the wedding venue if needed.
-Please add the time of your arrival to this [Carpool sheet](https://docs.google.com/spreadsheets/d/1c_IF5f0gY2EpwDWvSkv1FamWb_bG4eqKfgozGD8xTK8/edit?usp=sharing).
-
-## Carpool requests
-
-Offer/find your ride to the [Upper Valley](http://matinic.us/defining-uv/#view) by adding your name to this [Carpool sheet](https://docs.google.com/spreadsheets/d/1c_IF5f0gY2EpwDWvSkv1FamWb_bG4eqKfgozGD8xTK8/edit?usp=sharing).
+For guests that don't have a car or need a local pick-up,
+hopefully we can help coordinate that with other guests.
+If you think you will need a ride or might be able to offer a ride,
+put your information in [this spreadsheet](https://docs.google.com/spreadsheets/d/1c_IF5f0gY2EpwDWvSkv1FamWb_bG4eqKfgozGD8xTK8/edit).
