@@ -12,11 +12,11 @@ knitr::opts_chunk$set(echo = FALSE)
 
 We appreciate your early response!
 Make sure you scroll all the way down and hit _Submit_ when finished.
-Or you can go straight to the survey [here](https://docs.google.com/forms/d/e/1FAIpQLScMt7QDWuqGIsuY8yO69GDuTmkR2K1lNHW1WBlsXbgDQ19ezw/viewform?usp=sf_link).
+Or you can go straight to the survey [here](https://forms.gle/a1oTzCjzqSRUdLa16).
 
 _Please send additional comments/questions directly to Daniel <daniel.himmelstein@gmail.com>._
 
 
 ```{r, fig.align='center'}
-knitr::include_url("https://docs.google.com/forms/d/e/1FAIpQLScMt7QDWuqGIsuY8yO69GDuTmkR2K1lNHW1WBlsXbgDQ19ezw/viewform?usp=sf_link", height = "1000px")
+knitr::include_url("https://forms.gle/a1oTzCjzqSRUdLa16", height = "1000px")
 ```
