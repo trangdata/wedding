@@ -8,10 +8,10 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@main
       - name: Install Package Dependencies
-        run: |-
+        run: |
           Rscript -e "install.packages(c('rmarkdown', 'distill', 'postcards'), repos = 'https://demo.rstudiopm.com/all/__linux__/bionic/latest')"
       - name: Render Site
-        run: |-
+        run: |
           Rscript -e "rmarkdown::render_site(encoding = 'UTF-8')"
       - name: Deploy
         if: github.ref == 'refs/heads/main' && github.event_name == 'push' && !github.event.repository.fork
