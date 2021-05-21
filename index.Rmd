@@ -14,7 +14,8 @@ site: distill::distill_website
 `⅀(x, y) = "$x ♥️ $y"`
 
 We are celebrating our marriage **July 23--25, 2021** at an encampment along the Connecticut River in Windsor, Vermont.
-The venue is the [Path of Life Garden](https://greatriveroutfitters.com/news-and-events/welcome-to-the-path-of-life-sculpture-garden), which is a fusion of stunning sculpture arts, event space, river trip outfiters, and campground.
+The venue is the [Path of Life Garden](https://greatriveroutfitters.com/news-and-events/welcome-to-the-path-of-life-sculpture-garden),
+which is a fusion of stunning sculpture arts, event space, river trip outfiters, and campground.
 
 The ceremony and reception will start at _4 pm_ on **Saturday, July 24**.
 We hope you can join us camping and a whole weekend of fun (see [Schedule](/schedule) and [Venue](venue)).
@@ -22,5 +23,3 @@ We hope you can join us camping and a whole weekend of fun (see [Schedule](/sche
 ![Wedding announcement video including engagement footage from Yellowstone and pseudo-Julia code.](img/engagement-wedding-announcement.mp4){poster=img/carbon.svg}
 
 If you have any questions, please see the [FAQ](faq) page or send them directly to Daniel <daniel.himmelstein@gmail.com>.
-
-_Huge thanks to our dear friend, [Silvia Canelón](https://silvia.rbind.io), for creating this beautiful website._
