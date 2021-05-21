@@ -20,6 +20,7 @@ which is a fusion of stunning sculpture arts, event space, river trip outfiters,
 The ceremony and reception will start at _4 pm_ on **Saturday, July 24**.
 We hope you can join us camping and a whole weekend of fun (see [Schedule](/schedule) and [Venue](venue)).
 
-![Wedding announcement video including engagement footage from Yellowstone and pseudo-Julia code.](img/engagement-wedding-announcement.mp4){poster=img/carbon.svg}
+<!-- would like to add {poster=img/carbon.svg} to video but was messing up aspect ratio -->
+![Wedding announcement video including engagement footage from Yellowstone and pseudo-Julia code.](img/engagement-wedding-announcement.mp4)
 
 If you have any questions, please see the [FAQ](faq) page or send them directly to Daniel <daniel.himmelstein@gmail.com>.
