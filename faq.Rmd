@@ -15,9 +15,10 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Can I bring a +1?
 
-Yes, if we are aware of a likely +1,
+If we were aware of a likely +1,
 we probably named them in your invite or sent them a separate invite.
-If we didn't, you can still list them as part of your party in the RSVP form.
+If we didn't, you can still list them as part of your party in the RSVP form or ask us separately.
+And we will confirm that the additional guest doesn't exceed capacity restrictions.
 
 ## Are children allowed?
 
@@ -36,7 +37,7 @@ But you can help us commemmorate the occaission by wearing creative and colorful
 The event will be on grass.
 **Do not wear stiletto heels.**
 Prefer high-performing footwear or bring a change of shoes, such that your celebrate to your fullest ability.
-See [Camping] for helpful attire for the whole weekend.
+See [Camping](/camping) for helpful attire for the whole weekend.
 
 ## Where do I shower?
 
