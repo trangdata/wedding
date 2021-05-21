@@ -154,12 +154,9 @@ img[src$="#carbon"] {
   border-radius: 10px;
 }
 
-/* https://css-tricks.com/fluid-width-video/
-   https://stackoverflow.com/a/50563168/4651668
-*/
+/* https://css-tricks.com/fluid-width-video/ */
 video {
-  height: 100vh;
-  width: 100%;
-  object-fit: cover;
-  position: absolute;
+  /* override other styles to make responsive */
+  width: 100%    !important;
+  height: auto   !important;
 }
