@@ -38,3 +38,7 @@ For guests that don't have a car or need a local pick-up,
 hopefully we can help coordinate that with other guests.
 If you think you will need a ride or might be able to offer a ride,
 put your information in [this spreadsheet](https://docs.google.com/spreadsheets/d/1c_IF5f0gY2EpwDWvSkv1FamWb_bG4eqKfgozGD8xTK8/edit).
+
+## Lodging
+
+See [Camping](camping) for on-site and off-site lodging info.
