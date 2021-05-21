@@ -16,7 +16,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 | River trip     |                                              |
 |:------------------|----------------------------------------------|
-| **13:30 - 16.30** | Explore the Connecticut river via kayak, canoe, or paddle board! |
+| **1:30 pm -- 5:00 pm** | Explore the Connecticut river via kayak, canoe, or paddle board! |
 
 <aside>
 The river trip goes ~4 miles down the Connecticut River. The shuttle will leave at 2 pm, so you must be there at 1:30 pm to fill out a waiver and undergo an orientation. Advanced notice (via the RSVP) is required for this activity.
@@ -25,7 +25,7 @@ The river trip goes ~4 miles down the Connecticut River. The shuttle will leave 
 
 | Potluck dinner    |                                                      |
 |:------------------|------------------------------------------------------|
-| **18:30 - 20.00** | Anything made or purchased with love is appreciated!|
+| **6:30 pm -- 8:30 pm** | Anything made or purchased with love is appreciated!|
 
 <aside>
 
@@ -34,7 +34,7 @@ If you're able to bring something, great! If you're traveling from afar or unabl
 
 | Socializing       |                                                      |
 |:------------------|------------------------------------------------------|
-| **20:30 - 23.00** | Beer. Bonfire. Bliss.                                |
+| **8:30 pm -- 11:00 pm** | Beer. Bonfire. Bliss.                                |
 
 ------------------------------------------------------------------------
 
@@ -42,27 +42,27 @@ If you're able to bring something, great! If you're traveling from afar or unabl
 
 | MYOB              |                                                      |
 |:------------------|------------------------------------------------------|
-| **08:00 - 11:00** | Make your own bed/breakfast/bagel. And coffee.|
+| **08:00 am -- 11:00 am** | Make your own bed/breakfast/bagel. And coffee.|
 
 | Calibration yoga  |                                                      |
 |:------------------|------------------------------------------------------|
-| **09:00 - 10:00** | An alignment-based practice session that transcends boundaries. |
+| **09:00 am -- am 10:00** | An alignment-based practice session that transcends boundaries. |
 
 | Unstructured joy  |                                                      |
 |:------------------|------------------------------------------------------|
-| **11:00 - 15:00** | Water activities, yard games, flying discs, sculpture garden tour |
+| **11:00 am -- 3:00 pm** | Water activities, yard games, flying discs, sculpture garden tour |
 
 | Unconventional ceremony |                                                |
 |:------------------|------------------------------------------------------|
-| **16:00 - 17:00** | You don't want to miss this. See [FAQ](faq) for the undress code. |
+| **4:00 pm -- 5:00 pm** | You don't want to miss this. See [FAQ](faq) for the undress code. |
 
 | Reception         |                                                      |
 |:------------------|------------------------------------------------------|
-| **17:30 - 20:00** | You especially don't want to miss this. |
+| **5:30 pm -- 8:00 pm** | You especially don't want to miss this. |
 
 | Party      |                                                      |
 |:------------------|------------------------------------------------------|
-| **20:00 - **      | Dancing with the Driftwood band.                    |
+| **8:00 pm -- **      | Dancing with the Driftwood band.                    |
 
 
 ------------------------------------------------------------------------
@@ -71,20 +71,16 @@ If you're able to bring something, great! If you're traveling from afar or unabl
 
 | MYOB              |                                                      |
 |:------------------|------------------------------------------------------|
-| **08:00 - 11:00** | Good morning. Get yourself ready for the race!       |
+| **08:00 am -- 11:00 am** | Good morning. Get yourself ready for the race!       |
 
 | Off-the-grid 5K Run |                                                      |
 |:---------------------|------------------------------------------------------|
-| **09:00 - 10:00**    | ~5 km double-loop around the garden. |
-
-<aside>
-Grass and dirt track, with slightly uneven footing. Watch your step! We encourage everyone to participate who can, whether you jog or race.
-</aside>
+| **09:00 am -- 10:00 am**  | ~5 km / 3 mile double-loop around the garden. <small>Grass and dirt track, with slightly uneven footing. Watch your step! We encourage everyone to participate who can, whether you jog or race.</small> |
 
 | Award ceremony    |                                                      |
 |:------------------|------------------------------------------------------|
-| **10:00 - 11:00** | Awards to the top finishers in the male, female, and masters (45+) categories. |
+| **10:00 am - 11:00 am** | Awards to the top finishers in the male, female, and masters (45+) categories. |
 
 | Lingering festivities |                                                      |
-|:----------------------|------------------------------------------------------|
-| **11:00 - 14:00**     | Adieu.|
+|:-----------------------|---------|
+| **11:00 am - 2:00 pm** | Adieu. |
