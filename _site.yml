@@ -1,6 +1,7 @@
 name: "wedding"
 title: "Trang & Daniel"
 theme: css/theme.css
+favicon: img/river-favicon.png
 description: |
   Le & Himmelstein Wedding
 output_dir: "_site"
