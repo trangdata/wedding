@@ -30,7 +30,11 @@ If you can't drive / bike to the venue, consider any of the following options:
 
 ### Bus
 
-The [Dartmouth Coach](https://dartmouthcoach.com/) from Boston or NYC to Lebanon, NH or Hanover, NH
+The [Dartmouth Coach](https://dartmouthcoach.com/) from Boston or NYC to Lebanon, NH or Hanover, NH.
+Boston service picks up at Logan Airport (BOS) or South Station.
+New York service leaves from Midtown Manhattan between Lexington and 3rd Avenue at 150 East 42nd Street, New York, NY 10017.
+
+![Dartmouth Coach route map.](img/dartmouth-coach-all-route-map.jpg)
 
 ### Train
 
