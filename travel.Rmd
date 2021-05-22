@@ -28,9 +28,20 @@ If you can't drive / bike to the venue, consider any of the following options:
 
 ## Ground
 
-+ Bus: [Dartmouth Coach](https://dartmouthcoach.com/) from Boston or NYC to Lebanon, NH or Hanover, NH
-+ Train: [Amtrak](https://www.amtrak.com/) to White River Junction on the [Vermonter Line](https://www.amtrak.com/vermonter-train),
-  which is slated to resume service on July 19.
+### Bus
+
+The [Dartmouth Coach](https://dartmouthcoach.com/) from Boston or NYC to Lebanon, NH or Hanover, NH
+
+### Train
+
+The Amtrak [Vermonter Line](https://www.amtrak.com/vermonter-train) is slated to resume service on July 19.
+Northbound service [arrives](https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/timetables/Vermonter-Schedule-P55-031620.pdf) to the Windsor, VT station at 5:56 pm daily.
+Southbound service departs Windsor at 11:56 am daily.
+The Windsor, VT Amtrack station is just [3 miles](https://goo.gl/maps/ijRdsDQaRDRJXgS5A) from the Venue!
+The White River Junction Amtrak station is further north,
+and is better if you'd like to stop by Norwhich, VT or Hanover, NH before of after the event.
+
+![Route Map of the Amtrak Vermonter Line. Destinations outlined in green.](img/amtrak-vermonter-map.png)
 
 ## Carpool
 
