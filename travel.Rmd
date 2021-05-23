@@ -57,3 +57,7 @@ put your information in [this spreadsheet](https://docs.google.com/spreadsheets/
 ## Lodging
 
 See [Camping](camping) for on-site and off-site lodging info.
+
+## Map
+
+<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1g9SPRlTdjVpiS7HSqSxd1y2EVr-wGO_T" width="640" height="480"></iframe>
