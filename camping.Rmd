@@ -16,10 +16,61 @@ knitr::opts_chunk$set(echo = FALSE)
 ## Off-site Lodging
 
 For guests that do not want to stay on the premises,
-check back for hotel recommendations.
+we have hotel recommendations with group rates.
 
-Father Marty is organizing the hotel lodging for Himmelstein relatives.
+Mother Becky has found two hotels for wedding guests:
+_Windsor Mansion Inn_ and _Fairfield Inn and Suites White River Junction_.
+
+Father Marty is organizing the hotel lodging for Himmelstein relatives at the [_Norwich Inn_](https://www.norwichinn.com/).
 Check with him for more details.
+
+### Windsor Mansion Inn
+
+Address: 153 Pembroke Road, Windsor, 05089, VT
+(only 3 miles from the wedding site)
+
+Has 17 rooms arranged over 3 floors (no elevator) and they vary in price and features (<make this a link to room descriptions at bottom>).
+Nine rooms are still available as of May 25 for July 23--25 (two-night minimum on the weekend).
+This is an elegant, historic inn that has housed past presidents and was totally renovated in 2016.
+Andy, the proprietor, is offering a discount of $10 off the non-suite rooms and $14 off the suite rooms, or $142, $155 or $175/night + tax.
+Rooms are not refundable after June 8 (w/i 45 days of event).
+Breakfast for two is included.
+A couple rooms --- 'Middle' and 'Art Deco Suite' --- can accommodate a third person.
+Reservations can be made directly by calling [802-674-4112](tel:+1-802-674-4112) and mentioning the 'Himmelstein/Le/Hirschey' group.
+
+<details>
+<summary>Expand this for Windsor Mansion Inn room descriptions </summary>
+
+Note: not all rooms are available July 23--25.
+
+- **Calvin Coolidge Room**: 1 Queen Bed, Private porch, Antique show fireplace, Library access
+- **Theodore Roosevelt Suite**: 1 Queen Bed, Deep soaking tub, Propane fireplace, Library access
+- **Woodrow Wilson Suite**: 1 King Bed, Petite claw foot tub, Fireplace, Private porch, Library Access
+- **Bungalow**: 1 King Bed, Heated towel rack, Kitchenette, Private exterior entrance
+- **Evarts Suite**: 1 Queen Bed, Soaking Tub, Corner room with view, Antique show fireplace
+- **Gordon Ramsey Suite**: 1 Queen Bed, Clawfoot tub, Antique show fireplace, Shared balcony with views
+- **Auguste Rodin Suite**: 1 Queen Bed, Antique show fireplace, Shared balcony with views
+- **Art Deco Suite**: Partial Lake View
+- **Writer's Suite**: 1 Queen Bed, Petite Clawfoot tub, Antique show fireplace with built in bookshelves
+- **Federal Room**: 1 Queen Bed, Claw foot tub and shower, Antique show fireplace
+- **Gray Room**: 1 Queen Bed, Glass shower, Antique show fireplace
+- **Crocked Frame Room**: 1 Queen Bed, Petite claw foot tub and shower
+- **Middle Room**: 1 Queen Bed, Twin size sofa bed, Petite claw foot tub and shower
+- **Yellow Room**: 1 Queen Bed, Petite claw foot tub and shower, Propane show fireplace
+- **Hunter's Room**: Queen Bed, Glass Shower, Propane Show Fireplace
+- **French Room**: 1 Queen Bed with shower
+- **East Lake Room**: 1 Full Bed, Glass Shower
+
+</details>
+
+### Fairfield Inn and Suites, White River Junction
+
+Address: 102 Ballardvale Dr, White River Junction, VT
+20 rooms are blocked until 5 PM on June 23 at a rate of $135/night + tax and can be booked for one or two nights.
+Room fees are refundable up until 24 hours before arrival date.
+Some rooms can accommodate 5 adults (two queen beds and a sofa bed).
+Reservations can be made online [here](https://www.marriott.com/event-reservations/reservation-link.mi?id=1621973151706&key=GRP&app=resvlink)
+or by calling [802-291-9911](tel:+1-802-291-9911) and mentioning the "Himmelstein/Le/Hirschey Wedding" group.
 
 <!--
 you can consider a local
