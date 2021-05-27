@@ -13,6 +13,58 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+
+## Camping
+
+_Attendees seeking for the full experience will join us to camp in the garden._
+
+We have reserved a section of the garden for wedding guests to camp,
+which has 4 preexisting deluxe tents.
+With cots and blankets, each deluxe tent can fit at least 6 persons.
+If your party size is 4-6 or you have other individuals you'd like to stay with, let us know.
+
+<aside>
+Families might be a good fit.
+</aside>
+
+If you have camping gear (tent, pad, quilt / blanket), please bring it.
+Otherwise, let us know when [RSVPing](/rsvp) and we'll place you in one of the deluxe tents or find gear for you to borrow.
+We will also be setting up extra tents from our surplus gear.
+If you have extra gear, you can volunteer that when RSVPing.
+
+### What to pack
+
+If you have these, bring them:
+
+#. layers (it can get chilly at night)
+#. shelter (tent / tarp)
+#. padding (pad or mat)
+#. insulation (50° sleeping bag / quilt / comforter / blankets)
+#. water bottle
+#. sunglasses
+#. sunscreen
+#. bug spray
+#. swimsuit
+#. towel
+#. ear plugs (for sleeping)
+#. rain jacket / umbrella
+#. capable shoes for the sunday run
+#. headlight (phone flashlight could substitute)
+#. portable charger / power bank to recharge phone.
+#. festivities and games
+#. snacks, especially if you have special dietary needs
+#. musical instruments
+
+No on-site power though some portable power will be brought in for the reception tent and AV system.
+There will be drinking water around the venue in portable coolers.
+
+### Camping map
+
+Great River Outfitters provides some [camping info and rules](https://greatriveroutfitters.com/images/files/Camping_Rules_Regulations.pdf).
+We've highlighted the event and camping locations on this map:
+
+![Wedding camping and event locations in the Path of Life Garden](img/camp-map.png){width=100%}
+
 ## Off-site Lodging
 
 For guests that do not want to stay on the premises,
@@ -36,7 +88,7 @@ Andy, the proprietor, is offering a discount of $10 off the non-suite rooms and 
 Rooms are not refundable after June 8 (within 45 days of event).
 Breakfast for two is included.
 A couple rooms --- 'Middle' and 'Art Deco Suite' --- can accommodate a third person.
-Reservations can be made directly by calling [802-674-4112](tel:+1-802-674-4112) and mentioning the 'Himmelstein/Le/Hirschey' group.
+Reservations can be made directly by calling [802-674-4112](tel:+1-802-674-4112) and mentioning the _Himmelstein/Le/Hirschey Wedding_ group.
 
 <details>
 <summary>Expand this for Windsor Mansion Inn room descriptions </summary>
@@ -71,7 +123,7 @@ Address: 102 Ballardvale Dr, White River Junction, VT
 Room fees are refundable up until 24 hours before arrival date.
 Some rooms can accommodate 5 adults (two queen beds and a sofa bed).
 Reservations can be made online [here](https://www.marriott.com/event-reservations/reservation-link.mi?id=1621973151706&key=GRP&app=resvlink)
-or by calling [802-291-9911](tel:+1-802-291-9911) and mentioning the "Himmelstein/Le/Hirschey Wedding" group.
+or by calling [802-291-9911](tel:+1-802-291-9911) and mentioning the _Himmelstein/Le/Hirschey Wedding_ group.
 
 <!--
 you can consider a local
@@ -79,53 +131,3 @@ you can consider a local
 or [hotel](https://www.google.com/travel/hotels?utm_campaign=sharing&utm_medium=link&utm_source=htls&ts=CAESABpSCjQSMDIlMHg4OWUxYzM1NDA4NjllNTEzOjB4NWU4NjExNDA1ZGEyNzNjYToHV2luZHNvchoAEhoSFAoHCOUPEAcYFxIHCOUPEAcYGRgCMgIIASoPCgsoAUoCIAE6A1VTRBoA&rp=SAI&destination=Windsor&ap=MAFa3QEKBQisAhAAIgNVU0QqFgoHCOUPEAUYFBIHCOUPEAUYFRgBKACwAQBYAWgBmgEwEgdXaW5kc29yGiUweDg5ZTFjMzU0MDg2OWU1MTM6MHg1ZTg2MTE0MDVkYTI3M2NhogEUCgkvbS8wMTBsMmwSB1dpbmRzb3KqAQsKAggSEgMImwEYAaoBDgoCCBQSAggbEgIIUhgBqgEOCgIIHBICCHMSAghHGAGqAQ4KAggREgIIQBICCDgYAaoBEgoCCC4SAghWEgIIOhICCEsYAaoBCgoCCDUSAghdGAGSAQIgAWgA&ved=0CAAQ5JsGahcKEwiI8eqvz9jwAhUAAAAAHQAAAAAQUA).
 Check back here for specific hotel recommendations or see the "Accommodations" sidebar on the Great River Outfitters [website](https://greatriveroutfitters.com/news-and-events/the-story-behind-thep-path-of-life-garden).
 -->
-
-## Camping
-
-_Attendees seeking for the full experience will join us to camp in the garden._
-
-We have reserved a section of the garden for wedding guests to camp,
-which has 4 preexisting deluxe tents.
-With cots and blankets, each deluxe tent can fit at least 6 persons.
-If your party size is 4-6 or you have other individuals you'd like to stay with, let us know.
-
-<aside>
-Families might be a good fit.
-</aside>
-
-If you have camping gear (tent, pad, quilt / blanket), please bring it.
-Otherwise, let us know when [RSVPing](/rsvp) and we'll place you in one of the deluxe tents or find gear for you to borrow.
-We will also be setting up extra tents from our surplus gear.
-If you have extra gear, you can volunteer that when RSVPing.
-
-### What to pack
-
-If you have these, bring them:
-
-#. shelter (tent / tarp)
-#. padding (pad or mat)
-#. insulation (50° sleeping bag / quilt / comforter / blankets)
-#. water bottle
-#. sunglasses
-#. sunscreen
-#. bug spray
-#. swimsuit
-#. towel
-#. ear plugs (for sleeping)
-#. rain jacket / umbrella
-#. capable shoes for the sunday run
-#. headlight (phone flashlight could substitute)
-#. portable charger / power bank to recharge phone.
-#. festivities and games
-#. snacks, especially if you have special dietary needs
-#. musical instruments
-
-No on-site power though some portable power will be brought in for the reception tent and AV system.
-There will be drinking water around the venue in portable coolers.
-
-### Camping map
-
-Great River Outfitters provides some [camping info and rules](https://greatriveroutfitters.com/images/files/Camping_Rules_Regulations.pdf).
-We've highlighted the event and camping locations on this map:
-
-![Wedding camping and event locations in the Path of Life Garden](img/camp-map.png){width=100%}
