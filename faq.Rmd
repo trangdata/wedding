@@ -75,6 +75,7 @@ library(tidyverse)
 library(wordcloud)
 library(tidytext)
 library(lubridate)
+extrafont::load_fonts()
 
 rsvp_csv_url <- "https://docs.google.com/spreadsheets/d/1FpXd0o3heKXaLz_1s8ofhayg7Y_re5Js2sHG_gR2ub8/export?format=csv"
 rsvp_raw <- readr::read_csv(rsvp_csv_url,

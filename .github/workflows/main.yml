@@ -16,7 +16,7 @@ jobs:
           wget --directory-prefix=~/.fonts https://fonts.gstatic.com/s/mrdehaviland/v9/OpNVnooIhJj96FdB73296ksbOg3L60P3NilAZTs.woff2
           wget --directory-prefix=~/.fonts https://fonts.googleapis.com/css2?family=Mr+De+Haviland
           fc-cache -rv
-          Rscript -e "install.packages(c('remotes', 'rmarkdown', 'distill', 'postcards', 'tidyverse', 'wordcloud', 'tidytext', 'lubridate'), repos = 'https://demo.rstudiopm.com/all/__linux__/bionic/latest')"
+          Rscript -e "install.packages(c('remotes', 'rmarkdown', 'extrafont', 'distill', 'postcards', 'tidyverse', 'wordcloud', 'tidytext', 'lubridate'), repos = 'https://demo.rstudiopm.com/all/__linux__/bionic/latest')"
           Rscript -e "remotes::install_github('gadenbuie/ggpomological')"
       - name: Render Site
         run: |
