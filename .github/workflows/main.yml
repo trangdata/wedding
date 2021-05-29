@@ -1,6 +1,6 @@
 name: Render and Deploy RMarkdown Website
 'on':
-  push
+  push:
   schedule:
     # every day at 5:30 and 17:30 ET
     - cron:  '30 9,21 * * *'
