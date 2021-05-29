@@ -1,0 +1,18 @@
+---
+title: "Registry"
+output: 
+  distill::distill_article:
+    toc: false
+    theme: css/theme-rsvp.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+We **DO NOT** have a registry!
+
+We know you love us and would like to get us a gift, but your early RSVP is the biggest gift.
+No need to purchase anything!
+
+But, if you _really_ must, we will accept dumpster dived produce or donations via the [lightning network](https://tippin.me/@dhimmel).

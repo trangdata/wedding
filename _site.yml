@@ -21,4 +21,6 @@ navbar:
       href: travel.html
     - text: "FAQ"
       href: faq.html
+    - text: "Registry"
+      href: registry.html
 output: distill::distill_article
