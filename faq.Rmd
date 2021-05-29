@@ -78,7 +78,8 @@ library(lubridate)
 
 rsvp_google_url <- "https://docs.google.com/spreadsheets/d/1FpXd0o3heKXaLz_1s8ofhayg7Y_re5Js2sHG_gR2ub8/edit?usp=sharing"
 
-googlesheets4::gs4_auth(email = "grixor@gmail.com")
+googlesheets4::gs4_deauth()
+# googlesheets4::gs4_auth(email = "grixor@gmail.com")
 rsvp_raw <- googlesheets4::read_sheet(
   rsvp_google_url,
   sheet = 1,
