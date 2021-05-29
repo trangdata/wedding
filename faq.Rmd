@@ -9,10 +9,6 @@ output:
     theme: css/theme-faq.css
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
-
 ## Can I bring a +1?
 
 If we were aware of a likely +1,
@@ -69,3 +65,168 @@ If you'd like to offer a skill or lend an item, let us know in your RSVP or by e
 
 Huge thanks to our dear friend, [Silvia Canelón](https://silvia.rbind.io), for creating this beautiful website.
 And Trang's sister Ngọc for creating the invitation video.
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+```
+
+```{r warning=FALSE, message=FALSE, echo=FALSE}
+library(tidyverse)
+library(wordcloud)
+library(tidytext)
+library(lubridate)
+
+rsvp_google_url <- "https://docs.google.com/spreadsheets/d/1FpXd0o3heKXaLz_1s8ofhayg7Y_re5Js2sHG_gR2ub8/edit?usp=sharing"
+
+rsvp_raw <- googlesheets4::read_sheet(
+  rsvp_google_url,
+  sheet = 1,
+  col_names = c(
+    "timestamp", "email", "party", "will_attend",
+    "Friday, July 23rd", "Saturday, July 24th",
+    "Sunday, July 25th", "will_camp", "nights",
+    "missing_gear",
+    "deluxe_interest", "volunteer", "notes"
+  ),
+  col_types = "Tcccccccccncc"
+)[-1, ]
+```
+
+```{r}
+count_attends <- function(mystr) {
+  if (grepl("David Goldberg", mystr)) {
+    return(3)
+  }
+
+  num_at <- str_count(mystr, "@")
+  if (num_at == 0) {
+    return(length(str_split(mystr, c(",", " et "))[[1]]))
+  }
+  num_at
+}
+
+# count_attends0 <- function(mystr){
+#   x = floor(sum(!grepl("@|^$", str_split(gsub("<|>|-|,|;|+1|<no email yet what a baby>| et ", "", mystr), ' |  |\n')[[1]]))/2)
+#   if (x == 0)
+#     return(1)
+#   x
+# }
+# mystr = rsvp_raw$party
+
+# num_attends = sapply(rsvp_raw$party, count_attends0)
+# num_attends2 = sapply(rsvp_raw$party, count_attends)
+# checkdf=as.data.frame(num_attends) %>%
+#   cbind(count2 = num_attends2)
+
+rsvp <- rsvp_raw %>%
+  mutate(num_attends = sapply(rsvp_raw$party, count_attends)) %>%
+  separate(party, sep = " ", c("att_name")) %>%
+  separate(email, sep = "@", c("short_email", NA), remove = FALSE) %>%
+  mutate(
+    att_name = str_to_title(att_name),
+    activity = paste(`Friday, July 23rd`, `Saturday, July 24th`, `Sunday, July 25th`, sep = ", ")) %>%
+  filter(short_email != "bjohnson8949") %>%
+  # remove duplicates
+  select(-contains("July"))
+```
+
+## Who can make it?
+
+```{r}
+rsvp %>%
+  group_by(will_attend) %>% 
+  summarise(n = sum(num_attends))
+```
+
+```{r}
+rsvp %>% 
+  filter(will_attend == 'Yes!!!') %>% 
+  group_by(will_camp) %>%
+  summarise(n_camps = sum(num_attends))
+```
+
+
+```{r include=FALSE, eval=FALSE}
+# Those who camp, camp which night?
+
+rsvp %>%
+  filter(will_camp == "Yes") %>%
+  count(nights)
+
+maybe_campers <- rsvp %>%
+  filter(will_camp == "Maybe") %>%
+  select(email, nights, missing_gear, deluxe_interest)
+```
+
+## Who's doing what?
+
+```{r activity}
+activity_df <- rsvp %>%
+  filter(will_attend == "Yes!!!") %>%
+  select(-c(will_attend, will_camp, nights, missing_gear, deluxe_interest, notes, volunteer)) %>%
+  mutate(activity = activity %>% 
+           str_replace_all("1:30 pm|6:30 pm", "Friday") %>% 
+           str_replace_all("12:00 pm|4:00 pm|5:30 pm", "Saturday") %>% 
+           str_replace_all("9:00 am", "Sunday")) %>% 
+  separate_rows(activity, sep = ", ") %>%
+  filter(activity != "NA") %>%
+  add_count(short_email) %>%
+  mutate(
+    short_email = fct_reorder(short_email, n),
+    activity = activity %>% 
+      fct_relevel("Friday Potluck Dinner", after = 1) %>% 
+      fct_relevel("Saturday Lunch", after = 2),
+  ) %>%
+  complete(short_email, activity) %>%
+  replace_na(list(num_attends = 0))
+
+activity_df %>%
+  group_by(activity) %>%
+  summarise(participation = sum(num_attends))
+```
+
+## What did you write us?
+
+```{r}
+notes_df <- rsvp %>%
+  select(short_email, att_name, volunteer, notes) %>%
+  mutate(str_replace(notes, "’", "'"))
+
+activity_wide <- activity_df %>%
+  pivot_wider(names_from = activity, values_from = num_attends)
+note_counts <- notes_df %>%
+  unnest_tokens(word, notes) %>%
+  anti_join(stop_words)
+
+word_counts_df <- notes_df %>%
+  unnest_tokens(word, notes) %>%
+  count(short_email, att_name, name = 'note_words', sort = TRUE) %>%
+  left_join(notes_df %>%
+  unnest_tokens(word, volunteer) %>%
+  count(short_email, name = 'volunteer_words')) %>%
+  mutate(short_email = short_email %>% fct_reorder(note_words)) %>%
+  filter(note_words >= 5 | volunteer_words >= 5)
+
+set.seed(1)
+note_counts %>%
+  count(word) %>%
+  with(wordcloud(word, n,
+    min.freq = 0, random.order = FALSE,
+    colors = brewer.pal(8, "Dark2")
+  ))
+
+```
+
+Who's responsible?
+
+```{r fig.height=8, fig.width=8}
+word_counts_df %>%
+  pivot_longer(c(note_words, volunteer_words)) %>%
+  ggplot(aes(y = short_email, x = value, fill = name)) +
+  geom_col() +
+  labs(y = NULL, x = 'Number of words', fill = NULL) +
+  ggpomological::theme_pomological_fancy("Homemade Apple", 16) +
+  ggpomological::scale_fill_pomological() +
+  theme(legend.position = 'None') +
+  scale_y_discrete(labels = rev(word_counts_df$att_name))
+```
