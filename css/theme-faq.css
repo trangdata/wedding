@@ -131,3 +131,5 @@ until 15 minutes have gone by */
   /*transition: all .4s ease-in-out;  original code */
   transition: all 900s ease-in-out;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
