@@ -76,21 +76,15 @@ library(wordcloud)
 library(tidytext)
 library(lubridate)
 
-rsvp_google_url <- "https://docs.google.com/spreadsheets/d/1FpXd0o3heKXaLz_1s8ofhayg7Y_re5Js2sHG_gR2ub8/edit?usp=sharing"
-
-googlesheets4::gs4_deauth()
-# googlesheets4::gs4_auth(email = "grixor@gmail.com")
-rsvp_raw <- googlesheets4::read_sheet(
-  rsvp_google_url,
-  sheet = 1,
+rsvp_csv_url <- "https://docs.google.com/spreadsheets/d/1FpXd0o3heKXaLz_1s8ofhayg7Y_re5Js2sHG_gR2ub8/export?format=csv"
+rsvp_raw <- readr::read_csv(rsvp_csv_url,
   col_names = c(
     "timestamp", "email", "party", "will_attend",
     "Friday, July 23rd", "Saturday, July 24th",
     "Sunday, July 25th", "will_camp", "nights",
     "missing_gear",
     "deluxe_interest", "volunteer", "notes"
-  ),
-  col_types = "Tcccccccccncc"
+  )
 )[-1, ]
 ```
 
@@ -126,7 +120,8 @@ rsvp <- rsvp_raw %>%
   separate(email, sep = "@", c("short_email", NA), remove = FALSE) %>%
   mutate(
     att_name = str_to_title(att_name),
-    activity = paste(`Friday, July 23rd`, `Saturday, July 24th`, `Sunday, July 25th`, sep = ", ")) %>%
+    activity = paste(`Friday, July 23rd`, `Saturday, July 24th`, `Sunday, July 25th`, sep = ", ")
+  ) %>%
   filter(short_email != "bjohnson8949") %>%
   # remove duplicates
   select(-contains("July"))
@@ -136,13 +131,13 @@ rsvp <- rsvp_raw %>%
 
 ```{r}
 rsvp %>%
-  group_by(will_attend) %>% 
+  group_by(will_attend) %>%
   summarise(n = sum(num_attends))
 ```
 
 ```{r}
-rsvp %>% 
-  filter(will_attend == 'Yes!!!') %>% 
+rsvp %>%
+  filter(will_attend == "Yes!!!") %>%
   group_by(will_camp) %>%
   summarise(n_camps = sum(num_attends))
 ```
@@ -166,17 +161,17 @@ maybe_campers <- rsvp %>%
 activity_df <- rsvp %>%
   filter(will_attend == "Yes!!!") %>%
   select(-c(will_attend, will_camp, nights, missing_gear, deluxe_interest, notes, volunteer)) %>%
-  mutate(activity = activity %>% 
-           str_replace_all("1:30 pm|6:30 pm", "Friday") %>% 
-           str_replace_all("12:00 pm|4:00 pm|5:30 pm", "Saturday") %>% 
-           str_replace_all("9:00 am", "Sunday")) %>% 
+  mutate(activity = activity %>%
+    str_replace_all("1:30 pm|6:30 pm", "Friday") %>%
+    str_replace_all("12:00 pm|4:00 pm|5:30 pm", "Saturday") %>%
+    str_replace_all("9:00 am", "Sunday")) %>%
   separate_rows(activity, sep = ", ") %>%
   filter(activity != "NA") %>%
   add_count(short_email) %>%
   mutate(
     short_email = fct_reorder(short_email, n),
-    activity = activity %>% 
-      fct_relevel("Friday Potluck Dinner", after = 1) %>% 
+    activity = activity %>%
+      fct_relevel("Friday Potluck Dinner", after = 1) %>%
       fct_relevel("Saturday Lunch", after = 2),
   ) %>%
   complete(short_email, activity) %>%
@@ -202,10 +197,10 @@ note_counts <- notes_df %>%
 
 word_counts_df <- notes_df %>%
   unnest_tokens(word, notes) %>%
-  count(short_email, att_name, name = 'note_words', sort = TRUE) %>%
+  count(short_email, att_name, name = "note_words", sort = TRUE) %>%
   left_join(notes_df %>%
-  unnest_tokens(word, volunteer) %>%
-  count(short_email, name = 'volunteer_words')) %>%
+    unnest_tokens(word, volunteer) %>%
+    count(short_email, name = "volunteer_words")) %>%
   mutate(short_email = short_email %>% fct_reorder(note_words)) %>%
   filter(note_words >= 5 | volunteer_words >= 5)
 
@@ -216,7 +211,6 @@ note_counts %>%
     min.freq = 0, random.order = FALSE,
     colors = brewer.pal(8, "Dark2")
   ))
-
 ```
 
 Who's responsible?
@@ -226,9 +220,9 @@ word_counts_df %>%
   pivot_longer(c(note_words, volunteer_words)) %>%
   ggplot(aes(y = short_email, x = value, fill = name)) +
   geom_col() +
-  labs(y = NULL, x = 'Number of words', fill = NULL) +
+  labs(y = NULL, x = "Number of words", fill = NULL) +
   ggpomological::theme_pomological_fancy("Homemade Apple", 16) +
   ggpomological::scale_fill_pomological() +
-  theme(legend.position = 'None') +
+  theme(legend.position = "None") +
   scale_y_discrete(labels = rev(word_counts_df$att_name))
 ```
