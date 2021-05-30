@@ -67,7 +67,11 @@ Huge thanks to our dear friend, [Silvia Canelón](https://silvia.rbind.io), for 
 And Trang's sister Ngọc for creating the invitation video.
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(ragg)
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE,
+                      dev = "ragg_png")
+systemfonts::register_font("Homemade Apple", 
+                           plain = '~/.fonts/Qw3EZQFXECDrI2q789EKQZJob0x6XHgOiJM6.woff2')
 ```
 
 ```{r warning=FALSE, message=FALSE, echo=FALSE}
@@ -75,7 +79,7 @@ library(tidyverse)
 library(wordcloud)
 library(tidytext)
 library(lubridate)
-extrafont::load_fonts()
+# extrafont::loadfonts()
 
 rsvp_csv_url <- "https://docs.google.com/spreadsheets/d/1FpXd0o3heKXaLz_1s8ofhayg7Y_re5Js2sHG_gR2ub8/export?format=csv"
 rsvp_raw <- readr::read_csv(rsvp_csv_url,
@@ -222,8 +226,11 @@ word_counts_df %>%
   ggplot(aes(y = short_email, x = value, fill = name)) +
   geom_col() +
   labs(y = NULL, x = "Number of words", fill = NULL) +
-  ggpomological::theme_pomological_fancy("Mr De Haviland", 16) +
+  ggpomological::theme_pomological_fancy("Homemade Apple", 16) +
   ggpomological::scale_fill_pomological() +
-  theme(legend.position = "None") +
+  theme(legend.position = "None",
+        # axis.title = element_text(face="italic"),
+        # axis.text = element_text(face="italic")
+        ) +
   scale_y_discrete(labels = rev(word_counts_df$att_name))
 ```
