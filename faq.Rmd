@@ -1,7 +1,8 @@
 ---
 title: "FAQ"
 description: |
-  Please send questions directly to Daniel <daniel.himmelstein@gmail.com> and we'll add them here.
+  Please scroll down to see all the questions and answer.
+  If you have additional questions, send them directly to Daniel <daniel.himmelstein@gmail.com> and we'll add them here.
 output: 
   distill::distill_article:
     toc: true
@@ -9,22 +10,15 @@ output:
     theme: css/theme-faq.css
 ---
 
-## Can I bring a +1?
+## Are pets allowed?
 
-If we were aware of a likely +1,
-we probably named them in your invite or sent them a separate invite.
-If we didn't, you can still list them as part of your party in the RSVP form or ask us separately.
-And we will confirm that the additional guest doesn't exceed capacity restrictions.
+Unfortunately, the venue doesn't allow pets.
+We're sorry but you'll have to leave your furry friends at home.
 
 ## Are children allowed?
 
 Yes!
 Bring your babies, and we'll teach them Ultimate.
-
-## Are pets allowed?
-
-Unfortunately, the venue doesn't allow pets.
-We're sorry but you'll have to leave your furry friends at home.
 
 ## Dress
 
@@ -60,6 +54,13 @@ Here are some examples of ways you could assist, inspired by actual invitees!
 - Can make wildflower bouquets
 
 If you'd like to offer a skill or lend an item, let us know in your RSVP or by email.
+
+## Can I bring a +1?
+
+If we were aware of a likely +1,
+we probably named them in your invite or sent them a separate invite.
+If we didn't, you can still list them as part of your party in the RSVP form or ask us separately.
+And we will confirm that the additional guest doesn't exceed capacity restrictions.
 
 ## Who helped build the website?
 

@@ -45,7 +45,7 @@ Northbound service [arrives](https://www.amtrak.com/content/dam/projects/dotcom/
 Southbound service departs Windsor at 11:56 am daily.
 The Windsor, VT Amtrack station is just [3 miles](https://goo.gl/maps/ijRdsDQaRDRJXgS5A) from the Venue!
 The White River Junction Amtrak station is further north,
-and is better if you'd like to stop by Norwhich, VT or Hanover, NH before of after the event.
+and is better if you'd like to stop by Norwich, VT or Hanover, NH before of after the event.
 
 ![Route Map of the Amtrak Vermonter Line. Destinations outlined in green.](img/amtrak-vermonter-map.png)
 
