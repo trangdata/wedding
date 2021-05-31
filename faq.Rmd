@@ -231,7 +231,10 @@ word_counts_df %>%
   ggpomological::scale_fill_pomological() +
   theme(legend.position = "None",
         axis.title = element_text(face="italic"),
-        axis.text = element_text(face="italic")
+        axis.text = element_text(face="italic"),
+        panel.border = element_blank()
         ) +
-  scale_y_discrete(labels = rev(word_counts_df$att_name))
+  scale_y_discrete(labels = rev(word_counts_df$att_name)) +
+  coord_cartesian(expand = FALSE) +
+  NULL
 ```
