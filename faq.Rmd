@@ -1,7 +1,7 @@
 ---
 title: "FAQ"
 description: |
-  Please scroll down to see all the questions and answer.
+  Please scroll down to see all the questions and answers.
   If you have additional questions, send them directly to Daniel <daniel.himmelstein@gmail.com> and we'll add them here.
 output: 
   distill::distill_article:
