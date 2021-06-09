@@ -208,7 +208,8 @@ word_counts_df <- notes_df %>%
   left_join(notes_df %>%
     unnest_tokens(word, volunteer) %>%
     count(short_email, name = "volunteer_words")) %>%
-  mutate(short_email = short_email %>% fct_reorder(note_words)) %>%
+  mutate(short_email = short_email %>% 
+           fct_reorder2(- note_words, - volunteer_words, .fun = sum)) %>%
   filter(note_words >= 5 | volunteer_words >= 5)
 
 set.seed(1)
