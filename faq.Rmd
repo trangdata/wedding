@@ -79,6 +79,7 @@ knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE,
 #                            plain = '~/.fonts/Qw3EZQFXECDrI2q789EKQZJob0x6XHgOiJM6.woff2')
 ```
 
+
 ```{r warning=FALSE, message=FALSE, echo=FALSE}
 library(tidyverse)
 library(wordcloud)
@@ -86,53 +87,29 @@ library(tidytext)
 library(lubridate)
 # extrafont::loadfonts()
 
-rsvp_csv_url <- "https://docs.google.com/spreadsheets/d/1FpXd0o3heKXaLz_1s8ofhayg7Y_re5Js2sHG_gR2ub8/export?format=csv"
+rsvp_csv_url <- "https://docs.google.com/spreadsheets/d/1FpXd0o3heKXaLz_1s8ofhayg7Y_re5Js2sHG_gR2ub8/export?format=csv&gid=953617702"
 rsvp_raw <- readr::read_csv(rsvp_csv_url,
   col_names = c(
     "timestamp", "email", "party", "will_attend",
     "Friday, July 23rd", "Saturday, July 24th",
     "Sunday, July 25th", "will_camp", "nights",
     "missing_gear",
-    "deluxe_interest", "volunteer", "notes"
+    "deluxe_interest", "volunteer", "notes", "num_attends"
   )
 )[-1, ]
 ```
 
 ```{r}
-count_attends <- function(mystr) {
-  if (grepl("David Goldberg", mystr)) {
-    return(3)
-  }
-
-  num_at <- str_count(mystr, "@")
-  if (num_at == 0) {
-    return(length(str_split(mystr, c(",", " et "))[[1]]))
-  }
-  num_at
-}
-
-# count_attends0 <- function(mystr){
-#   x = floor(sum(!grepl("@|^$", str_split(gsub("<|>|-|,|;|+1|<no email yet what a baby>| et ", "", mystr), ' |  |\n')[[1]]))/2)
-#   if (x == 0)
-#     return(1)
-#   x
-# }
-# mystr = rsvp_raw$party
-
-# num_attends = sapply(rsvp_raw$party, count_attends0)
-# num_attends2 = sapply(rsvp_raw$party, count_attends)
-# checkdf=as.data.frame(num_attends) %>%
-#   cbind(count2 = num_attends2)
-
 rsvp <- rsvp_raw %>%
-  mutate(num_attends = sapply(rsvp_raw$party, count_attends)) %>%
+  # mutate(num_attends = sapply(rsvp_raw$party, count_attends)) %>%
+  mutate(num_attends = as.numeric(num_attends)) %>% 
   separate(party, sep = " ", c("att_name")) %>%
   separate(email, sep = "@", c("short_email", NA), remove = FALSE) %>%
   mutate(
     att_name = str_to_title(att_name),
     activity = paste(`Friday, July 23rd`, `Saturday, July 24th`, `Sunday, July 25th`, sep = ", ")
   ) %>%
-  filter(short_email != "bjohnson8949") %>%
+  # filter(short_email != "bjohnson8949") %>%
   # remove duplicates
   select(-contains("July"))
 ```
