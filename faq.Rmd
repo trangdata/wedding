@@ -190,7 +190,15 @@ word_counts_df <- notes_df %>%
     count(short_email, name = "volunteer_words")) %>%
   mutate(short_email = short_email %>% 
            fct_reorder2(- note_words, - volunteer_words, .fun = sum)) %>%
-  filter(note_words >= 5 | volunteer_words >= 5)
+  filter(note_words >= 5 | volunteer_words >= 5) %>%
+  ungroup() %>% 
+  mutate(att_name = gsub('@Gmail.com|\"', "", att_name),
+         att_name = case_when(
+           short_email == "Lhimmelstein9395" ~ "Laura H.",
+           short_email == "laura" ~ "Laura V.",
+           short_email == "worth.sam" ~ "Sam W.",
+           short_email == "samuel.m.marshall" ~ "Sam M.",
+           TRUE ~ att_name)) 
 
 set.seed(1)
 note_counts %>%
@@ -204,9 +212,9 @@ note_counts %>%
 Who's responsible?
 
 ```{r fig.height=8, fig.width=8}
-word_counts_df %>%
+word_counts_df %>% 
   pivot_longer(c(note_words, volunteer_words)) %>%
-  ggplot(aes(y = short_email, x = value, fill = name)) +
+  ggplot(aes(y = fct_reorder(att_name, value, .fun = sum), x = value, fill = name)) +
   geom_col() +
   labs(y = NULL, x = "Number of words", fill = NULL) +
   ggpomological::theme_pomological_plain("serif", 16) +
@@ -216,7 +224,7 @@ word_counts_df %>%
         axis.text = element_text(face="italic"),
         panel.border = element_blank()
         ) +
-  scale_y_discrete(labels = rev(word_counts_df$att_name)) +
+  # scale_y_discrete(labels = rev(word_counts_df$att_name)) +
   coord_cartesian(expand = FALSE) +
   NULL
 ```
