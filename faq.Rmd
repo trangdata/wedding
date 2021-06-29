@@ -106,12 +106,55 @@ rsvp <- rsvp_raw %>%
   separate(party, sep = " ", c("att_name")) %>%
   separate(email, sep = "@", c("short_email", NA), remove = FALSE) %>%
   mutate(
+    email = tolower(email), 
     att_name = str_to_title(att_name),
     activity = paste(`Friday, July 23rd`, `Saturday, July 24th`, `Sunday, July 25th`, sep = ", ")
   ) %>%
   # filter(short_email != "bjohnson8949") %>%
   # remove duplicates
   select(-contains("July"))
+```
+
+```{r eval=FALSE, include=FALSE}
+## Airtable check
+Sys.setenv("AIRTABLE_API_KEY"="keyEXeWcwlu3lnRAp") 
+invites_df <- airtabler::airtable("appkx29mEpL4bUliA", "invites")
+airtable <- invites_df$invites$select_all() %>% 
+  mutate(email = tolower(Email)) %>% 
+  select(Name, RSVP, email)
+
+comb_rsvp <- rsvp %>% 
+  select(email, num_attends, will_attend) %>% 
+  full_join(airtable) %>% 
+  replace_na(list(num_attends = 0, RSVP = 0)) %>% 
+  mutate(not_matched = RSVP != num_attends) 
+
+comb_rsvp %>% 
+  filter(will_attend == "Yes!!!") %>% 
+  pull(num_attends) %>% 
+  as.numeric() %>% 
+  sum(na.rm = TRUE)
+
+comb_rsvp %>% 
+  pull(RSVP) %>% 
+  as.numeric() %>% 
+  sum(na.rm = TRUE)
+
+# sum(as.numeric(rsvp_raw$num_attends), na.rm = TRUE)
+sum(airtable$RSVP, na.rm = TRUE)
+mismatches <- comb_rsvp %>% 
+  filter(is.na(will_attend) | will_attend == "Yes!!!",
+         is.na(not_matched) | not_matched)
+mismatches$num_attends %>% sum
+mismatches$RSVP %>% sum
+
+airtable %>% 
+  filter(RSVP > 0) %>% 
+  pull(email) %>% 
+  setdiff(comb_rsvp %>% filter(RSVP > 0) %>% pull(email))
+comb_emails = comb_rsvp %>% filter(RSVP > 0) %>% pull(email) 
+comb_emails[duplicated(comb_emails)]
+
 ```
 
 ## Who can make it?
