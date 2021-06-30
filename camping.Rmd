@@ -74,9 +74,6 @@ we have hotel recommendations with group rates.
 Mother Becky has found two hotels for wedding guests:
 _Windsor Mansion Inn_ and _Fairfield Inn and Suites White River Junction_.
 
-Father Marty is organizing the hotel lodging for Himmelstein relatives at the [_Norwich Inn_](https://www.norwichinn.com/).
-Check with him for more details.
-
 ### Windsor Mansion Inn
 
 Address: 153 Pembroke Road, Windsor, 05089, VT
