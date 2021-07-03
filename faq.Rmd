@@ -115,6 +115,43 @@ rsvp <- rsvp_raw %>%
   select(-contains("July"))
 ```
 
+```{r include=FALSE}
+rsvp_more <- rsvp_raw %>%
+  mutate(party = gsub('\\"|\\+1', "", party)) %>% 
+  separate(party, sep = "<|>|,|:|\\(|- |;|\\)", 
+           c("x1_name", "x1_alt_email", "x2_name", "x2_alt_email", "x3_name", "x3_alt_email")) %>%
+  mutate(
+    party = x1_name,
+    x1_alt_email = if_else(is.na(x1_alt_email) | x1_alt_email == "", email, x1_alt_email)) %>% 
+  pivot_longer(cols = starts_with("x"), 
+                    names_to = c("xval", ".value"),
+                    names_pattern = 'x(\\d+)_(.*)') %>% 
+  mutate(
+    email = tolower(email), 
+    name = str_trim(name),
+    alt_email = str_trim(alt_email),
+    activity = paste(`Friday, July 23rd`, `Saturday, July 24th`, `Sunday, July 25th`, sep = ", ")
+  ) %>%
+  filter(will_attend == "Yes!!!", name != "") %>% 
+  drop_na(name) %>% 
+  select(- c(contains("July"), num_attends, xval, timestamp, email, 
+             will_camp, will_attend, deluxe_interest)) %>% 
+  select(name, party, alt_email, contains("day"), everything()) %>% 
+  mutate(activity = activity %>%
+    str_replace_all("1:30 pm|6:30 pm", "Friday") %>%
+    str_replace_all("12:00 pm|4:00 pm|5:30 pm", "Saturday") %>%
+    str_replace_all("9:00 am", "Sunday")) %>%
+  separate_rows(activity, sep = ", ") %>%
+  filter(activity != "NA") %>% 
+  mutate(act_val = 1) %>%
+  separate(nights, sep = ",", into = c("Camp Friday", "Camp Saturday")) %>%  
+  pivot_wider(names_from = activity, values_from = act_val) %>% 
+  select(- contains("Ceremony"), - contains("Reception"))
+
+# write_csv(rsvp_more, file = "data/rsvp_deets.csv")
+```
+
+
 ```{r eval=FALSE, include=FALSE}
 ## Airtable check
 Sys.setenv("AIRTABLE_API_KEY"="keyEXeWcwlu3lnRAp") 
