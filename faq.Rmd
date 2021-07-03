@@ -72,10 +72,12 @@ And Trang's sister Ngọc for creating the invitation video.
 
 ```{r setup, include=FALSE}
 library(ragg)
-knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE,
-                      dev = "ragg_png")
+knitr::opts_chunk$set(
+  echo = FALSE, warning = FALSE, message = FALSE,
+  dev = "ragg_png"
+)
 # X11Font("Homemade Apple")
-# systemfonts::register_font("Homemade Apple", 
+# systemfonts::register_font("Homemade Apple",
 #                            plain = '~/.fonts/Qw3EZQFXECDrI2q789EKQZJob0x6XHgOiJM6.woff2')
 ```
 
@@ -102,11 +104,11 @@ rsvp_raw <- readr::read_csv(rsvp_csv_url,
 ```{r}
 rsvp <- rsvp_raw %>%
   # mutate(num_attends = sapply(rsvp_raw$party, count_attends)) %>%
-  mutate(num_attends = as.numeric(num_attends)) %>% 
+  mutate(num_attends = as.numeric(num_attends)) %>%
   separate(party, sep = " ", c("att_name")) %>%
   separate(email, sep = "@", c("short_email", NA), remove = FALSE) %>%
   mutate(
-    email = tolower(email), 
+    email = tolower(email),
     att_name = str_to_title(att_name),
     activity = paste(`Friday, July 23rd`, `Saturday, July 24th`, `Sunday, July 25th`, sep = ", ")
   ) %>%
@@ -117,81 +119,112 @@ rsvp <- rsvp_raw %>%
 
 ```{r include=FALSE}
 rsvp_more <- rsvp_raw %>%
-  mutate(party = gsub('\\"|\\+1', "", party)) %>% 
-  separate(party, sep = "<|>|,|:|\\(|- |;|\\)", 
-           c("x1_name", "x1_alt_email", "x2_name", "x2_alt_email", "x3_name", "x3_alt_email")) %>%
+  mutate(party = gsub('\\"|\\+1', "", party)) %>%
+  separate(party,
+    sep = "<|>|,|:|\\(|- |;|\\)",
+    c("x1_name", "x1_alt_email", "x2_name", "x2_alt_email", "x3_name", "x3_alt_email")
+  ) %>%
   mutate(
     party = x1_name,
-    x1_alt_email = if_else(is.na(x1_alt_email) | x1_alt_email == "", email, x1_alt_email)) %>% 
-  pivot_longer(cols = starts_with("x"), 
-                    names_to = c("xval", ".value"),
-                    names_pattern = 'x(\\d+)_(.*)') %>% 
+    x1_alt_email = if_else(is.na(x1_alt_email) | x1_alt_email == "", email, x1_alt_email)
+  ) %>%
+  pivot_longer(
+    cols = starts_with("x"),
+    names_to = c("xval", ".value"),
+    names_pattern = "x(\\d+)_(.*)"
+  ) %>%
   mutate(
-    email = tolower(email), 
+    num_attends = as.numeric(num_attends),
+    email = tolower(email),
     name = str_trim(name),
+    party = str_trim(party),
     alt_email = str_trim(alt_email),
+    notes = gsub("\n|\t", " ", notes),
+    volunteer = gsub("\n|\t", " ", volunteer),
     activity = paste(`Friday, July 23rd`, `Saturday, July 24th`, `Sunday, July 25th`, sep = ", ")
   ) %>%
-  filter(will_attend == "Yes!!!", name != "") %>% 
-  drop_na(name) %>% 
-  select(- c(contains("July"), num_attends, xval, timestamp, email, 
-             will_camp, will_attend, deluxe_interest)) %>% 
-  select(name, party, alt_email, contains("day"), everything()) %>% 
+  filter(will_attend == "Yes!!!", name != "") %>%
+  # drop_na(name) %>%
+  # add_count(email, name = "n_emails") %>%
+  # filter(num_attends != n_emails)
+  select(-c(
+    contains("July"), xval, timestamp, email,
+    will_camp, will_attend, deluxe_interest
+  )) %>%
+  select(name, party, alt_email, contains("day"), everything()) %>%
   mutate(activity = activity %>%
     str_replace_all("1:30 pm|6:30 pm", "Friday") %>%
     str_replace_all("12:00 pm|4:00 pm|5:30 pm", "Saturday") %>%
     str_replace_all("9:00 am", "Sunday")) %>%
   separate_rows(activity, sep = ", ") %>%
-  filter(activity != "NA") %>% 
+  filter(activity != "NA") %>%
   mutate(act_val = 1) %>%
-  separate(nights, sep = ",", into = c("Camp Friday", "Camp Saturday")) %>%  
-  pivot_wider(names_from = activity, values_from = act_val) %>% 
-  select(- contains("Ceremony"), - contains("Reception"))
+  separate_rows(nights, sep = ", ") %>%
+  mutate(
+    nights = as.factor(nights) %>% 
+      fct_recode("Camp Friday" = "Friday night (July 23-34)", 
+                 "Camp Saturday" = "Saturday night  (July 24-35)"),
+    night_val = 1) %>%
+  pivot_wider(names_from = nights, values_from = night_val) %>% 
+  mutate(
+    `Camp Friday` = !is.na(`Camp Friday`),
+    `Camp Saturday` = !is.na(`Camp Saturday`)
+  ) %>%
+  pivot_wider(names_from = activity, values_from = act_val) %>%
+  select(-contains("Ceremony"), -contains("Reception"), -num_attends) %>%
+  select("name", "party", "alt_email", "Camp Friday", "Camp Saturday", 
+         "Friday River Trip", "Friday Potluck Dinner", "Saturday Lunch", 
+         "Sunday Off-the-grid 5K Run", "missing_gear", "volunteer", "notes") %>% 
+  replace_na(list(alt_email = "", missing_gear = "", volunteer = "", notes = ""))
 
+# write_tsv(rsvp_more, file = "data/rsvp_deets.tsv")
 # write_csv(rsvp_more, file = "data/rsvp_deets.csv")
 ```
 
 
 ```{r eval=FALSE, include=FALSE}
 ## Airtable check
-Sys.setenv("AIRTABLE_API_KEY"="keyEXeWcwlu3lnRAp") 
+Sys.setenv("AIRTABLE_API_KEY" = "keyEXeWcwlu3lnRAp")
 invites_df <- airtabler::airtable("appkx29mEpL4bUliA", "invites")
-airtable <- invites_df$invites$select_all() %>% 
-  mutate(email = tolower(Email)) %>% 
+airtable <- invites_df$invites$select_all() %>%
+  mutate(email = tolower(Email)) %>%
   select(Name, RSVP, email)
 
-comb_rsvp <- rsvp %>% 
-  select(email, num_attends, will_attend) %>% 
-  full_join(airtable) %>% 
-  replace_na(list(num_attends = 0, RSVP = 0)) %>% 
-  mutate(not_matched = RSVP != num_attends) 
+comb_rsvp <- rsvp %>%
+  select(email, num_attends, will_attend) %>%
+  full_join(airtable) %>%
+  replace_na(list(num_attends = 0, RSVP = 0)) %>%
+  mutate(not_matched = RSVP != num_attends)
 
-comb_rsvp %>% 
-  filter(will_attend == "Yes!!!") %>% 
-  pull(num_attends) %>% 
-  as.numeric() %>% 
+comb_rsvp %>%
+  filter(will_attend == "Yes!!!") %>%
+  pull(num_attends) %>%
+  as.numeric() %>%
   sum(na.rm = TRUE)
 
-comb_rsvp %>% 
-  pull(RSVP) %>% 
-  as.numeric() %>% 
+comb_rsvp %>%
+  pull(RSVP) %>%
+  as.numeric() %>%
   sum(na.rm = TRUE)
 
 # sum(as.numeric(rsvp_raw$num_attends), na.rm = TRUE)
 sum(airtable$RSVP, na.rm = TRUE)
-mismatches <- comb_rsvp %>% 
-  filter(is.na(will_attend) | will_attend == "Yes!!!",
-         is.na(not_matched) | not_matched)
-mismatches$num_attends %>% sum
-mismatches$RSVP %>% sum
+mismatches <- comb_rsvp %>%
+  filter(
+    is.na(will_attend) | will_attend == "Yes!!!",
+    is.na(not_matched) | not_matched
+  )
+mismatches$num_attends %>% sum()
+mismatches$RSVP %>% sum()
 
-airtable %>% 
-  filter(RSVP > 0) %>% 
-  pull(email) %>% 
+airtable %>%
+  filter(RSVP > 0) %>%
+  pull(email) %>%
   setdiff(comb_rsvp %>% filter(RSVP > 0) %>% pull(email))
-comb_emails = comb_rsvp %>% filter(RSVP > 0) %>% pull(email) 
+comb_emails <- comb_rsvp %>%
+  filter(RSVP > 0) %>%
+  pull(email)
 comb_emails[duplicated(comb_emails)]
-
 ```
 
 ## Who can make it?
@@ -268,17 +301,20 @@ word_counts_df <- notes_df %>%
   left_join(notes_df %>%
     unnest_tokens(word, volunteer) %>%
     count(short_email, name = "volunteer_words")) %>%
-  mutate(short_email = short_email %>% 
-           fct_reorder2(- note_words, - volunteer_words, .fun = sum)) %>%
+  mutate(short_email = short_email %>%
+    fct_reorder2(-note_words, -volunteer_words, .fun = sum)) %>%
   filter(note_words >= 5 | volunteer_words >= 5) %>%
-  ungroup() %>% 
-  mutate(att_name = gsub('@Gmail.com|\"', "", att_name),
-         att_name = case_when(
-           short_email == "Lhimmelstein9395" ~ "Laura H.",
-           short_email == "laura" ~ "Laura V.",
-           short_email == "worth.sam" ~ "Sam W.",
-           short_email == "samuel.m.marshall" ~ "Sam M.",
-           TRUE ~ att_name)) 
+  ungroup() %>%
+  mutate(
+    att_name = gsub('@Gmail.com|\"', "", att_name),
+    att_name = case_when(
+      short_email == "Lhimmelstein9395" ~ "Laura H.",
+      short_email == "laura" ~ "Laura V.",
+      short_email == "worth.sam" ~ "Sam W.",
+      short_email == "samuel.m.marshall" ~ "Sam M.",
+      TRUE ~ att_name
+    )
+  )
 
 set.seed(1)
 note_counts %>%
@@ -292,18 +328,19 @@ note_counts %>%
 Who's responsible?
 
 ```{r fig.height=8, fig.width=8}
-word_counts_df %>% 
+word_counts_df %>%
   pivot_longer(c(note_words, volunteer_words)) %>%
   ggplot(aes(y = fct_reorder(att_name, value, .fun = sum), x = value, fill = name)) +
   geom_col() +
   labs(y = NULL, x = "Number of words", fill = NULL) +
   ggpomological::theme_pomological_plain("serif", 16) +
   ggpomological::scale_fill_pomological() +
-  theme(legend.position = "None",
-        axis.title = element_text(face="italic"),
-        axis.text = element_text(face="italic"),
-        panel.border = element_blank()
-        ) +
+  theme(
+    legend.position = "None",
+    axis.title = element_text(face = "italic"),
+    axis.text = element_text(face = "italic"),
+    panel.border = element_blank()
+  ) +
   # scale_y_discrete(labels = rev(word_counts_df$att_name)) +
   coord_cartesian(expand = FALSE) +
   NULL
