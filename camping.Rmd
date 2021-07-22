@@ -18,9 +18,9 @@ knitr::opts_chunk$set(echo = FALSE)
 
 _Attendees seeking for the full experience will join us to camp in the garden._
 
-We have reserved a section of the garden for wedding guests to camp,
-which has 4 preexisting deluxe tents.
-With cots and blankets, each deluxe tent can fit at least 6 persons.
+We have reserved the EFGH and IJKL sections of the garden for wedding guests to camp.
+EFGH has 4 preexisting deluxe tents.
+With cots and blankets, each deluxe tent can fit 6 persons.
 If your party size is 4-6 or you have other individuals you'd like to stay with, let us know.
 
 <aside>
@@ -66,6 +66,9 @@ Great River Outfitters provides some [camping info and rules](https://greatriver
 We've highlighted the event and camping locations on this map:
 
 ![Wedding camping and event locations in the Path of Life Garden](img/camp-map.png){width=100%}
+
+Overnight guests should park in the grass lot at [43.512089, -72.402431](https://goo.gl/maps/6ZZR7WS5EQMaWbUy5),
+especially critical if you are arriving after the Great River Outfitter office is closed.
 
 ## Off-site Lodging
 
