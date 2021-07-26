@@ -1,0 +1,29 @@
+---
+title: "Results"
+description: |
+  Results from the wedding.
+output: 
+  distill::distill_article:
+    toc: true
+    toc_float: true
+    theme: css/theme-rsvp.css
+---
+
+## Race Results
+
+<iframe class="airtable-embed" src="https://airtable.com/embed/shrB7exrpBJmPuMIi?backgroundColor=orange&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;">
+</iframe>
+
+## Volunteers
+
+- Kurt Wheeler -- Ceremony Officiant
+- Daniel Lelchuk -- Cello
+- Jim Eakin -- Race Officiant
+- Josh Himmelstein -- Ring bearer & airman
+- Amanda John -- Photographer
+- Nadia Penrod -- Yoga Instructor
+- Mathew Griffen & Jordan Hunter: Improv workshop leads
+- Becky Hirschey -- master of meals
+- Brandon Johnson -- Audio/Video Engineer 
+- Liz Marshall -- Wedding Cake
+- Spotify Playlists -- DJ

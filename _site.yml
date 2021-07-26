@@ -23,4 +23,6 @@ navbar:
       href: faq.html
     - text: "Registry"
       href: registry.html
+    - text: "Results"
+      href: results.html
 output: distill::distill_article
