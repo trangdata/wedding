@@ -1,7 +1,7 @@
 ---
 title: "Results"
 description: |
-  Results from the wedding.
+  Results and acknowledgements from the wedding.
 output: 
   distill::distill_article:
     toc: true
@@ -11,19 +11,31 @@ output:
 
 ## Race Results
 
+On Sunday, many elite and recreational runners braved the rain and fatigue to run the Off-the-Grid 5k Race.
+Course details are available in [the FAQ](/faq.html#running-course).
+We are grateful to former Hanover High Cross Country coach, Jim Eakin, for proper timing and setting of the finish line.
+Here are the results:
+
 <iframe class="airtable-embed" src="https://airtable.com/embed/shrB7exrpBJmPuMIi?backgroundColor=orange&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;">
 </iframe>
 
 ## Volunteers
 
+Thanks everyone who helped make the wedding wonderful.
+We very much wanted the event to be a collaborative one that celebrated not just us,
+but also the talents of our guests.
+A special thank you to the following individuals who played major roles:
+
 - Kurt Wheeler -- Ceremony Officiant
 - Daniel Lelchuk -- Cello
 - Jim Eakin -- Race Officiant
 - Josh Himmelstein -- Ring bearer & airman
-- Amanda John -- Photographer
 - Nadia Penrod -- Yoga Instructor
+- Liz Marshall -- Wedding Cake
+- Amanda John -- Photographer
 - Mathew Griffen & Jordan Hunter: Improv workshop leads
 - Becky Hirschey -- master of meals
 - Brandon Johnson -- Audio/Video Engineer 
-- Liz Marshall -- Wedding Cake
 - Spotify Playlists -- DJ
+
+And everyone else who made the wedding possible and helped along the way.
