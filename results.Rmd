@@ -6,12 +6,12 @@ output:
   distill::distill_article:
     toc: true
     toc_float: true
-    theme: css/theme-rsvp.css
+    theme: css/theme-results.css
 ---
 
 ## Race Results
 
-On Sunday, many elite and recreational runners braved the rain and fatigue to run the Off-the-Grid 5k Race.
+On Sunday, many elite and recreational runners braved the rain and fatigue to run the Off-the-Grid 5K Race.
 Course details are available in [the FAQ](/faq.html#running-course).
 We are grateful to former Hanover High Cross Country coach, Jim Eakin, for proper timing and setting of the finish line.
 Here are the results:
@@ -22,22 +22,22 @@ Here are the results:
 ## Volunteers
 
 Thanks everyone who helped make the wedding wonderful.
-We very much wanted the event to be a collaborative one that celebrated not just us,
+We very much wanted the event to be a collaborative one that celebrated not just us
 but also the talents of our guests.
 A special thank you to the following individuals who played major roles:
 
 - Kurt Wheeler -- Ceremony Officiant
 - Daniel Lelchuk -- Cello
 - Jim Eakin -- Race Officiant
-- Josh Himmelstein -- Ring bearer & airman
+- Josh Himmelstein -- Ring Bearer & Airman
 - Nadia Penrod -- Yoga Instructor
 - Liz Marshall -- Wedding Cake
 - Amanda John -- Photographer
-- Mathew Griffen & Jordan Hunter: Improv workshop leads
+- Mathew Griffin & Jordan Hunter: Improv Workshop Leads
 - Brandon Johnson -- Audio/Video Engineer
-- Bennett Prescott -- audio advice
-- Marissa & Diego Legrand whose 2018 campground wedding was a major insipiration
-- Becky Hirschey -- master of logistics
+- Bennett Prescott -- Audio Advisor
+- Marissa & Diego Legrand whose 2018 campground wedding was a major inspiration
+- Becky Hirschey -- Master of Logistics
 
 And everyone else who made the wedding possible and helped along the way.
 
@@ -45,12 +45,12 @@ And everyone else who made the wedding possible and helped along the way.
 
 We did have the help of several paid vendors, which we'd like acknowledge:
 
-- Path of Life Garden & [Great River Outfitters](https://www.greatriveroutfitters.com/) for the venue, campground, and river trip.
-- [Barefoot Gourmet](https://www.barefoot-gourmet.com/) for reception dinner catering.
-- [Blood's catering](https://www.bloodscatering.com/) for the event tent, table, and chair rental.
-- [SILO Distillery](https://www.silodistillery.com/silo-distillery) for reception alcohol catering (a Vermont licensed alcohol caterer required by venue / laws).
-- [Artisan Eats](https://www.artisaneatsvt.com/) for lunch sandwiches / wraps.
-- [Best Septic](https://bestsepticvt.net/) for porta-potty and hand-washing station rental.
+- Path of Life Garden & [Great River Outfitters](https://www.greatriveroutfitters.com/) for the venue, campground, and river trip
+- [Barefoot Gourmet](https://www.barefoot-gourmet.com/) for reception dinner catering
+- [Blood's catering](https://www.bloodscatering.com/) for the event tent, table, and chair rental
+- [SILO Distillery](https://www.silodistillery.com/silo-distillery) for reception alcohol catering (a Vermont licensed alcohol caterer required by venue / laws)
+- [Artisan Eats](https://www.artisaneatsvt.com/) for lunch sandwiches / wraps
+- [Best Septic](https://bestsepticvt.net/) for porta-potty and hand-washing station rental
 - [Home Depot](https://www.homedepot.com/p/rental/Honda-Power-Equipment-2000W-Inverter-Generator-EU2000T1A1-705515/309392156) for the generator rental
 
 ## Music
