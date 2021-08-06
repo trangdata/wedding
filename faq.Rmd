@@ -119,10 +119,9 @@ Huge thanks to our dear friend, [Silvia Canelón](https://silvia.rbind.io), for 
 And Trang's sister Ngọc for creating the invitation video.
 
 ```{r setup, include=FALSE}
-library(ragg)
+# library(ragg)
 knitr::opts_chunk$set(
-  echo = FALSE, warning = FALSE, message = FALSE,
-  dev = "ragg_png"
+  echo = FALSE, warning = FALSE, message = FALSE
 )
 # X11Font("Homemade Apple")
 # systemfonts::register_font("Homemade Apple",
