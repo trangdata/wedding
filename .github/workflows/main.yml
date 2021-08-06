@@ -1,9 +1,6 @@
 name: Render and Deploy RMarkdown Website
 'on':
-  push:
-  schedule:
-    # every day at 5:30 and 17:30 ET
-    - cron:  '30 9,21 * * *'
+  push
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -13,9 +10,6 @@ jobs:
         uses: actions/checkout@main
       - name: Install Package Dependencies
         run: |
-          wget --directory-prefix=~/.fonts https://fonts.gstatic.com/s/homemadeapple/v11/Qw3EZQFXECDrI2q789EKQZJob0x6XHgOiJM6.woff2
-          wget --directory-prefix=~/.fonts https://fonts.googleapis.com/css2?family=Homemade+Apple
-          fc-cache -rv
           Rscript -e "install.packages(c('remotes', 'ragg', 'rmarkdown', 'extrafont', 'distill', 'postcards', 'tidyverse', 'wordcloud', 'tidytext', 'lubridate'), repos = 'https://demo.rstudiopm.com/all/__linux__/bionic/latest')"
           Rscript -e "remotes::install_github('gadenbuie/ggpomological')"
       - name: Render Site
@@ -27,4 +21,3 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: _site
-
