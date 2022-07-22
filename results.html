@@ -50,16 +50,17 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  { color: #00769e; background-color: #f1f3f5; }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
+code span { color: #00769e; } /* Normal */
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { color: #20794d; } /* Attribute */
+code span.at { color: #657422; } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
-code span.cf { color: #007ba5; } /* ControlFlow */
+code span.cf { color: #00769e; } /* ControlFlow */
 code span.ch { color: #20794d; } /* Char */
 code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #5e5e5e; } /* Comment */
@@ -73,17 +74,18 @@ code span.fl { color: #ad0000; } /* Float */
 code span.fu { color: #4758ab; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #5e5e5e; } /* Information */
-code span.kw { color: #007ba5; } /* Keyword */
+code span.kw { color: #00769e; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
-code span.ot { color: #007ba5; } /* Other */
+code span.ot { color: #00769e; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
-code span.sc { color: #20794d; } /* SpecialChar */
+code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
 code span.st { color: #20794d; } /* String */
 code span.va { color: #111111; } /* Variable */
 code span.vs { color: #20794d; } /* VerbatimString */
 code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
+
 
   <!--radix_placeholder_meta_tags-->
   <title>Trang &amp; Daniel: Results</title>
@@ -456,7 +458,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   </style>
 
-  <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+  <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
   <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
   <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
@@ -1028,10 +1030,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     position: relative;
     margin-bottom: 2.5em;
     margin-top: 1.5em;
-  }
-
-  .figure img {
-    width: 100%;
   }
 
   .figure .caption {
@@ -1863,7 +1861,16 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
+        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
+          var fn = $(this).children()[0]
+          $(this).html(fn.shadowRoot.querySelector("sup"))
+          $(this).id = fn.id
+          fn.remove()
+        }
+        var refs = $(this).attr('data-cites').split(" ");
+        var refHtml = refs.map(function(ref) {
+          return "<p>" + $('#ref-' + ref).html() + "</p>";
+        }).join("\n");
         window.tippy(this, {
           allowHTML: true,
           content: refHtml,
@@ -1874,6 +1881,31 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
           placement: 'bottom-start'
         });
       });
+
+      // fix footnotes in tables (#411)
+      // replacing broken distill.pub feature
+      $('table d-footnote').each(function() {
+        // we replace internal showAtNode methode which is triggered when hovering a footnote
+        this.hoverBox.showAtNode = function(node) {
+          // ported from https://github.com/distillpub/template/pull/105/files
+          calcOffset = function(elem) {
+              let x = elem.offsetLeft;
+              let y = elem.offsetTop;
+              // Traverse upwards until an `absolute` element is found or `elem`
+              // becomes null.
+              while (elem = elem.offsetParent && elem.style.position != 'absolute') {
+                  x += elem.offsetLeft;
+                  y += elem.offsetTop;
+              }
+
+              return { left: x, top: y };
+          }
+          // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop
+          const bbox = node.getBoundingClientRect();
+          const offset = calcOffset(node);
+          this.show([offset.left + bbox.width, offset.top + bbox.height]);
+        }
+      })
 
       // clear polling timer
       clearInterval(tid);
@@ -1973,6 +2005,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // mark non-body figures created by knitr chunks as 100% width
     $('.layout-chunk').each(function(i, val) {
       var figures = $(this).find('img, .html-widget');
+      // ignore leaflet img layers (#106)
+      figures = figures.filter(':not(img[class*="leaflet"])')
       if ($(this).attr('data-layout') !== "l-body") {
         figures.css('width', '100%');
       } else {
@@ -1995,7 +2029,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // get rid of index.html references in header
     if (window.location.protocol !== "file:") {
       $('.distill-site-header a[href]').each(function(i,val) {
-        $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+        $(this).attr('href', $(this).attr('href').replace(/^index[.]html/, "./"));
       });
     }
 
@@ -2148,10 +2182,10 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     --aside-color:     rgba(0, 0, 0, 0.6);
     --fig-cap-color:   rgba(0, 0, 0, 0.6);
     /*-- Specify custom fonts ~~~ must be imported above   --*/
-    --heading-font:    'IM Fell English SC', serif;
+    --heading-font:    'Alegreya Sans SC', serif;
     --mono-font:       monospace;
     --body-font:       'IM Fell English', serif;
-    --navbar-font:     'IM Fell English SC', serif;  /* websites + blogs only */
+    --navbar-font:     'Alegreya Sans SC', serif;  /* websites + blogs only */
   }
 
   /*-- ARTICLE METADATA --*/
@@ -2181,17 +2215,17 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   .distill-site-header {
     --title-size:       25px;
-    --text-color:       rgba(255, 255, 255, 0.8);
+    --text-color:       #932210;
     --text-size:        18px;
-    --hover-color:      white;
-    --bkgd-color:       #0F2E3D;
+    --hover-color:      grey;
+    --bkgd-color:       #FFF7F5;
   }
 
   .distill-site-footer {
-    --text-color:       rgba(255, 255, 255, 0.8);
+    --text-color:       #932210;
     --text-size:        15px;
-    --hover-color:      white;
-    --bkgd-color:       #0F2E3D;
+    --hover-color:      grey;
+    --bkgd-color:       #FFF7F5;
   }
 
   /*-- Additional custom styles --*/
@@ -2370,7 +2404,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2410,6 +2444,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <a href="faq.html">FAQ</a>
 <a href="registry.html">Registry</a>
 <a href="results.html">Results</a>
+<a href="vietnam.html">Việt Nam</a>
 <a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
 </div>
 </nav>
@@ -2431,19 +2466,26 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <nav class="l-text toc figcaption" id="TOC">
 <h3>Contents</h3>
 <ul>
-<li><a href="#race-results">Race Results</a></li>
-<li><a href="#volunteers">Volunteers</a></li>
-<li><a href="#vendors">Vendors</a></li>
-<li><a href="#music">Music</a></li>
+<li><a href="#race-results" id="toc-race-results">Race Results</a></li>
+<li><a href="#volunteers" id="toc-volunteers">Volunteers</a></li>
+<li><a href="#vendors" id="toc-vendors">Vendors</a></li>
+<li><a href="#music" id="toc-music">Music</a></li>
 </ul>
 </nav>
 </div>
 <h2 id="race-results">Race Results</h2>
-<p>On Sunday, many elite and recreational runners braved the rain and fatigue to run the Off-the-Grid 5K Race. Course details are available in <a href="/faq.html#running-course">the FAQ</a>. We are grateful to former Hanover High Cross Country coach, Jim Eakin, for proper timing and setting of the finish line. Here are the results:</p>
+<p>On Sunday, many elite and recreational runners braved the rain and
+fatigue to run the Off-the-Grid 5K Race. Course details are available in
+<a href="/faq.html#running-course">the FAQ</a>. We are grateful to
+former Hanover High Cross Country coach, Jim Eakin, for proper timing
+and setting of the finish line. Here are the results:</p>
 <iframe class="airtable-embed" src="https://airtable.com/embed/shrB7exrpBJmPuMIi?backgroundColor=orange&amp;viewControls=on" frameborder="0" onmousewheel width="100%" height="533" style="background: transparent; border: 1px solid #ccc;">
 </iframe>
 <h2 id="volunteers">Volunteers</h2>
-<p>Thanks everyone who helped make the wedding wonderful. We very much wanted the event to be a collaborative one that celebrated not just us but also the talents of our guests. A special thank you to the following individuals who played major roles:</p>
+<p>Thanks everyone who helped make the wedding wonderful. We very much
+wanted the event to be a collaborative one that celebrated not just us
+but also the talents of our guests. A special thank you to the following
+individuals who played major roles:</p>
 <ul>
 <li>Kurt Wheeler – Ceremony Officiant</li>
 <li>Daniel Lelchuk – Cello</li>
@@ -2455,24 +2497,47 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <li>Mathew Griffin &amp; Jordan Hunter: Improv Workshop Leads</li>
 <li>Brandon Johnson – Audio/Video Engineer</li>
 <li>Bennett Prescott – Audio Advisor</li>
-<li>Marissa &amp; Diego Legrand whose 2018 campground wedding was a major inspiration</li>
+<li>Marissa &amp; Diego Legrand whose 2018 campground wedding was a
+major inspiration</li>
 <li>Becky Hirschey – Master of Logistics</li>
 </ul>
-<p>And everyone else who made the wedding possible and helped along the way.</p>
+<p>And everyone else who made the wedding possible and helped along the
+way.</p>
 <h2 id="vendors">Vendors</h2>
-<p>We did have the help of several paid vendors, which we’d like to acknowledge:</p>
+<p>We did have the help of several paid vendors, which we’d like to
+acknowledge:</p>
 <ul>
-<li>Path of Life Garden &amp; <a href="https://www.greatriveroutfitters.com/">Great River Outfitters</a> for the venue, campground, and river trip</li>
-<li><a href="https://www.barefoot-gourmet.com/">Barefoot Gourmet</a> for reception dinner catering</li>
-<li><a href="https://www.bloodscatering.com/">Blood’s catering</a> for the event tent, table, and chair rental</li>
-<li><a href="https://www.silodistillery.com/silo-distillery">SILO Distillery</a> for reception alcohol catering (a Vermont licensed alcohol caterer required by venue / laws)</li>
-<li><a href="https://www.artisaneatsvt.com/">Artisan Eats</a> for lunch sandwiches / wraps</li>
-<li><a href="https://bestsepticvt.net/">Best Septic</a> for porta-potty and hand-washing station rental</li>
-<li><a href="https://www.homedepot.com/p/rental/Honda-Power-Equipment-2000W-Inverter-Generator-EU2000T1A1-705515/309392156">Home Depot</a> for the generator rental</li>
+<li>Path of Life Garden &amp; <a
+href="https://www.greatriveroutfitters.com/">Great River Outfitters</a>
+for the venue, campground, and river trip</li>
+<li><a href="https://www.barefoot-gourmet.com/">Barefoot Gourmet</a> for
+reception dinner catering</li>
+<li><a href="https://www.bloodscatering.com/">Blood’s catering</a> for
+the event tent, table, and chair rental</li>
+<li><a href="https://www.silodistillery.com/silo-distillery">SILO
+Distillery</a> for reception alcohol catering (a Vermont licensed
+alcohol caterer required by venue / laws)</li>
+<li><a href="https://www.artisaneatsvt.com/">Artisan Eats</a> for lunch
+sandwiches / wraps</li>
+<li><a href="https://bestsepticvt.net/">Best Septic</a> for porta-potty
+and hand-washing station rental</li>
+<li><a
+href="https://www.homedepot.com/p/rental/Honda-Power-Equipment-2000W-Inverter-Generator-EU2000T1A1-705515/309392156">Home
+Depot</a> for the generator rental</li>
 </ul>
 <h2 id="music">Music</h2>
-<p>For music, we made several Spotify playlists by occasion: <a href="https://open.spotify.com/playlist/4Rka7unZ3DvtEMEXQ7YGPo?si=df44ce78a1614cee">Bonfire</a>, <a href="https://open.spotify.com/playlist/51BmonCD5SAwSgyaJksdW2?si=cb0eb595a3aa479d">Romantic background</a>, <a href="https://open.spotify.com/playlist/57OX5egKZ50BRHaFl9vzF2?si=8ebfb7b306454f51">Prime dance</a>, <a href="https://open.spotify.com/playlist/4KlyFIKSVPQ9pAQrpbSLsS?si=7cb1d7cc1d6a4ab8">Late night</a>, and <a href="https://open.spotify.com/playlist/5XXIW6wodJVN2nKD2zcJYH?si=f967e8cac2094d70">Special</a>.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<p>For music, we made several Spotify playlists by occasion: <a
+href="https://open.spotify.com/playlist/4Rka7unZ3DvtEMEXQ7YGPo?si=df44ce78a1614cee">Bonfire</a>,
+<a
+href="https://open.spotify.com/playlist/51BmonCD5SAwSgyaJksdW2?si=cb0eb595a3aa479d">Romantic
+background</a>, <a
+href="https://open.spotify.com/playlist/57OX5egKZ50BRHaFl9vzF2?si=8ebfb7b306454f51">Prime
+dance</a>, <a
+href="https://open.spotify.com/playlist/4KlyFIKSVPQ9pAQrpbSLsS?si=7cb1d7cc1d6a4ab8">Late
+night</a>, and <a
+href="https://open.spotify.com/playlist/5XXIW6wodJVN2nKD2zcJYH?si=f967e8cac2094d70">Special</a>.</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
