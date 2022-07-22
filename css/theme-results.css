@@ -35,10 +35,10 @@ html {
   --aside-color:     rgba(0, 0, 0, 0.6);
   --fig-cap-color:   rgba(0, 0, 0, 0.6);
   /*-- Specify custom fonts ~~~ must be imported above   --*/
-  --heading-font:    'IM Fell English SC', serif;
+  --heading-font:    'Alegreya Sans SC', serif;
   --mono-font:       monospace;
   --body-font:       'IM Fell English', serif;
-  --navbar-font:     'IM Fell English SC', serif;  /* websites + blogs only */
+  --navbar-font:     'Alegreya Sans SC', serif;  /* websites + blogs only */
 }
 
 /*-- ARTICLE METADATA --*/
@@ -68,17 +68,17 @@ d-appendix {
 
 .distill-site-header {
   --title-size:       25px;
-  --text-color:       rgba(255, 255, 255, 0.8);
+  --text-color:       #932210;
   --text-size:        18px;
-  --hover-color:      white;
-  --bkgd-color:       #0F2E3D;
+  --hover-color:      grey;
+  --bkgd-color:       #FFF7F5;
 }
 
 .distill-site-footer {
-  --text-color:       rgba(255, 255, 255, 0.8);
+  --text-color:       #932210;
   --text-size:        15px;
-  --hover-color:      white;
-  --bkgd-color:       #0F2E3D;
+  --hover-color:      grey;
+  --bkgd-color:       #FFF7F5;
 }
 
 /*-- Additional custom styles --*/

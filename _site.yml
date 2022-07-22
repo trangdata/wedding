@@ -25,4 +25,6 @@ navbar:
       href: registry.html
     - text: "Results"
       href: results.html
+    - text: "Việt Nam"
+      href: vietnam.html
 output: distill::distill_article

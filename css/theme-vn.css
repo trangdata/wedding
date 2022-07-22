@@ -13,11 +13,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=IM+Fell+English:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@700&family=Mea+Culpa&family=Nunito&family=Signika+Negative&display=swap');
 
 html {
+
   /*-- Main font sizes --*/
-  --title-size:      50px;
-  --body-size:       1.3rem;
+  --title-size:      60px;
+  --body-size:       1.1rem;
   --code-size:       14px;
   --aside-size:      14px;
   --fig-cap-size:    13px;
@@ -30,7 +32,7 @@ html {
   /*-- Specify custom fonts ~~~ must be imported above   --*/
   --heading-font:    'Alegreya Sans SC', serif;
   --mono-font:       monospace;
-  --body-font:       'IM Fell English', serif;
+  --body-font:       'Nunito', serif;
   --navbar-font:     'Alegreya Sans SC', serif;  /* websites + blogs only */
 }
 
@@ -74,8 +76,8 @@ d-appendix {
   --bkgd-color:       #FFF7F5;
 }
 
-/*-- Additional custom styles -----------------------------------------------*/
-/* Add any additional CSS rules below */
+/*-- Additional custom styles --*/
+/* Add any additional CSS rules below                      */
 
 /* Change bullets */
 ul > li::marker {
@@ -96,59 +98,16 @@ d-article table th {
   padding: 2px 8px 20px 0px;
 }
 
-/* Title space */
-d-title {
-  background-image: url(img/anni.jpg);
-  background-size: cover;
-  background-position: 50% 50%;
-  padding: 5em 0em 55em 0em;
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: minmax(100px, auto);
 }
 
-/* Resizing background image for desktop */
-@media (min-width: 481px) {
-  d-title {
-    background-image: url(img/anni.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+.adjust-line-height {
+  line-height: 0.5em;
 }
 
-/* Resizing background image for mobile */
-@media (max-width: 480px) {
-  d-title {
-    background-image: url(img/anni.jpg);
-    background-repeat: no-repeat;
-    background-size: contain ;
-  }
-}
-
-/* Postcard/Home page */
-
-/* navigation bar */
-.distill-site-header {
-  line-height: 1.5rem;
-}
-
-/* heading above paragraph */
-h3 {
-  font-size: 2rem;
-  font-weight: 500;
-}
-
-/* paragraph text */
-body {
-  font-size: 1.25rem;
-}
-
-img[src$="#carbon"] {
-  display: block;
-  border-radius: 10px;
-}
-
-/* https://css-tricks.com/fluid-width-video/ */
-video {
-  /* override other styles to make responsive */
-  width: 100%    !important;
-  height: auto   !important;
-  border-radius: 10px;
+.adjust-line-height-small {
+  line-height: 0.7em;
 }

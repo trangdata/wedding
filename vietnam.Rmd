@@ -1,0 +1,117 @@
+---
+title: "Thiệp mời"
+output: 
+  distill::distill_article:
+    toc: false
+    theme: css/theme-vn.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+<center>
+<div class="wrapper">
+<div>
+Ông bà:
+
+<p style="font-size:20px; font-style:italic">
+*Lê Đình Lăng*
+</p>
+<p style="font-size:20px; font-style:italic">
+*Nguyễn Thị Hà*
+</p>
+Vũng Tàu, Bà Rịa — Vũng Tàu 
+</div>
+<div>
+Ông bà:
+
+<p style="font-size:20px; font-style:italic">
+*Marty Himmelstein*
+</p>
+<p style="font-size:20px; font-style:italic">
+*Becky Hirschey*
+</p>
+Hanover, NH
+</div>
+</div>
+
+
+<br>
+
+Trân trọng báo tin **Lễ Thành Hôn** của con chúng tôi:
+
+
+<div class="adjust-line-height">
+<br>
+<p style="font-family: 'Mea Culpa'; font-size:35px; font-style:italic">
+*Daniel Himmelstein*
+</p>
+
+<p style="font-family: 'Mea Culpa'; font-size:35px; font-style:italic">
+&
+</p>
+<p style="font-family: 'Mea Culpa'; font-size:35px; font-style:italic">
+*Lê Thảo Trang*
+</p>
+</div>
+
+<br>
+Hôn lễ sẽ được cử hành tại/
+The celebration will be at 
+<div class="adjust-line-height-small">
+<br>
+<p style="font-size:24px; font-style:italic">
+**Palace Hotel**
+</p>
+1 Nguyễn Trãi, Phường 1, thành phố Vũng Tàu
+<br>
+</div>
+<br>
+vào lúc 18 giờ 30 phút
+<div class="adjust-line-height-small">
+<br>
+**_Thứ Hai, ngày 26 tháng 12 năm 2022_**
+
+**_Monday, December 26, 2022_**
+
+(nhằm ngày 04 tháng 12 năm Nhâm Dần)
+</div>
+<br>
+
+Sự hiện diện của quý khách là niềm vinh hạnh cho gia đình chúng tôi.
+
+Trân trọng kính mời!
+
+</center>
+
+## For alien visitors
+
+*Welcome!*
+
+I'm thrilled that you're coming to visit my beautiful country!
+Sincerely!
+
+### Lodging
+
+If you would like to stay at the 4-star [Palace hotel](https://goo.gl/maps/mbVEmU1ok68hXiRw7),
+you can book via Priceline, Booking.com, Expedia, etc.
+Unfortunately, the hotel does not offer a group discount.
+Nightly rate is about $50 including breakfast.
+
+There are a few AirBnB options but they can be a little further away from city center.
+We're currently looking at [this space](https://www.airbnb.com/rooms/48702865)
+that is right in the center and can accommodate up to 12 people.
+Let us know if you're interested!
+
+### Việt Nam visa 
+
+### Trang & Daniel's itinerary 
+
+We will be in Viet Nam from Nov 27 to Dec 28, 2022.
+Let me know when you arrive so I can be your guide for a few days!
+
+### Things to do
+
+We're working on a [Viet Nam must-sees doc](https://docs.google.com/document/d/10TBIXHtapfQSFwOBlhvAMOuZdbCAjRRfFHmfg3lmbMc/edit?usp=sharing) here.
+Please let me know if you have any additional questions so I can add to _Notes_.
