@@ -140,7 +140,6 @@ available as a reward booking for 44k United MileagePlus miles & $96.07 per head
 
 #### Việt Nam visa
 
-<<<<<<< HEAD
 Foreign visitors will need a visa.
 If your stay does not exceed 30 days and includes only a single entry into Vietnam,
 you can get an [e-visa here](https://evisa.xuatnhapcanh.gov.vn/en_US/web/guest/khai-thi-thuc-dien-tu/cap-thi-thuc-dien-tu).
