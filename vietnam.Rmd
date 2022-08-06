@@ -119,12 +119,16 @@ Let us know if you're interested!
 ## Travel
 
 The closest airport to Vung Tau is SGN (Saigon / Ho Chi Minh City).
-We'll update with information on ground transporation from the airport.
+We'll update with information on ground transportation from the airport.
 
 #### Trang & Daniel's itinerary 
 
 We will be in Viet Nam from Nov 27 to Dec 28, 2022.
-Let us know when you arrive, so Trang can be your guide for a few days!
+Let us know when you arrive so Trang can be your guide for a few days!
+
+<aside>
+Of course, you're encouraged to stay longer than Dec 28!
+</aside>
 
 On the way back to the states, Daniel, Trang, & brother Joshua have booked the following flights
 available as a reward booking for 44k United MileagePlus miles & $96.07 per head:
@@ -136,26 +140,58 @@ available as a reward booking for 44k United MileagePlus miles & $96.07 per head
 
 #### Việt Nam visa
 
+<<<<<<< HEAD
 Foreign visitors will need a visa.
 If your stay does not exceed 30 days and includes only a single entry into Vietnam,
 you can get an [e-visa here](https://evisa.xuatnhapcanh.gov.vn/en_US/web/guest/khai-thi-thuc-dien-tu/cap-thi-thuc-dien-tu).
 The e-visa process is entirely online, takes ~3 days to process, and costs $25.
+We recommend paying with a credit card with no foreign transaction fee. 
 
 For other types of visas, see the [USA Embassy site](https://vietnamembassy-usa.org/consular/visa-application-process) for more information.
 We will provide you with the contact details for Trang's father,
 should the visa requires a sponsor or destination address.
+
+Please let us know if you have any further questions!
+
+Reading:
+
+- [Vietnam International Travel Information (state.gov)](https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Vietnam.html#/)
+
+- [vietnamembassy-usa.org](https://vietnamembassy-usa.org/consular/visa-application-process)
 
 ### Things to do
 
 We're working on a [Viet Nam must-sees doc](https://docs.google.com/document/d/10TBIXHtapfQSFwOBlhvAMOuZdbCAjRRfFHmfg3lmbMc/edit?usp=sharing) here.
 Please let us know if you have any additional questions.
 
-<!-- 
-### Tips
+### Monie
 
-- credit card with no foreign tx fee
-- bring debit card to get cash (VN dong)
-- $10 per person shuttle from airport: (make sure to tell them you're going to Vung Tau)
-  companies: Hoa Mai, Thanh Vinh, Toan Thang, Huy Hoang, Anh Quoc 
+1 USD ~= 23,000 VND
 
--->
+The best way to get Viet Nam Dong (VND) is from an ATM, so bring a debit card!
+I'm not sure how much the Exchange Booths in Viet Nam overcharge you, but I generally avoid them at other airports!
+
+There are [2 ATMs in the arrivals hall](https://www.theworldinmypocket.co.uk/how-not-to-get-scammed-at-saigon-ho-chi-minh-city-airport/) at SGN airport: a _BIDV_ and a _citibank_, facing each other.
+If you're taking a taxi from the airport, you can also ask them to stop at an ATM on the way to your destination.
+The ATM fee is usually ~3% of the amount you withdraw.
+
+We also recommend bringing some cash with you from here (USD).
+You can always go to any bank in Viet Nam to exchange to VND
+(no fee, unlike the Exchange Booth).
+<!-- # TODO: check with mum on this -->
+
+Reading:
+
+- [ATMs in Ho Chi Minh City | i Tour Vietnam Blogs (itourvn.com)](https://www.itourvn.com/blog/is-it-easy-to-get-money-out-of-atms-in-ho-chi-minh-city)
+
+- [How NOT to get scammed at Saigon Airport (theworldinmypocket.co.uk)](https://www.theworldinmypocket.co.uk/how-not-to-get-scammed-at-saigon-ho-chi-minh-city-airport/)
+
+### Getting to Vung Tau
+
+There are shuttles from the airport every 20 mins or so, unless you arrive at a strange time.
+Make sure to tell them you're going to [Vung Tau](https://youtu.be/gld41YRCqC0).
+Cost is ~$10/person and the shuttle will take you to your exact address.
+Depending on traffic, travel time is 2—2.5 hours.
+Some popular shuttle companies are: Hoa Mai, Thanh Vinh, Toan Thang, Huy Hoang, and Anh Quoc.
+
+

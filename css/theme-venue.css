@@ -35,6 +35,12 @@ html {
   --navbar-font:     'Alegreya Sans SC', serif;  /* websites + blogs only */
 }
 
+/* paragraph text */
+body {
+  background-color: #FFF7F4;
+}
+
+
 /*-- ARTICLE METADATA --*/
 d-byline {
   --heading-size:    0.8rem;
@@ -65,14 +71,14 @@ d-appendix {
   --text-color:       #932210;
   --text-size:        18px;
   --hover-color:      grey;
-  --bkgd-color:       #FFF7F5;
+  --bkgd-color:       #FFF7F4;
 }
 
 .distill-site-footer {
   --text-color:       #932210;
   --text-size:        15px;
   --hover-color:      grey;
-  --bkgd-color:       #FFF7F5;
+  --bkgd-color:       #FFF7F4;
 }
 
 /*-- Additional custom styles --*/
