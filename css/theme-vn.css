@@ -116,3 +116,7 @@ d-article table th {
 .adjust-line-height-small {
   line-height: 0.7em;
 }
+
+.adjust-line-height-medium {
+  line-height: 0.8em;
+}
