@@ -12,30 +12,29 @@ knitr::opts_chunk$set(echo = FALSE)
 
 <center>
 <div class="wrapper">
-<div>
+<div class="adjust-line-height-medium">
 Ông bà:
 
 <p style="font-size:20px; font-style:italic">
 *Lê Đình Lăng*
-</p>
-<p style="font-size:20px; font-style:italic">
+<br/>
+<br/>
 *Nguyễn Thị Hà*
 </p>
 Vũng Tàu, Bà Rịa — Vũng Tàu 
 </div>
-<div>
+<div class="adjust-line-height-medium">
 Ông bà:
 
 <p style="font-size:20px; font-style:italic">
 *Marty Himmelstein*
-</p>
-<p style="font-size:20px; font-style:italic">
+<br/>
+<br/>
 *Becky Hirschey*
 </p>
 Hanover, NH
 </div>
 </div>
-
 
 <br>
 
@@ -152,7 +151,7 @@ should the visa requires a sponsor or destination address.
 
 Please let us know if you have any further questions!
 
-Reading:
+_Reading_:
 
 - [Vietnam International Travel Information (state.gov)](https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Vietnam.html#/)
 
@@ -168,18 +167,22 @@ Please let us know if you have any additional questions.
 1 USD ~= 23,000 VND
 
 The best way to get Viet Nam Dong (VND) is from an ATM, so bring a debit card!
-I'm not sure how much the Exchange Booths in Viet Nam overcharge you, but I generally avoid them at other airports!
+We're not sure how much the Exchange Booths in Viet Nam overcharge you, but we generally avoid them at other airports!
 
 There are [2 ATMs in the arrivals hall](https://www.theworldinmypocket.co.uk/how-not-to-get-scammed-at-saigon-ho-chi-minh-city-airport/) at SGN airport: a _BIDV_ and a _citibank_, facing each other.
 If you're taking a taxi from the airport, you can also ask them to stop at an ATM on the way to your destination.
 The ATM fee is usually ~3% of the amount you withdraw.
 
-We also recommend bringing some cash with you from here (USD).
+We also recommend bringing some USD cash with you from the US.
 You can always go to any bank in Viet Nam to exchange to VND
 (no fee, unlike the Exchange Booth).
 <!-- # TODO: check with mum on this -->
 
-Reading:
+<aside>
+There is no limit but if you're bringing more than $5,000, be sure to declare at customs.
+</aside>
+
+_Reading_:
 
 - [ATMs in Ho Chi Minh City | i Tour Vietnam Blogs (itourvn.com)](https://www.itourvn.com/blog/is-it-easy-to-get-money-out-of-atms-in-ho-chi-minh-city)
 
@@ -188,6 +191,7 @@ Reading:
 ### Getting to Vung Tau
 
 There are shuttles from the airport every 20 mins or so, unless you arrive at a strange time.
+You should see a shuttle lane when you get outside.
 Make sure to tell them you're going to [Vung Tau](https://youtu.be/gld41YRCqC0).
 Cost is ~$10/person and the shuttle will take you to your exact address.
 Depending on traffic, travel time is 2—2.5 hours.
