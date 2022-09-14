@@ -786,6 +786,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -1858,15 +1859,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
-          var fn = $(this).children()[0]
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -2428,7 +2435,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2486,27 +2493,17 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
 <div class="d-article">
-<p>The event will be at the <a
-href="https://greatriveroutfitters.com/news-and-events/welcome-to-the-path-of-life-sculpture-garden"><strong>Path
-of Life Sculpture Garden</strong></a>, which is operated by <a
-href="https://greatriveroutfitters.com">Great River Outfitters</a>.</p>
-<p>The venue is located in <a
-href="https://www.artisanspark.net/">Artisan’s Park</a>, a “collection
-of 8 unique Vermont businesses.” Once at Artisan’s Park, you enter the
-garden through the Great River Outfitters shop, passing under the
-railroad tracks via the <em>Tunnel of Oblivion</em>. The garden is
-enclosed on one side by the <a
-href="https://www.gwrr.com/railroads/north_america/new_england_central_railroad#m_tab-one-panel">New
-England Central Railroad</a> and the other by the mighty <a
-href="https://arcg.is/jWnrb">Connecticut River</a>.</p>
+<p>The event will be at the <a href="https://greatriveroutfitters.com/news-and-events/welcome-to-the-path-of-life-sculpture-garden"><strong>Path of Life Sculpture Garden</strong></a>,
+which is operated by <a href="https://greatriveroutfitters.com">Great River Outfitters</a>.</p>
+<p>The venue is located in <a href="https://www.artisanspark.net/">Artisan’s Park</a>, a “collection of 8 unique Vermont businesses.”
+Once at Artisan’s Park, you enter the garden through the Great River Outfitters shop,
+passing under the railroad tracks via the <em>Tunnel of Oblivion</em>.
+The garden is enclosed on one side by the <a href="https://www.gwrr.com/railroads/north_america/new_england_central_railroad#m_tab-one-panel">New England Central Railroad</a> and the other by the mighty <a href="https://arcg.is/jWnrb">Connecticut River</a>.</p>
 <p>Address:</p>
 <ul>
 <li>36 Park Road, Windsor, Vermont 05089</li>
-<li>On <a
-href="https://www.google.com/maps/place/Path+of+Life+Sculpture+Garden/@43.5134707,-72.3999229,15z/data=!4m2!3m1!1s0x0:0xe51fd9530f5b7312?sa=X&amp;ved=2ahUKEwilzc7qlc7wAhWWWc0KHbcWCGAQ_BIwG3oECEMQBQ">Google
-Maps</a></li>
-<li>On <a
-href="https://www.openstreetmap.org/way/308153779#map=18/43.51397/-72.40171">OpenStreetMap</a></li>
+<li>On <a href="https://www.google.com/maps/place/Path+of+Life+Sculpture+Garden/@43.5134707,-72.3999229,15z/data=!4m2!3m1!1s0x0:0xe51fd9530f5b7312?sa=X&amp;ved=2ahUKEwilzc7qlc7wAhWWWc0KHbcWCGAQ_BIwG3oECEMQBQ">Google Maps</a></li>
+<li>On <a href="https://www.openstreetmap.org/way/308153779#map=18/43.51397/-72.40171">OpenStreetMap</a></li>
 </ul>
 <p>Venue Contact:</p>
 <ul>
@@ -2516,46 +2513,32 @@ href="https://www.openstreetmap.org/way/308153779#map=18/43.51397/-72.40171">Ope
 <h2 id="notes">Notes</h2>
 <ul>
 <li>No pets allowed</li>
-<li>Windsor, VT is part of the <a
-href="http://matinic.us/defining-uv/#view">Upper Valley region</a>,
-where Daniel grew up.</li>
-<li><a
-href="https://greatriveroutfitters.com/news-and-events/path-of-life-garden-guide-a-map">Sculpture
-guide</a></li>
-<li><a
-href="https://greatriveroutfitters.com/news-and-events/the-story-behind-thep-path-of-life-garden">Sculpture
-garden history</a></li>
+<li>Windsor, VT is part of the <a href="http://matinic.us/defining-uv/#view">Upper Valley region</a>, where Daniel grew up.</li>
+<li><a href="https://greatriveroutfitters.com/news-and-events/path-of-life-garden-guide-a-map">Sculpture guide</a></li>
+<li><a href="https://greatriveroutfitters.com/news-and-events/the-story-behind-thep-path-of-life-garden">Sculpture garden history</a></li>
 </ul>
 <h2 id="additional-photos">Additional photos</h2>
 <figure>
 <img src="img/river-up.jpg" alt="Looking north from the beach." />
-<figcaption aria-hidden="true">Looking north from the
-beach.</figcaption>
+<figcaption aria-hidden="true">Looking north from the beach.</figcaption>
 </figure>
 <figure>
 <img src="img/shower.jpg" alt="Solar bag setup for shower." />
 <figcaption aria-hidden="true">Solar bag setup for shower.</figcaption>
 </figure>
 <figure>
-<img src="img/tent3.jpg"
-alt="We have reserved four “deluxe tents” with cots and sleeping bags for at least 6 persons/tent. This is a good option if you do not have a tent. See Camping." />
-<figcaption aria-hidden="true">We have reserved four “deluxe tents” with
-cots and sleeping bags for at least 6 persons/tent. This is a good
-option if you do not have a tent. See <a
-href="_site/camping.html">Camping</a>.</figcaption>
+<img src="img/tent3.jpg" alt="We have reserved four “deluxe tents” with cots and sleeping bags for at least 6 persons/tent. This is a good option if you do not have a tent. See Camping." />
+<figcaption aria-hidden="true">We have reserved four “deluxe tents” with cots and sleeping bags for at least 6 persons/tent. This is a good option if you do not have a tent. See <a href="_site/camping.html">Camping</a>.</figcaption>
 </figure>
 <figure>
-<img src="img/daniel-run.jpg"
-alt="Test run. The path will be more groomed on the day of the race." />
-<figcaption aria-hidden="true">Test run. The path will be more groomed
-on the day of the race.</figcaption>
+<img src="img/daniel-run.jpg" alt="Test run. The path will be more groomed on the day of the race." />
+<figcaption aria-hidden="true">Test run. The path will be more groomed on the day of the race.</figcaption>
 </figure>
 <figure>
 <img src="img/charred.jpg" alt="One of the sculpture works." />
 <figcaption aria-hidden="true">One of the sculpture works.</figcaption>
 </figure>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

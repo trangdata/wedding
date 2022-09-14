@@ -786,6 +786,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -1858,15 +1859,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
-          var fn = $(this).children()[0]
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -2427,7 +2434,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2486,69 +2493,50 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 <div class="d-article">
 <p>There will be guest parking at the venue.</p>
-<p>If you can’t drive / bike to the venue, consider any of the following
-options:</p>
+<p>If you can’t drive / bike to the venue, consider any of the following options:</p>
 <h2 id="air">Air</h2>
 <ul>
-<li><a href="https://www.massport.com/logan-airport/">Boston Logan
-International Airport</a> (BOS), with <a
-href="https://www.flightconnections.com/flights-to-boston-bos">global
-service</a>.</li>
-<li><a href="https://www.flymanchester.com/">Manchester-Boston Regional
-Airport</a> (MHT). <a
-href="https://www.flightconnections.com/flights-to-manchester-mht">serviced</a>
-by American, United, and Southwest.</li>
-<li><a href="https://lebanonnh.gov/150/Airport">Lebanon Municipal
-Airport</a> (LEB), serviced by Cape Air with <a
-href="https://www.flightconnections.com/flights-from-lebanon-leb">flights
-from</a> BOS (JetBlue codeshare) and White Plains (HPN). There is little
-convenience to these flights over ground transportation, but the small
-planes do make for a memorable experience.</li>
+<li><a href="https://www.massport.com/logan-airport/">Boston Logan International Airport</a> (BOS),
+with <a href="https://www.flightconnections.com/flights-to-boston-bos">global service</a>.</li>
+<li><a href="https://www.flymanchester.com/">Manchester-Boston Regional Airport</a> (MHT).
+<a href="https://www.flightconnections.com/flights-to-manchester-mht">serviced</a> by American, United, and Southwest.</li>
+<li><a href="https://lebanonnh.gov/150/Airport">Lebanon Municipal Airport</a> (LEB),
+serviced by Cape Air with <a href="https://www.flightconnections.com/flights-from-lebanon-leb">flights from</a> BOS (JetBlue codeshare) and White Plains (HPN).
+There is little convenience to these flights over ground transportation,
+but the small planes do make for a memorable experience.</li>
 </ul>
 <h2 id="ground">Ground</h2>
 <h3 id="bus">Bus</h3>
-<p>The <a href="https://dartmouthcoach.com/">Dartmouth Coach</a>
-provides service from Boston or NYC to Lebanon/Hanover, NH. It is one of
-the finest motorcoach experiences around, operated by seasoned drivers
-with gravitas.</p>
-<p>Boston service picks up at Logan Airport (BOS) or South Station. New
-York service leaves from Midtown Manhattan between Lexington and 3rd
-Avenue at 150 East 42nd Street, New York, NY 10017.</p>
+<p>The <a href="https://dartmouthcoach.com/">Dartmouth Coach</a> provides service from Boston or NYC to Lebanon/Hanover, NH.
+It is one of the finest motorcoach experiences around, operated by seasoned drivers with gravitas.</p>
+<p>Boston service picks up at Logan Airport (BOS) or South Station.
+New York service leaves from Midtown Manhattan between Lexington and 3rd Avenue at 150 East 42nd Street, New York, NY 10017.</p>
 <figure>
-<img src="img/dartmouth-coach-all-route-map.jpg"
-alt="Dartmouth Coach route map." />
+<img src="img/dartmouth-coach-all-route-map.jpg" alt="Dartmouth Coach route map." />
 <figcaption aria-hidden="true">Dartmouth Coach route map.</figcaption>
 </figure>
 <h3 id="train">Train</h3>
-<p>The Amtrak <a href="https://www.amtrak.com/vermonter-train">Vermonter
-Line</a> is slated to resume service on July 19. Northbound service <a
-href="https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/timetables/Vermonter-Schedule-P55-031620.pdf">arrives</a>
-to the Windsor, VT station at 5:56 pm daily. Southbound service departs
-Windsor at 11:56 am daily. The Windsor, VT Amtrack station is just <a
-href="https://goo.gl/maps/ijRdsDQaRDRJXgS5A">3 miles</a> from the Venue!
-The White River Junction Amtrak station is further north, and is better
-if you’d like to stop by Norwich, VT or Hanover, NH before of after the
-event.</p>
+<p>The Amtrak <a href="https://www.amtrak.com/vermonter-train">Vermonter Line</a> is slated to resume service on July 19.
+Northbound service <a href="https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/timetables/Vermonter-Schedule-P55-031620.pdf">arrives</a> to the Windsor, VT station at 5:56 pm daily.
+Southbound service departs Windsor at 11:56 am daily.
+The Windsor, VT Amtrack station is just <a href="https://goo.gl/maps/ijRdsDQaRDRJXgS5A">3 miles</a> from the Venue!
+The White River Junction Amtrak station is further north,
+and is better if you’d like to stop by Norwich, VT or Hanover, NH before of after the event.</p>
 <figure>
-<img src="img/amtrak-vermonter-map.png"
-alt="Route Map of the Amtrak Vermonter Line. Destinations outlined in green." />
-<figcaption aria-hidden="true">Route Map of the Amtrak Vermonter Line.
-Destinations outlined in green.</figcaption>
+<img src="img/amtrak-vermonter-map.png" alt="Route Map of the Amtrak Vermonter Line. Destinations outlined in green." />
+<figcaption aria-hidden="true">Route Map of the Amtrak Vermonter Line. Destinations outlined in green.</figcaption>
 </figure>
 <h2 id="carpool">Carpool</h2>
-<p>For guests that don’t have a car or need a local pick-up, hopefully
-we can help coordinate that with other guests. If you think you will
-need a ride or might be able to offer a ride, put your information in <a
-href="https://docs.google.com/spreadsheets/d/1c_IF5f0gY2EpwDWvSkv1FamWb_bG4eqKfgozGD8xTK8/edit">this
-spreadsheet</a>.</p>
+<p>For guests that don’t have a car or need a local pick-up,
+hopefully we can help coordinate that with other guests.
+If you think you will need a ride or might be able to offer a ride,
+put your information in <a href="https://docs.google.com/spreadsheets/d/1c_IF5f0gY2EpwDWvSkv1FamWb_bG4eqKfgozGD8xTK8/edit">this spreadsheet</a>.</p>
 <h2 id="lodging">Lodging</h2>
-<p>See <a href="camping">Camping</a> for on-site and off-site lodging
-info.</p>
+<p>See <a href="camping">Camping</a> for on-site and off-site lodging info.</p>
 <h2 id="map">Map</h2>
 <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1g9SPRlTdjVpiS7HSqSxd1y2EVr-wGO_T" width="640" height="480">
 </iframe>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
