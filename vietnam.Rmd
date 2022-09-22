@@ -93,7 +93,7 @@ Sincerely!
 
 ### Events
 
-You're invited to two official events on December 26,
+You're invited to two official events on Monday, December 26,
 both in the peninsular city of Vũng Tàu where one can watch both sunrise and sunset over the ocean.
 First is the morning engagement ceremony called Đám Hỏi,
 where the groom's family & friends present dowric offerings to the bride's family
@@ -111,14 +111,32 @@ The hotel finds it too logistically challenging to offer any group discount.
 </aside>
 
 There are a few AirBnB options but they can be a little further away from city center.
-We're currently looking at [this space](https://www.airbnb.com/rooms/48702865)
-that is right in the center and can accommodate up to 12 people.
-Let us know if you're interested!
 
 ## Travel
 
 The closest airport to Vung Tau is SGN (Saigon / Ho Chi Minh City).
 We'll update with information on ground transportation from the airport.
+
+### Hội An
+
+Hội An is a site of world heritage in central Vietnam.
+We have booked **group lodging** in a 7 bedroom villa overlooking the rice paddies for anyone who'd like to join.
+The villa is reserved from **December 16--21** (Friday--Wednesday).
+
+The villa is in the Cẩm Thanh village and is referred to as "_The An Retreat Hoi An by Đặng Viết Đồng_".
+Details can be found on [facebook](https://www.facebook.com/dang.v.dong/posts/pfbid0SUdbBASg7Q63bxxkivRv5VpnbXj5huEPDUUy9Ryu4MjgAmqXE3QsNcSWmgbk43XLl
+0) and [airbnb](https://www.airbnb.com/rooms/620873204365705719).
+We'll try to acquire world-class amenities:
+an occasional private chef and bicycles for all.
+The GPS location is `15.88536, 108.35432`
+(see on [Google](https://goo.gl/maps/DYeV8MEFa2yFjoWe7) or [OpenStreetMap](https://www.openstreetmap.org/way/286421500)),
+which is roughly this address:
+
+> Tống Văn Sương, Hamlet 5  
+> Hội An, Quảng Nam 560000, Vietnam
+
+To get to Hội An, fly to Đà Nẵng Airport ([DAD](https://www.flightconnections.com/flights-from-da-nang-dad)).
+This will be a cheap domestic flight and is probably easiest to book separately from your flight to Vietnam.
 
 #### Trang & Daniel's itinerary 
 
