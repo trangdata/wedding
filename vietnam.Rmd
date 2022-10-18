@@ -121,7 +121,7 @@ We'll update with information on ground transportation from the airport.
 
 Hội An is a site of world heritage in central Vietnam.
 We have booked **group lodging** in a 7 bedroom villa overlooking the rice paddies for anyone who'd like to join.
-The villa is reserved from **December 16--21** (Friday--Wednesday).
+The villa is reserved from **December 16--22** (Friday--Thursday).
 
 The villa is in the Cẩm Thanh village and is referred to as "_The An Retreat Hoi An by Đặng Viết Đồng_".
 Details can be found on [facebook](https://www.facebook.com/dang.v.dong/posts/pfbid0SUdbBASg7Q63bxxkivRv5VpnbXj5huEPDUUy9Ryu4MjgAmqXE3QsNcSWmgbk43XLl
@@ -216,3 +216,132 @@ Depending on traffic, travel time is 2—2.5 hours.
 Some popular shuttle companies are: Hoa Mai, Thanh Vinh, Toan Thang, Huy Hoang, and Anh Quoc.
 
 
+### Meet the aliens
+
+
+::: {.floatting}
+
+```{r out.width='30%', out.extra='style="float:left; padding:10px"'}
+knitr::include_graphics("img/Isabelle.jpeg")
+```
+
+**Isabelle** received her doctorate degree at Harvard where she constructed indicators using feature engineering to characterize decentralization as a latent variable and its relationship with program performance.
+<!-- Isabelle has published many high impact articles such as "Equally able, but unequally accepted: Gender differentials and experiences of community health volunteers promoting maternal, newborn, and child health in Morogoro Region, Tanzania". -->
+She can't wait for an adventurous time in Viet Nam sans children.
+
+
+:::
+
+
+::: {.floatting}
+
+```{r out.width='30%', out.extra='style="float:left; padding:10px"'}
+knitr::include_graphics("img/Antoine.jpeg")
+```
+
+**Antoine** is the father of two beautiful children, at least one of whom is with Isabelle.
+He is thrilled to be making his Loveroo Club debut.
+
+:::
+
+
+::: {.floatting}
+
+```{r out.width='30%', out.extra='style="float:left; padding:10px"'}
+knitr::include_graphics("img/Jason.jpeg")
+```
+
+**Jason** is an avid skier who also dabbles in competitive ultimate, marathon running, and gravel biking. 
+Jason ăn chay and cannot wait to explore what the Viet cuisine has to offer.
+
+:::
+
+
+::: {.floatting}
+
+```{r out.width='30%', out.extra='style="float:left; padding:10px"'}
+knitr::include_graphics("img/Slappy.jpeg")
+```
+
+**Robert** is a Cornell graduate and has been one of Elon Musk's best mentees for several years.
+Robert is passionate about renewable energy and wishes to invest in solar panels for Southeast Asia.
+
+:::
+
+::: {.floatting}
+
+```{r out.width='30%', out.extra='style="float:left; padding:10px"'}
+knitr::include_graphics("img/Nathaly.jpeg")
+```
+
+**Nathaly** a chemical engineer who speaks 4 languages and cooks 12 different cuisines.
+She was last seen in Mexico but you may find her hosting an impromptu dinner in the Greater Philadelphia Area region.
+Nathaly is excited to visit Viet Nam and 5 more other countries on her way there.
+
+:::
+
+::: {.floatting}
+
+```{r out.width='30%', out.extra='style="float:left; padding:10px"'}
+knitr::include_graphics("img/Luis.jpeg")
+```
+
+**Luis** will be meeting Trang and Daniel for the first time in Viet Nam.
+He looks forward to be completely showered with strangers' love.
+
+:::
+
+::: {.floatting}
+
+```{r out.width='30%', out.extra='style="float:left; padding:10px"'}
+knitr::include_graphics("img/Isabel.jpeg")
+```
+
+**Isabel** is a published author!
+For readers who can read Spanish, there will be a book signing by the beach after the celebration.
+Congratulations, Isabel!
+
+:::
+
+
+::: {.floatting}
+
+```{r out.width='30%', out.extra='style="float:left; padding:10px"'}
+knitr::include_graphics("img/Ariel.jpeg")
+```
+
+**Ariel** is a Cuban engineer who is expecting!
+Ariel is excited to be back to play witness in his third Loveroo union.
+
+:::
+
+
+::: {.floatting}
+
+```{r out.width='30%', out.extra='style="float:left; padding:10px"'}
+knitr::include_graphics("img/Kurt.jpg")
+```
+
+**Kurt** is a free Philadelphian spirit who officiated out first two weddings.
+He is excited to enjoy this year's celebration without any responsibility.
+
+:::
+
+::: {.floatting}
+```{r out.width='30%', out.extra='style="float:left; padding:10px"'}
+knitr::include_graphics("img/Angie.jpeg")
+```
+
+**Angie** is an economist who studies the effect of fiscal policies on gender equality in African countries.
+Angie looks forward to return to Viet Nam to collect de-identified data for her research.
+And to celebrate love, of course.
+
+:::
+
+::: {.floatting}
+```{r out.width='30%', out.extra='style="float:left; padding:10px"'}
+knitr::include_graphics("img/Sam.jpeg")
+```
+**Sam Marshall** received the highest conjugal award at our last celebration and is excited to be competing in the third wedding as the (for)reigning champion.
+
+:::
