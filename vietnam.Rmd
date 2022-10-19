@@ -327,21 +327,21 @@ He is excited to enjoy this year's celebration without any responsibility.
 
 :::
 
-::: {.floatting}
-```{r out.width='30%', out.extra='style="float:left; padding:10px"'}
-knitr::include_graphics("img/Angie.jpeg")
-```
+<!-- ::: {.floatting} -->
+<!-- ```{r out.width='30%', out.extra='style="float:left; padding:10px"'} -->
+<!-- knitr::include_graphics("img/Angie.jpeg") -->
+<!-- ``` -->
 
-**Angie** is an economist who studies the effect of fiscal policies on gender equality in African countries.
-Angie looks forward to return to Viet Nam to collect de-identified data for her research.
-And to celebrate love, of course.
+<!-- **Angie** is an economist who studies the effect of fiscal policies on gender equality in African countries. -->
+<!-- Angie looks forward to return to Viet Nam to collect de-identified data for her research. -->
+<!-- And to celebrate love, of course. -->
 
-:::
+<!-- ::: -->
 
-::: {.floatting}
-```{r out.width='30%', out.extra='style="float:left; padding:10px"'}
-knitr::include_graphics("img/Sam.jpeg")
-```
-**Sam Marshall** received the highest conjugal award at our last celebration and is excited to be competing in the third wedding as the (for)reigning champion.
+<!-- ::: {.floatting} -->
+<!-- ```{r out.width='30%', out.extra='style="float:left; padding:10px"'} -->
+<!-- knitr::include_graphics("img/Sam.jpeg") -->
+<!-- ``` -->
+<!-- **Sam** received the highest conjugal award at our last celebration and is excited to be competing in the third wedding as the (for)reigning champion. -->
 
-:::
+<!-- ::: -->
