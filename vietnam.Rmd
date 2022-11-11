@@ -314,6 +314,44 @@ He is excited to enjoy this year's celebration without any responsibility.
 
 :::
 
+::: {.floatting}
+
+```{r out.width='30%', out.extra='style="float:left; padding:10px"'}
+knitr::include_graphics("img/corey.jpg")
+```
+
+**Corey** is of House Hilton from New Rochelle, New York.
+Corey is Daniel's fraternity brother,
+which is a non-blood relationship from a collegiate social group.
+If you need help with any Slick Deals, consult Corey.
+
+:::
+
+
+::: {.floatting}
+
+```{r out.width='30%', out.extra='style="float:left; padding:10px"'}
+knitr::include_graphics("img/Joshua.jpg")
+```
+
+**Joshua** is the true blood brother of Daniel.
+He flies drones and studies coastal geology.
+Joshua is considered more charming than Daniel,
+in part because of his superior patience.
+
+:::
+
+::: {.floatting}
+
+```{r out.width='30%', out.extra='style="float:left; padding:10px"'}
+knitr::include_graphics("img/Sally.jpg")
+```
+
+**Sally** is a PhD student of North Carolina and yogi.
+Her and Joshua like to surf the seas and dive the depths.
+:::
+
+
 <!-- ::: {.floatting} -->
 <!-- ```{r out.width='30%', out.extra='style="float:left; padding:10px"'} -->
 <!-- knitr::include_graphics("img/Angie.jpeg") -->
