@@ -91,6 +91,9 @@ Trân trọng kính mời!
 We're thrilled that you're coming to visit Trang's beautiful hometown!
 
 We're working on a [***Viet Nam must-read***](https://lively-candy-457.notion.site/Vietnam-must-sees-1d29e420e65047acbb8f0a8c80fc7582) Notion page.
+
+[![VietNam](img/notion-screenshot.png){width=100%}](https://lively-candy-457.notion.site/Vietnam-must-sees-1d29e420e65047acbb8f0a8c80fc7582)
+
 We include some crucial information below, but please check out the Notion page for more detail.
 And, of course, let us know if you have any additional questions.
 
@@ -103,7 +106,7 @@ where the groom's family & friends present dowric offerings to the bride's famil
 (at their residence).
 Second is the evening wedding reception at the Palace Hotel.
 
-![](img/vungtau.JPG)
+<!-- ![](img/vungtau.JPG) -->
 
 ### Lodging
 
