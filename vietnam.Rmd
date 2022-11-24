@@ -347,7 +347,7 @@ in part because of his superior patience.
 ::: {.floatting}
 
 ```{r out.width='30%', out.extra='style="float:left; padding:10px"'}
-knitr::include_graphics("img/Sally.jpg")
+knitr::include_graphics("img/sally.png")
 ```
 
 **Sally** is a PhD student of North Carolina and yogi.
