@@ -5,15 +5,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     container: rocker/verse:latest
-    env:
-      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@main
+        uses: actions/checkout@v4
       - name: Install Package Dependencies
         run: |
           Rscript -e "install.packages(c('remotes', 'rmarkdown', 'distill', 'postcards', 'tidyverse', 'wordcloud', 'tidytext', 'lubridate'))"
-          Rscript -e "Sys.unsetenv('GITHUB_PAT')"
           Rscript -e "remotes::install_github('gadenbuie/ggpomological', ref='HEAD')"
       - name: Render Site
         run: |
